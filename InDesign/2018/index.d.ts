@@ -5392,6 +5392,7 @@ declare class Window {
 	 */
 	toSpecifier(): string;
 
+	add(type: string, bounds?: number[], text?: string, properties?: object): any;
 }
 
 /**
