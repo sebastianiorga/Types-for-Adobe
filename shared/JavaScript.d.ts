@@ -1468,6 +1468,14 @@ interface SyntaxError extends Error {
 
 };
 
+interface TypeErrorConstructor extends ErrorConstructor {
+
+};
+declare const TypeError: TypeErrorConstructor;
+interface TypeError extends Error {
+
+};
+
 interface FileConstructor {
 	readonly prototype: File;
 
