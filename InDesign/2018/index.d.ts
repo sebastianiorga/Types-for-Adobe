@@ -5392,6 +5392,16 @@ declare class Window {
 	 */
 	toSpecifier(): string;
 
+	/**
+	 * @param type	The type of the child element, as specified for the type property.
+	 * Control types are listed in the JavaScript Tools Guide.
+	 * @param bounds A bounds specification that describes the size and position of the new control or container, relative to its parent.
+	 * If supplied, this value creates a new Bounds object which is assigned to the new objectís bounds property. (Optional)
+	 * @param text	String	The text or label, a localizable string.
+	 * Initial text to be displayed in the control as the title, label, or contents, depending on the control type. If supplied, this value is assigned to the new objectís text property. (Optional)
+	 * @param properties	Object	An object that contains one or more creation properties of the new child (properties used only when the element is created).
+	 * The creation properties depend on the element type. See property of each control type. (Optional)
+	*/
 	add(type: string, bounds?: number[], text?: string, properties?: object): any;
 }
 
