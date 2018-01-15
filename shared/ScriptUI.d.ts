@@ -80,9 +80,6 @@ declare class ScriptUI {
 
 }
 
-enum WindowType {
-	window, palette, dialog
-}
 /**
  * The instance represents a top-level window or dialog box, which contains user-interface elements.
  * The globally available Window object provides access to predefined and script-defined windows.
