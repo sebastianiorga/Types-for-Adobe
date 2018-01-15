@@ -1,5 +1,287 @@
 /// <reference path="../../shared/global.d.ts" />
-/// <reference path="../../shared/ScriptUI.d.ts" />
+
+/**
+ * Defines the boundaries of a window within the screen’s coordinate space, or of a UI element within the container’s coordinate space.
+ * A Bounds object is created when you set an element’s bounds property. You can set the property using a JavaScript object with properties namedleft, top, right, bottom or x, y, width, height, or an array with 4 values in the order [x, y, wd, ht].
+ */
+declare type Bounds = _Bounds | [number, number, number, number];
+declare class _Bounds {
+	/**
+	 * The vertical coordinate, a pixel offset from the origin of the element's coordinate space.
+	 */
+	bottom: number;
+
+	/**
+	 * The height in pixels.
+	 */
+	height: number;
+
+	/**
+	 * The horizontal coordinate, a pixel offset from the origin of the element's coordinate space.
+	 */
+	left: number;
+
+	/**
+	 * The array length.
+	 */
+	readonly length: number;
+
+	/**
+	 * The width in pixels.
+	 */
+	right: number;
+
+	/**
+	 * The height in pixels.
+	 */
+	top: number;
+
+	/**
+	 * The width in pixels.
+	 */
+	width: number;
+
+	/**
+	 * The horizontal coordinate, a pixel offset from the origin of the element's coordinate space.
+	 */
+	x: number;
+
+	/**
+	 * The vertical coordinate, a pixel offset from the origin of the element's coordinate space.
+	 */
+	y: number;
+
+	[0]: number;
+
+	[1]: number;
+
+	[2]: number;
+
+	[3]: number;
+
+}
+
+/**
+ * Creation properties map
+ * An object that contains one or more creation properties of the element (properties used only when the element is created).
+ */
+interface _ControlPropertiesMap {
+	/**
+	 * Creation properties of a Button
+	 * But the third argument to the add() method that creates it can be the initial text value.
+	 * @param name A unique name for the control. Special name "ok" makes the button primary for parent dialog, and the special name "cancel" makes the button default cancel button for parent dialog.
+	 */
+	button: {
+		name: string;
+	};
+
+	/**
+	 * Creation properties of a CheckBox
+	 * The third argument to the add() method that creates it is the text to be displayed.
+	 * @param name A unique name for the control.
+	 */
+	checkbox: {
+		name: string;
+	};
+
+	/**
+	 * Creation properties of a DropDownList
+	 * @param name A unique name for the control.
+	 * @param items An array of strings for the text of each list item. An item object is created for each item. An item with the text string "-" creates a separator item. Supply this property, or the items argument to the add() method, not both. This form is most useful for elements defined using Resource Specifications.
+	 */
+	dropdownlist: {
+		name: string;
+		items: string[];
+	};
+
+	/**
+	 * Creation properties of an EditText
+	 * @param name A unique name for the control.
+	 * @param multiline When false (the default), the control displays a single line of text. When true, the control displays multiple lines, in which case the text wraps within the width of the control.
+	 * @param borderless When true, the control is drawn with no border. Default is false.
+	 * @param scrollable For multiline elements only. When true (the default), the text field has a vertical scrollbar that is enabled when the element contains more text than fits in the visible area. When false, no vertical scrollbar appears; if the element contains more text than fits in the visible area, the arrow keys can be used to scroll the text up and down.
+	 * @param readonly When false (the default), the control accepts text input. When true, the control does not accept input but only displays the contents of the text property.
+	 * @param noecho When false (the default), the control displays input text. When true, the control does not display input text (used for password input fields).
+	 * @param enterKeySignalsOnChange When false (the default), the control signals an onChange event when the editable text is changed and the control loses the keyboard focus (that is, the user tabs to another control, clicks outside the control, or types Enter). When true, the control only signals an onChange() event when the editable text is changed and the user types Enter; other changes to the keyboard focus do not signal the event.
+	 * @param wantReturn Only applies to multiple line edit controls in ScriptUI Version 6.0 or later. When true the RETURN/ENTER keystroke is considered as text-input advancing the cursor to the next line. The default value is false.
+	 */
+	edittext: {
+		name: string;
+		multiline: boolean;
+		borderless: boolean;
+		scrollable: boolean;
+		readonly: boolean;
+		noecho: boolean;
+		enterKeySignalsOnChange: boolean;
+		wantReturn: boolean;
+	};
+
+	/**
+	 * Creation properties of a FlashPlayer
+	 * @param name A unique name for the control.
+	 */
+	flashplayer: {
+		name: string;
+	};
+
+	/**
+	 * Creation properties of a Group
+	 * @param name A unique name for the control.
+	 */
+	group: {
+		name: string;
+	};
+
+	/**
+	 * Creation properties of an IconButton
+	 * @param name A unique name for the control.
+	 * @param style A string for the visual style, either "button", which has a visible border with a raised or 3D appearance, or "toolbutton", which has a flat appearance, appropriate for inclusion in a toolbar.
+	 * @param toggle For a button-style control, a value of true causes it to get a button-pressed appearance the first time it is clicked, and alternate with the unpressed appearance each time it is clicked. The toggle state is reflected in the control’s value property.
+	 */
+	iconbutton: {
+		name: string;
+		style: "button" | "toolbutton";
+		toggle: boolean;
+	};
+
+	/**
+	 * Creation properties of a ListBox
+	 * @param name A unique name for the control.
+	 * @param multiselect When false (the default), only one item can be selected. When true, multiple items can be selected.
+	 * @param selected When true, multiple items can be selected.
+	 * @param items An array of strings for the text of each list item. An item object is created for each item. An item with the text string "-" creates a separator item. Supply this property, or the items argument to the add() method, not both. This form is most useful for elements defined using Resource Specifications.
+	 * @param numberOfColumns A number of columns in which to display the items; default is 1. When there are multiple columns, each ListItem object represents a selectable row. Its text and image values specify the label in the first column, and the subitems property specifies the labels in the additional columns.
+	 * @param showHeaders True to display column titles.
+	 * @param columnWidths An array of numbers for the preferred width in pixels of each column.
+	 * @param columnTitles A corresponding array of strings for the title of each column, to be shown if showHeaders is true.
+	 */
+	listbox: {
+		name: string;
+		multiselect: boolean;
+		selected: boolean;
+		items: string[];
+		numberOfColumns: number;
+		showHeaders: boolean;
+		columnWidths: number[];
+		columnTitles: string[];
+	};
+
+	/**
+	 * Creation properties of a Panel
+	 * @param name A unique name for the control.
+	 * @param borderStyle A string that specifies the appearance of the border drawn around the panel. One of black, etched, gray, raised, sunken. Default is etched.
+	 * @param su1PanelCoordinates Photoshop only. When true, this panel automatically adjusts the positions of its children for compatability with Photoshop CS. Default is false, meaning that the panel does not adjust the positions of its children, even if the parent window has automatic adjustment enabled.
+	 */
+	panel: {
+		name: string;
+		borderStyle: string;
+		su1PanelCoordinates: boolean;
+	};
+
+	/**
+	 * Creation properties of a ProgressBar
+	 * The third argument of the add() method that creates it is the initial value (default 0), and the fourth argument is the maximum value of the range (default 100).
+	 * @param name A unique name for the control.
+	 */
+	progressbar: {
+		name: string;
+	};
+
+	/**
+	 * Creation properties of a RadioButton
+	 * The third argument of the add() method that creates can be the label text.
+	 * @param name A unique name for the control.
+	 */
+	radiobutton: {
+		name: string;
+	};
+
+	/**
+	 * Creation properties of a Scrollbar
+	 * The third argument of the add() method that creates it is the initial value, and the fourth and fifth arguments are the minimum and maximum values of the range.
+	 * @param name A unique name for the control.
+	 */
+	scrollbar: {
+		name: string;
+	};
+
+	/**
+	 * Creation properties of a Slider
+	 * The third argument of the add() method that creates it is the initial value, and the fourth and fifth arguments are the minimum and maximum values of the range.
+	 * @param name A unique name for the control.
+	 */
+	slider: {
+		name: string;
+	};
+
+	/**
+	 * Creation properties of a StaticText
+	 * @param name A unique name for the control.
+	 * @param multiline When false (the default), the control displays a single line of text. When true, the control displays multiple lines, in which case the text wraps within the width of the control.
+	 * @param scrolling When false (the default), the displayed text cannot be scrolled. When true, the displayed text can be vertically scrolled using the Up Arrow and Down Arrow; this case implies multiline=true.
+	 * @param truncate If middle or end, defines where to remove characters from the text and replace them with an ellipsis if the specified title does not fit within the space reserved for it. If none, and the text does not fit, characters are removed from the end, without any replacement ellipsis character.
+	 */
+	statictext: {
+		name: string;
+		multiline: boolean;
+		scrolling: boolean;
+		truncate: string;
+	};
+
+	/**
+	 * Creation properties of a TreeView
+	 * @param name A unique name for the control.
+	 * @param items An array of strings for the text of each top-level list item. An item object is created for each item. An item with the text string "-" creates a separator item. Supply this property, or the items argument to the add() method, not both. This form is most useful for elements defined using Resource Specifications.
+	 */
+	treeview: {
+		name: string;
+		items: string[];
+	};
+
+	/**
+	 * Creation properties of a Window
+	 * @param resizeable When true, the window can be resized by the user. Default is false.
+	 * @param su1PanelCoordinates Photoshop only. When true, the child panels of this window automatically adjust the positions of their children for compatability with Photoshop CS (in which the vertical coordinate was measured from outside the frame). Default is false. Individual panels can override the parent window’s setting.
+	 * @param closeButton Bridge only. When true, the title bar includes a button to close the window, if the platform and window type allow it. When false, it does not. Default is true. Not used for dialogs.
+	 * @param maximizeButton Bridge only. When true, the title bar includes a button to expand the window to its maximum size (typically, the entire screen), if the platform and window type allow it. When false, it does not. Default is false for type palette, true for type window. Not used for dialogs.
+	 * @param minimizeButton Bridge only. When true, the title bar includes a button to minimize or iconify the window, if the platform and window type allow it. When false, it does not. Default is false for type palette, true for type window. Main windows cannot have a minimize button in Mac OS. Not used for dialogs.
+	 * @param independent When true, a window of type window is independent of other application windows, and can be hidden behind them in Windows. In Mac OS, has no effect. Default is false.
+	 * @param borderless When true, the window has no title bar or borders. Properties that control those features are ignored.
+	 */
+	window: {
+		resizeable: boolean;
+		su1PanelCoordinates: boolean;
+		closeButton: boolean;
+		maximizeButton: boolean;
+		minimizeButton: boolean;
+		independent: boolean;
+		borderless: boolean;
+	};
+
+	/**
+	 * A ListItem object has no creation properties.
+	 */
+	listitem: {};
+
+}
+
+interface _WindowPanelGroupAdd {
+	(type: "button", bounds?: Bounds, text?: string, properties?: Partial<_ControlPropertiesMap["button"]>): Button;
+	(type: "checkbox", bounds?: Bounds, text?: string, properties?: Partial<_ControlPropertiesMap["checkbox"]>): Checkbox;
+	(type: "dropdownlist", bounds?: Bounds, items?: string[], properties?: Partial<_ControlPropertiesMap["dropdownlist"]>): DropDownList;
+	(type: "edittext", bounds?: Bounds, text?: string, properties?: Partial<_ControlPropertiesMap["edittext"]>): EditText;
+	(type: "flashplayer", bounds?: Bounds, movieToLoad?: string | File, properties?: Partial<_ControlPropertiesMap["flashplayer"]>): FlashPlayer;
+	(type: "group", bounds?: Bounds, properties?: Partial<_ControlPropertiesMap["group"]>): Group;
+	(type: "iconbutton", bounds?: Bounds, icon?: string | File, properties?: Partial<_ControlPropertiesMap["iconbutton"]>): IconButton;
+	(type: "listbox", bounds?: Bounds, items?: string[], properties?: Partial<_ControlPropertiesMap["listbox"]>): ListBox;
+	(type: "panel", bounds?: Bounds, text?: string, properties?: Partial<_ControlPropertiesMap["panel"]>): Panel;
+	(type: "progressbar", bounds?: Bounds, value?: number, max?: number, properties?: Partial<_ControlPropertiesMap["progressbar"]>): Progressbar;
+	(type: "radiobutton", bounds?: Bounds, text?: string, properties?: Partial<_ControlPropertiesMap["radiobutton"]>): RadioButton;
+	(type: "scrollbar", bounds?: Bounds, value?: number, min?: number, max?: number, properties?: Partial<_ControlPropertiesMap["scrollbar"]>): Scrollbar;
+	(type: "slider", bounds?: Bounds, value?: number, min?: number, max?: number, properties?: Partial<_ControlPropertiesMap["slider"]>): Slider;
+	(type: "statictext", bounds?: Bounds, text?: string, properties?: Partial<_ControlPropertiesMap["statictext"]>): StaticText;
+	(type: "treeview", bounds?: Bounds, items?: string[], properties?: Partial<_ControlPropertiesMap["treeview"]>): TreeView;
+}
 
 /**
  * An assignment.
