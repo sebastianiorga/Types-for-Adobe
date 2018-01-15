@@ -1460,6 +1460,8 @@ interface Error {
 
 }
 
+interface SyntaxError extends Error;
+
 interface FileConstructor {
 	readonly prototype: File;
 
