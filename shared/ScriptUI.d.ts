@@ -106,7 +106,7 @@ declare class Window extends _Control {
 	 * •  independent: When true, a window of type window is independent of other application windows, and can be hidden behind them in Windows. In Mac OS, has no effect. Default is false.
 	 * •  borderless: When true, the window has no title bar or borders. Properties that control those features are ignored. (Optional)
 	*/
-	constructor(type: WindowType, title?: string, bounds?: number[], properties?: any)
+	constructor(type: WindowType, title?: string, bounds?: number[], properties?: any);
 	/**
 	 * Set to true to make this window active.
 	 * A modal dialog that is visible is by definition the active dialog.
