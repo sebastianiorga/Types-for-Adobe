@@ -1407,6 +1407,11 @@ interface RegExp {
 	 */
 	toString(): string;
 
+	/**
+	 * read/write integer property of regular expression instances that specifies the index at which to start the next match.
+	*/
+	lastIndex?: number;
+
 }
 
 interface RegExpMatchArray extends Array<string> {
