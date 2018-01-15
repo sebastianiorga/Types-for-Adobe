@@ -5221,24 +5221,14 @@ declare class Documents {
  */
 declare class Window {
 	/**
-	 * @param type	String	The window type.
-	 * One of:
-	 * •  window: Creates a simple window that can be used as a main window for an application. (Not supported by Photoshop CS3.)
-	 * •  palette: Creates a modeless dialog, also called a floating palette. (Not supported by Photoshop CS3.)
-	 * •  dialog: Creates a modal dialog. This argument can also be a ScriptUI resource specification; in that case, all other arguments are ignored.
-	 * @param title	String	The window title, a localizable string. (Optional)
-	 * @param bounds	Bounds	The window's position and size. (Optional)
-	 * @param properties	Object	An object containing creation-only properties.
-	 * Can contain any of these properties:
-	 * •  resizeable: When true, the window can be resized by the user. Default is false.
-	 * •  su1PanelCoordinates: Photoshop only. When true, the child panels of this window automatically adjust the positions of their children for compatability with Photoshop CS (in which the vertical coordinate was measured from outside the frame). Default is false. Individual panels can override the parent windowís setting.
-	 * • TODO(SI) missing: When true, the title bar includes a button to close the window, if the platform and window type allow it. When false, it does not. Default is true. Not used for dialogs.
-	 * •  maximizeButton: When true, the title bar includes a button to expand the window to its maximum size (typically, the entire screen), if the platform and window type allow it. When false, it does not. Default is false for type palette, true for type window. Not used for dialogs.
-	 * •  minimizeButton: When true, the title bar includes a button to minimize or iconify the window, if the platform and window type allow it. When false, it does not. Default is false for type palette, true for type window. Main windows cannot have a minimize button in Mac OS. Not used for dialogs.
-	 * •  independent: When true, a window of type window is independent of other application windows, and can be hidden behind them in Windows. In Mac OS, has no effect. Default is false.
-	 * •  borderless: When true, the window has no title bar or borders. Properties that control those features are ignored. (Optional)
-	*/
-	constructor(type: WindowType, title?: string, bounds?: number[], properties?: any);
+	 * Creates a new window.
+	 * @param type The window type. One of: window: Creates a simple window that can be used as a main window for an application. (Not supported by Photoshop CS3.) palette: Creates a modeless dialog, also called a floating palette. (Not supported by Photoshop CS3.) dialog: Creates a modal dialog. This argument can also be a ScriptUI resource specification; in that case, all other arguments are ignored.
+	 * @param title The window title, a localizable string.
+	 * @param bounds The window's position and size.
+	 * @param properties An object containing creation-only properties.
+	 */
+	constructor(type: string, title?: string, bounds?: Bounds, properties?: Partial<_ControlPropertiesMap["window"]>);
+
 	/**
 	 * Dispatched after the Window becomes active. This event bubbles. This event is not cancelable.
 	 */
@@ -5393,16 +5383,13 @@ declare class Window {
 	toSpecifier(): string;
 
 	/**
-	 * @param type	The type of the child element, as specified for the type property.
-	 * Control types are listed in the JavaScript Tools Guide.
-	 * @param bounds A bounds specification that describes the size and position of the new control or container, relative to its parent.
-	 * If supplied, this value creates a new Bounds object which is assigned to the new objectís bounds property. (Optional)
-	 * @param text	String	The text or label, a localizable string.
-	 * Initial text to be displayed in the control as the title, label, or contents, depending on the control type. If supplied, this value is assigned to the new objectís text property. (Optional)
-	 * @param properties	Object	An object that contains one or more creation properties of the new child (properties used only when the element is created).
-	 * The creation properties depend on the element type. See property of each control type. (Optional)
-	*/
-	add(type: string, bounds?: number[], text?: string, properties?: object): any;
+	 * Creates and returns a new control or container object and adds it to the children of this window.
+	 * @param type The type of the child element, as specified for the type property. Control types are listed in the JavaScript Tools Guide.
+	 * @param bounds A bounds specification that describes the size and position of the new control or container, relative to its parent. If supplied, this value creates a new Bounds object which is assigned to the new object’s bounds property.
+	 * @param text The text or label, a localizable string. Initial text to be displayed in the control as the title, label, or contents, depending on the control type. If supplied, this value is assigned to the new object’s text property.
+	 * @param properties An object that contains one or more creation properties of the new child (properties used only when the element is created). The creation properties depend on the element type. See properties property of each control type.
+	 */
+	add: _WindowPanelGroupAdd;
 }
 
 /**
