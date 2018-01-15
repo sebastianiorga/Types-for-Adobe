@@ -103,7 +103,7 @@ declare class Assignment {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -115,8 +115,8 @@ declare class Assignment {
 	/**
 	 * Creates an assignment package.
 	 * @param filePath The full path name of the assignment package file.
-	 * @param submit If true, submits assigned stories before packaging the assignment. 
-	 * @param withProperties Initial values for properties of the new Assignment 
+	 * @param submit If true, submits assigned stories before packaging the assignment.
+	 * @param withProperties Initial values for properties of the new Assignment
 	 */
 	createPackage(filePath: File, submit?: boolean, withProperties?: object): File;
 
@@ -147,7 +147,7 @@ declare class Assignment {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -163,8 +163,8 @@ declare class Assignment {
 
 	/**
 	 * Updates the assignment file.
-	 * @param versionComments The comment for this version. 
-	 * @param forceSave If true, forcibly saves a version. 
+	 * @param versionComments The comment for this version.
+	 * @param forceSave If true, forcibly saves a version.
 	 */
 	update(versionComments: string, forceSave?: boolean): void;
 
@@ -188,9 +188,9 @@ declare class Assignments {
 	/**
 	 * Creates a new assignment.
 	 * @param filePath The full path name of the new assignment.
-	 * @param versionComments The comment for this version. 
-	 * @param forceSave If true, forcibly saves a version. 
-	 * @param withProperties Initial values for properties of the new Assignment 
+	 * @param versionComments The comment for this version.
+	 * @param forceSave If true, forcibly saves a version.
+	 * @param withProperties Initial values for properties of the new Assignment
 	 */
 	add(filePath: File, versionComments: string, forceSave?: boolean, withProperties?: object): Assignment;
 
@@ -331,7 +331,7 @@ declare class AssignedStory {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -355,7 +355,7 @@ declare class AssignedStory {
 
 	/**
 	 * Moves the assigned story to the specified location.
-	 * @param to The location of the assigned story relative to the reference object or within the containing object. 
+	 * @param to The location of the assigned story relative to the reference object or within the containing object.
 	 * @param reference The reference object. Note: Required when the to parameter specifies before or after.
 	 */
 	move(to?: LocationOptions, reference?: Assignment | AssignedStory): AssignedStory;
@@ -364,7 +364,7 @@ declare class AssignedStory {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -637,14 +637,14 @@ declare class PlaceGun extends Preference {
 	/**
 	 * Load the place gun with one or more files.
 	 * @param fileName One or more files to place.
-	 * @param showingOptions Whether to display the import options dialog 
-	 * @param withProperties Initial values for properties of the placed object(s) 
+	 * @param showingOptions Whether to display the import options dialog
+	 * @param withProperties Initial values for properties of the placed object(s)
 	 */
 	loadPlaceGun(fileName: File | File[], showingOptions?: boolean, withProperties?: object): void;
 
 	/**
 	 * Rotate the contents of the place gun.
-	 * @param direction Which direction to rotate the contents 
+	 * @param direction Which direction to rotate the contents
 	 */
 	rotate(direction?: RotationDirection): void;
 
@@ -753,8 +753,8 @@ declare class EventListeners {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
-	 * @param withProperties Initial values for properties of the new EventListener 
+	 * @param captures This parameter is obsolete.
+	 * @param withProperties Initial values for properties of the new EventListener
 	 */
 	add(eventType: string, handler: File | Function, captures?: boolean, withProperties?: object): EventListener;
 
@@ -1256,7 +1256,7 @@ declare class IdleTask {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -1287,7 +1287,7 @@ declare class IdleTask {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -1320,7 +1320,7 @@ declare class IdleTasks {
 
 	/**
 	 * Creates a new IdleTask.
-	 * @param withProperties Initial values for properties of the new IdleTask 
+	 * @param withProperties Initial values for properties of the new IdleTask
 	 */
 	add(withProperties: object): IdleTask;
 
@@ -2589,25 +2589,25 @@ declare class Application {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
 	/**
 	 * Applies the specified menu customization set. An empty string will reset all menus and colorization (Show Full Menus). No string will apply the default menu set.
-	 * @param name The menu customization set. 
+	 * @param name The menu customization set.
 	 */
 	applyMenuCustomization(name: string): void;
 
 	/**
 	 * Applies the specified shortcut set file. No string will apply the default shortcut set.
-	 * @param name The shortcut set. 
+	 * @param name The shortcut set.
 	 */
 	applyShortcutSet(name: string): void;
 
 	/**
 	 * Applies the specified workspace.
-	 * @param name The workspace. 
+	 * @param name The workspace.
 	 */
 	applyWorkspace(name: string): void;
 
@@ -2623,31 +2623,31 @@ declare class Application {
 
 	/**
 	 * Finds glyphs that match the find what value and replaces the glyphs with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeGlyph(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value and replaces the text with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeGrep(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds objects that match the find what value and replace the objects with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeObject(reverseOrder: boolean): PageItem[];
 
 	/**
 	 * Finds text that matches the find what value and replaces the text with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeText(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find character type value and replaces the text with the change character type value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeTransliterate(reverseOrder: boolean): Text[];
 
@@ -2671,7 +2671,7 @@ declare class Application {
 
 	/**
 	 * Create a mini-folio out of asset and overlay descriptions.
-	 * 
+	 *
 	 * Schema for the mini folio description:
 	 * || Key || Type || Required? || Description ||
 	 * | contentstackid | string | yes | The explicit ID to be used for this stack |
@@ -2686,7 +2686,7 @@ declare class Application {
 	 * | metadata | array | no | The metadata for the mini-folio described below. |
 	 * | showprogressbar | boolean | no | Either true or false to indicate whether we should show a progress bar (default is false) |
 	 * | targetviewerversion | string | no | If provided (in the form "major.minor.revision") a folio compatible with the viewer version is produced. If omitted, the latest folio format is produced. | CS5 |
-	 * 
+	 *
 	 * The following are fields in the array for "assets":
 	 * || Key || Type || Required? || Description ||
 	 * | file | file | yes | The asset file |
@@ -2696,12 +2696,12 @@ declare class Application {
 	 * | orientation | string | yes | The asset orientation, either "portrait" or "landscape" |
 	 * | thumbnail | file | no | A thumbnail of the asset to be used in browse mode |
 	 * | scrubber | file | no | A thumbnail of the asset to be used in scrubber mode |
-	 * 
+	 *
 	 * The following are fields in the array for "assetDependencies":
 	 * || Key || Type || Required? || Description ||
 	 * | file | file | no | The dependent file |
 	 * | relativePath | string | no | The relative path to the file, for use in the package |
-	 * 
+	 *
 	 * The following are fields in the array for "metadata":
 	 * || Key || Type || Required? || Description ||
 	 * | any string | string or boolean | no | any key/value where the key is a string, and the value is either a string or a boolean, such as those described in "export folio meta data" |
@@ -2736,10 +2736,10 @@ declare class Application {
 	/**
 	 * Executes the script in the specified language as a single transaction.
 	 * @param script The script to execute.
-	 * @param language The language of the script to execute. If not specified, uses the language used to call this method. 
-	 * @param withArguments An array of arguments passed to the script. 
-	 * @param undoMode How to undo this script. 
-	 * @param undoName The name of the undo step for entire script undo mode. 
+	 * @param language The language of the script to execute. If not specified, uses the language used to call this method.
+	 * @param withArguments An array of arguments passed to the script.
+	 * @param undoMode How to undo this script.
+	 * @param undoName The name of the undo step for entire script undo mode.
 	 */
 	doScript(script: File | string | Function, language?: ScriptLanguage, withArguments?: any[], undoMode?: UndoModes, undoName?: string): any;
 
@@ -2762,8 +2762,8 @@ declare class Application {
 	 * @param destination The location to write the file.
 	 * @param portraitDocument The InDesign document for the stack's portrait orientation.
 	 * @param landscapeDocument The InDesign document for the stack's landscape orientation.
-	 * @param folioMetadata Optional meta data for the mini folio. Can accept: Ordered array containing key:String, value:String. 
-	 * @param miniFolioParams Options for exporting a mini folio. Can accept: Ordered array containing dataField:String, dataValue:Any Type. 
+	 * @param folioMetadata Optional meta data for the mini folio. Can accept: Ordered array containing key:String, value:String.
+	 * @param miniFolioParams Options for exporting a mini folio. Can accept: Ordered array containing dataField:String, dataValue:Any Type.
 	 */
 	exportArticleFolio(destination: File, portraitDocument: Document, landscapeDocument: Document, folioMetadata: any[], miniFolioParams: any[]): string;
 
@@ -2781,7 +2781,7 @@ declare class Application {
 	 * @param destination The directory to write the folio.
 	 * @param miniFolioList The mini folio(es) to add to the folio.
 	 * @param folioMetadata Meta data for the folio. Can accept: Ordered array containing key:String, value:String.
-	 * @param exportFolioParams Additional options for export folios. Can accept: Ordered array containing dataField:String, dataValue:Any Type. 
+	 * @param exportFolioParams Additional options for export folios. Can accept: Ordered array containing dataField:String, dataValue:Any Type.
 	 */
 	exportFolioToDirectory(destination: File, miniFolioList: File | File[], folioMetadata: any[], exportFolioParams: any[]): void;
 
@@ -2790,7 +2790,7 @@ declare class Application {
 	 * @param destination The location to write the package.
 	 * @param miniFolioList The mini folio(es) to add to the folio.
 	 * @param folioMetadata Meta data for the folio. Can accept: Ordered array containing key:String, value:String.
-	 * @param exportFolioParams Additional options for export folios. Can accept: Ordered array containing dataField:String, dataValue:Any Type. 
+	 * @param exportFolioParams Additional options for export folios. Can accept: Ordered array containing dataField:String, dataValue:Any Type.
 	 */
 	exportFolioToDirectoryPackage(destination: File, miniFolioList: File | File[], folioMetadata: any[], exportFolioParams: any[]): void;
 
@@ -2799,7 +2799,7 @@ declare class Application {
 	 * @param destination The location to write the package.
 	 * @param miniFolioList The mini folio(es) to add to the folio.
 	 * @param folioMetadata Meta data for the folio. Can accept: Ordered array containing key:String, value:String.
-	 * @param exportFolioParams Additional options for export folios. Can accept: Ordered array containing dataField:String, dataValue:Any Type. 
+	 * @param exportFolioParams Additional options for export folios. Can accept: Ordered array containing dataField:String, dataValue:Any Type.
 	 */
 	exportFolioToPackage(destination: File, miniFolioList: File | File[], folioMetadata: any[], exportFolioParams: any[]): void;
 
@@ -2808,8 +2808,8 @@ declare class Application {
 	 * @param destination The location to write the file.
 	 * @param portraitDocument The InDesign document for the stack's portrait orientation.
 	 * @param landscapeDocument The InDesign document for the stack's landscape orientation.
-	 * @param folioMetadata Optional meta data for the mini folio. Can accept: Ordered array containing key:String, value:String. 
-	 * @param miniFolioParams Options for exporting a mini folio. Can accept: Ordered array containing dataField:String, dataValue:Any Type. 
+	 * @param folioMetadata Optional meta data for the mini folio. Can accept: Ordered array containing key:String, value:String.
+	 * @param miniFolioParams Options for exporting a mini folio. Can accept: Ordered array containing dataField:String, dataValue:Any Type.
 	 */
 	exportMiniFolio(destination: File, portraitDocument: Document, landscapeDocument: Document, folioMetadata: any[], miniFolioParams: any[]): string[];
 
@@ -2817,8 +2817,8 @@ declare class Application {
 	 * Export the presets to a file.
 	 * @param format The preset format.
 	 * @param to The file to export to.
-	 * @param versionComments The comments for this version. 
-	 * @param forceSave Forcibly save a version. 
+	 * @param versionComments The comments for this version.
+	 * @param forceSave Forcibly save a version.
 	 */
 	exportPresets(format: ExportPresetFormat, to: File, versionComments: string, forceSave?: boolean): void;
 
@@ -2832,8 +2832,8 @@ declare class Application {
 	 * Exports stroke styles or presets.
 	 * @param to The file to save to
 	 * @param strokeStyleList The list of stroke styles to save
-	 * @param versionComments The comment for this version 
-	 * @param forceSave Forcibly save a version 
+	 * @param versionComments The comment for this version
+	 * @param forceSave Forcibly save a version
 	 */
 	exportStrokeStyles(to: File, strokeStyleList: StrokeStyle[], versionComments: string, forceSave?: boolean): void;
 
@@ -2845,13 +2845,13 @@ declare class Application {
 
 	/**
 	 * Finds glyphs that match the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findGlyph(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findGrep(reverseOrder: boolean): Text[];
 
@@ -2863,26 +2863,26 @@ declare class Application {
 
 	/**
 	 * Finds objects that match the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findObject(reverseOrder: boolean): PageItem[];
 
 	/**
 	 * Finds text that matches the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findText(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find character type value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findTransliterate(reverseOrder: boolean): Text[];
 
 	/**
 	 * Generate schema for IDML.
 	 * @param to The folder path of the schema.
-	 * @param packageFormat If true, generate schema for package format (multiple files). Default value is false. 
+	 * @param packageFormat If true, generate schema for package format (multiple files). Default value is false.
 	 */
 	generateIDMLSchema(to: File, packageFormat: boolean): void;
 
@@ -2890,13 +2890,13 @@ declare class Application {
 	 * Get all overlays.
 	 * @param portraitDocumentForCheckingOverlays The portrait document for checking overlays.
 	 * @param landscapeDocumentForCheckingOverlays The landscape document for checking overlays.
-	 * @param miniFolioParams Options for exporting a mini folio. Can accept: Ordered array containing dataField:String, dataValue:Any Type. 
+	 * @param miniFolioParams Options for exporting a mini folio. Can accept: Ordered array containing dataField:String, dataValue:Any Type.
 	 */
 	getAllOverlays(portraitDocumentForCheckingOverlays: Document, landscapeDocumentForCheckingOverlays: Document, miniFolioParams: any[]): any[];
 
 	/**
 	 * Get a JSON string for the CCX Welcome dialog.
-	 * @param jsondata mode description 
+	 * @param jsondata mode description
 	 */
 	getCCXUserJSONData(jsondata: string): string;
 
@@ -2919,7 +2919,7 @@ declare class Application {
 
 	/**
 	 * Get the resolution strategy for style conflict, false if the user cancels
-	 * @param charOrParaStyle Style type to look at. 
+	 * @param charOrParaStyle Style type to look at.
 	 */
 	getStyleConflictResolutionStrategy(charOrParaStyle: StyleType): any;
 
@@ -2966,7 +2966,7 @@ declare class Application {
 	 * Imports the specified styles.
 	 * @param format The types of styles to import.
 	 * @param from The file containing the styles you want to import.
-	 * @param globalStrategy The resolution strategy to employ for imported styles that have the same names as existing styles. 
+	 * @param globalStrategy The resolution strategy to employ for imported styles that have the same names as existing styles.
 	 */
 	importStyles(format: ImportFormat, from: File, globalStrategy?: GlobalClashResolutionStrategy): void;
 
@@ -2997,7 +2997,7 @@ declare class Application {
 	/**
 	 * Load conditions from the specified file.
 	 * @param from The path to the file that contains the conditions.
-	 * @param loadConditionSets If true, load the condition sets as well. 
+	 * @param loadConditionSets If true, load the condition sets as well.
 	 */
 	loadConditions(from: File, loadConditionSets: boolean): void;
 
@@ -3047,8 +3047,8 @@ declare class Application {
 	/**
 	 * Opens the specified document, book, or library.
 	 * @param from The file path(s) to the document, book, or library.
-	 * @param showingWindow If true, opens the document in a window. If false, the document is opened but is not displayed in a window. 
-	 * @param openOption How to open the document. 
+	 * @param showingWindow If true, opens the document in a window. If false, the document is opened but is not displayed in a window.
+	 * @param openOption How to open the document.
 	 */
 	open(from: File | File[], showingWindow?: boolean, openOption?: OpenOptions): any;
 
@@ -3068,7 +3068,7 @@ declare class Application {
 	 * Package a folder into a UCF file.
 	 * @param sourceFolder The folder to be packaged into an IDML file. Does not validate structure of the folder pursuant to the IDML spec. Caller is responsible for making sure the files in the folder are correctly organized.
 	 * @param ucfFile The destination UCF file. Will be overwritten if it already exists.
-	 * @param mimeMediaType The MIME media type, default value identifies package as IDML. 
+	 * @param mimeMediaType The MIME media type, default value identifies package as IDML.
 	 */
 	packageUCF(sourceFolder: File, ucfFile: File, mimeMediaType?: string): void;
 
@@ -3113,22 +3113,22 @@ declare class Application {
 	/**
 	 * Place one or more files following the behavior of the place menu item. This may load the place gun or replace the selected object, depending on current preferences.
 	 * @param fileName One or more files to place.
-	 * @param showingOptions Whether to display the import options dialog 
-	 * @param withProperties Initial values for properties of the placed object(s) 
+	 * @param showingOptions Whether to display the import options dialog
+	 * @param withProperties Initial values for properties of the placed object(s)
 	 */
 	place(fileName: File | File[], showingOptions?: boolean, withProperties?: object): void;
 
 	/**
 	 * Prints the specified file(s).
 	 * @param from One or more file paths.
-	 * @param printDialog Whether to invoke the print dialog 
+	 * @param printDialog Whether to invoke the print dialog
 	 * @param using Printer preset to use.
 	 */
 	print(from: File | File[], printDialog: boolean, using: PrinterPresetTypes | PrinterPreset): void;
 
 	/**
 	 * Quits the application.
-	 * @param saving The option to use for saving changes to open documents before quitting. 
+	 * @param saving The option to use for saving changes to open documents before quitting.
 	 */
 	quit(saving?: SaveOptions): void;
 
@@ -3141,7 +3141,7 @@ declare class Application {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -3162,23 +3162,23 @@ declare class Application {
 	 * Saves the specified swatch(es) to a swatchbook file.
 	 * @param to The swatchbook file to save to.
 	 * @param swatchList The swatch(es) to save.
-	 * @param versionComments The comment for this version. 
-	 * @param forceSave If true, forcibly saves a version. 
+	 * @param versionComments The comment for this version.
+	 * @param forceSave If true, forcibly saves a version.
 	 */
 	saveSwatches(to: File, swatchList: Swatch[], versionComments: string, forceSave?: boolean): void;
 
 	/**
 	 * Saves a set of tags to an external file.
 	 * @param to The full path to the file in which to save the tags.
-	 * @param versionComments The comment for this version. 
-	 * @param forceSave If true, forcibly saves a version. 
+	 * @param versionComments The comment for this version.
+	 * @param forceSave If true, forcibly saves a version.
 	 */
 	saveXMLTags(to: File, versionComments: string, forceSave?: boolean): void;
 
 	/**
 	 * Selects the specified object(s).
 	 * @param selectableItems The objects to select.
-	 * @param existingSelection The selection status of the Application in relation to previously selected objects. 
+	 * @param existingSelection The selection status of the Application in relation to previously selected objects.
 	 */
 	select(selectableItems: object | object[] | NothingEnum | SelectAll, existingSelection?: SelectionOptions): void;
 
@@ -3325,7 +3325,7 @@ declare class BackgroundTask {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -3349,7 +3349,7 @@ declare class BackgroundTask {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -4577,7 +4577,7 @@ declare class Document {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -4585,8 +4585,8 @@ declare class Document {
 	 * Align page items.
 	 * @param alignDistributeItems The page items to align or distribute.
 	 * @param alignOption The type of alignment to apply.
-	 * @param alignDistributeBounds The bounds within which to align or distribute the page items. 
-	 * @param reference The reference or key object to align to distribute relative to. Required when 'align distribute bounds' specifies 'key object'. 
+	 * @param alignDistributeBounds The bounds within which to align or distribute the page items.
+	 * @param reference The reference or key object to align to distribute relative to. Required when 'align distribute bounds' specifies 'key object'.
 	 */
 	align(alignDistributeItems: PageItem[], alignOption: AlignOptions, alignDistributeBounds: AlignDistributeBounds, reference: PageItem): void;
 
@@ -4594,10 +4594,10 @@ declare class Document {
 	 * asynchronously exports the object(s) to a file.
 	 * @param format The export format, specified as an enumeration value or as an extension that appears in the Save as type or Format menu in the Export dialog.
 	 * @param to The path to the export file.
-	 * @param showingOptions If true, displays the export options dialog. 
-	 * @param using The export style. 
-	 * @param versionComments The comment for this version. 
-	 * @param forceSave If true, forcibly saves a version. 
+	 * @param showingOptions If true, displays the export options dialog.
+	 * @param using The export style.
+	 * @param versionComments The comment for this version.
+	 * @param forceSave If true, forcibly saves a version.
 	 */
 	asynchronousExportFile(format: ExportFormat | string, to: File, showingOptions?: boolean, using?: PDFExportPreset, versionComments?: string, forceSave?: boolean): BackgroundTask;
 
@@ -4608,38 +4608,38 @@ declare class Document {
 
 	/**
 	 * Finds glyphs that match the find what value and replaces the glyphs with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeGlyph(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value and replaces the text with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeGrep(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds objects that match the find what value and replace the objects with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeObject(reverseOrder: boolean): PageItem[];
 
 	/**
 	 * Finds text that matches the find what value and replaces the text with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeText(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find character type value and replaces the text with the change character type value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeTransliterate(reverseOrder: boolean): Text[];
 
 	/**
 	 * Check in to Version Cue.
-	 * @param versionComments The comment for this version 
-	 * @param forceSave Forcibly save a version 
+	 * @param versionComments The comment for this version
+	 * @param forceSave Forcibly save a version
 	 */
 	checkIn(versionComments: string, forceSave?: boolean): void;
 
@@ -4650,10 +4650,10 @@ declare class Document {
 
 	/**
 	 * Close the Document
-	 * @param saving Whether to save changes before closing the Document 
-	 * @param savingIn The file in which to save the Document 
-	 * @param versionComments The comment for this version 
-	 * @param forceSave Forcibly save a version 
+	 * @param saving Whether to save changes before closing the Document
+	 * @param savingIn The file in which to save the Document
+	 * @param versionComments The comment for this version
+	 * @param forceSave Forcibly save a version
 	 */
 	close(saving?: SaveOptions, savingIn?: File, versionComments?: string, forceSave?: boolean): void;
 
@@ -4679,11 +4679,11 @@ declare class Document {
 
 	/**
 	 * Create Email QR Code on the page item or document
-	 * @param emailAddress QR code Email Address 
-	 * @param subject QR code Email Subject 
-	 * @param body QR code Email Body Message 
+	 * @param emailAddress QR code Email Address
+	 * @param subject QR code Email Subject
+	 * @param body QR code Email Body Message
 	 * @param qrCodeSwatch Swatch to be applied on generated QR Code Graphic .
-	 * @param withProperties Initial values for properties of the new Document. Above parameters can also be passed as properties 
+	 * @param withProperties Initial values for properties of the new Document. Above parameters can also be passed as properties
 	 */
 	createEmailQRCode(emailAddress: string, subject: string, body: string, qrCodeSwatch: Swatch | string, withProperties: string[]): void;
 
@@ -4691,7 +4691,7 @@ declare class Document {
 	 * Create Hyperlink QR Code on the page item or document
 	 * @param urlLink QR code Hyperlink URL
 	 * @param qrCodeSwatch Swatch to be applied on generated QR Code Graphic .
-	 * @param withProperties Initial values for properties of the new Document. Above parameters can also be passed as properties 
+	 * @param withProperties Initial values for properties of the new Document. Above parameters can also be passed as properties
 	 */
 	createHyperlinkQRCode(urlLink: string, qrCodeSwatch: Swatch | string, withProperties: string[]): void;
 
@@ -4707,47 +4707,47 @@ declare class Document {
 	 * Create Plain Text QR Code on the page item
 	 * @param plainText QR code Plain Text
 	 * @param qrCodeSwatch Swatch to be applied on generated QR Code Graphic .
-	 * @param withProperties Initial values for properties of the new Document. Above parameters can also be passed as properties 
+	 * @param withProperties Initial values for properties of the new Document. Above parameters can also be passed as properties
 	 */
 	createPlainTextQRCode(plainText: string, qrCodeSwatch: Swatch | string, withProperties: string[]): void;
 
 	/**
 	 * Creates a table of contents.
 	 * @param using The TOC style to use to define the content, title, and format of the table of contents.
-	 * @param replacing If true, replaces the existing TOC. 
-	 * @param fromBook The book whose documents to include in the TOC. 
-	 * @param placePoint The point at which to place the TOC story, specified as page coordinates in the format [x, y]. 
-	 * @param includeOverset If true, includes overset text TOC entries in the TOC. 
-	 * @param destinationLayer The layer on which to place the TOC. 
+	 * @param replacing If true, replaces the existing TOC.
+	 * @param fromBook The book whose documents to include in the TOC.
+	 * @param placePoint The point at which to place the TOC story, specified as page coordinates in the format [x, y].
+	 * @param includeOverset If true, includes overset text TOC entries in the TOC.
+	 * @param destinationLayer The layer on which to place the TOC.
 	 */
 	createTOC(using: TOCStyle, replacing?: boolean, fromBook?: Book, placePoint?: string[] | number[], includeOverset?: boolean, destinationLayer?: Layer): Story[];
 
 	/**
 	 * Create Text Msg QR Code on the page item or document
-	 * @param cellNumber QR code Text Phone Number 
-	 * @param textMessage QR code Text Message 
+	 * @param cellNumber QR code Text Phone Number
+	 * @param textMessage QR code Text Message
 	 * @param qrCodeSwatch Swatch to be applied on generated QR Code Graphic .
-	 * @param withProperties Initial values for properties of the new Document. Above parameters can also be passed as properties 
+	 * @param withProperties Initial values for properties of the new Document. Above parameters can also be passed as properties
 	 */
 	createTextMsgQRCode(cellNumber: string, textMessage: string, qrCodeSwatch: Swatch | string, withProperties: string[]): void;
 
 	/**
 	 * Create Business Card QR Code on the page item or load on document's placegun
-	 * @param firstName QR code Business Card First Name 
-	 * @param lastName QR code Business Card Last Name 
-	 * @param jobTitle QR code Business Card Title 
-	 * @param cellPhone QR code Business Card Cell Phone Number 
-	 * @param phone QR code Business Card Phone Number 
-	 * @param email QR code Business Card Email Address 
-	 * @param organisation QR code Business Card Organisation 
-	 * @param streetAddress QR code Business Card Street Address 
-	 * @param city QR code Business Card City 
-	 * @param adrState QR code Business Card State 
-	 * @param country QR code Business Card Country 
-	 * @param postalCode QR code Business Card Postal Code 
-	 * @param website QR code Business Card URL 
+	 * @param firstName QR code Business Card First Name
+	 * @param lastName QR code Business Card Last Name
+	 * @param jobTitle QR code Business Card Title
+	 * @param cellPhone QR code Business Card Cell Phone Number
+	 * @param phone QR code Business Card Phone Number
+	 * @param email QR code Business Card Email Address
+	 * @param organisation QR code Business Card Organisation
+	 * @param streetAddress QR code Business Card Street Address
+	 * @param city QR code Business Card City
+	 * @param adrState QR code Business Card State
+	 * @param country QR code Business Card Country
+	 * @param postalCode QR code Business Card Postal Code
+	 * @param website QR code Business Card URL
 	 * @param qrCodeSwatch Swatch to be applied on generated QR Code Graphic .
-	 * @param withProperties Initial values for properties of the new Document. Above parameters can also be passed as properties 
+	 * @param withProperties Initial values for properties of the new Document. Above parameters can also be passed as properties
 	 */
 	createVCardQRCode(firstName: string, lastName: string, jobTitle: string, cellPhone: string, phone: string, email: string, organisation: string, streetAddress: string, city: string, adrState: string, country: string, postalCode: string, website: string, qrCodeSwatch: Swatch | string, withProperties: string[]): void;
 
@@ -4766,10 +4766,10 @@ declare class Document {
 	 * Distribute page items.
 	 * @param alignDistributeItems The page items to align or distribute
 	 * @param distributeOption The type of distribution to apply.
-	 * @param alignDistributeBounds The bounds within which to align or distribute the page items. 
-	 * @param useDistributeMeasurement If true, distribute space between page items. When this property is true, the bounds setting is ignored. 
-	 * @param absoluteDistributeMeasurement The distance to use when distributing page items. Required when 'align distribute bounds' specifies 'key object'. 
-	 * @param reference The reference or key object to align to distribute relative to. Required when 'align distribute bounds' specifies 'key object'. 
+	 * @param alignDistributeBounds The bounds within which to align or distribute the page items.
+	 * @param useDistributeMeasurement If true, distribute space between page items. When this property is true, the bounds setting is ignored.
+	 * @param absoluteDistributeMeasurement The distance to use when distributing page items. Required when 'align distribute bounds' specifies 'key object'.
+	 * @param reference The reference or key object to align to distribute relative to. Required when 'align distribute bounds' specifies 'key object'.
 	 */
 	distribute(alignDistributeItems: PageItem[], distributeOption: DistributeOptions, alignDistributeBounds: AlignDistributeBounds, useDistributeMeasurement: boolean, absoluteDistributeMeasurement: string | number, reference: PageItem): void;
 
@@ -4783,10 +4783,10 @@ declare class Document {
 	 * Exports the object(s) to a file.
 	 * @param format The export format, specified as an enumeration value or as an extension that appears in the Save as type or Format menu in the Export dialog.
 	 * @param to The path to the export file.
-	 * @param showingOptions If true, displays the export options dialog. 
-	 * @param using The export style. 
-	 * @param versionComments The comment for this version. 
-	 * @param forceSave If true, forcibly saves a version. 
+	 * @param showingOptions If true, displays the export options dialog.
+	 * @param using The export style.
+	 * @param versionComments The comment for this version.
+	 * @param forceSave If true, forcibly saves a version.
 	 */
 	exportFile(format: ExportFormat | string, to: File, showingOptions?: boolean, using?: PDFExportPreset, versionComments?: string, forceSave?: boolean): void;
 
@@ -4813,8 +4813,8 @@ declare class Document {
 	 * Exports stroke styles or presets.
 	 * @param to The file to save to
 	 * @param strokeStyleList The list of stroke styles to save
-	 * @param versionComments The comment for this version 
-	 * @param forceSave Forcibly save a version 
+	 * @param versionComments The comment for this version
+	 * @param forceSave Forcibly save a version
 	 */
 	exportStrokeStyles(to: File, strokeStyleList: StrokeStyle[], versionComments: string, forceSave?: boolean): void;
 
@@ -4826,37 +4826,37 @@ declare class Document {
 
 	/**
 	 * Finds glyphs that match the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findGlyph(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findGrep(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds objects that match the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findObject(reverseOrder: boolean): PageItem[];
 
 	/**
 	 * Finds text that matches the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findText(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find character type value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findTransliterate(reverseOrder: boolean): Text[];
 
 	/**
 	 * This will return an array of structs containing information about the alternate layouts.
-	 * @param resolveMaster Resolves layout policy if setting is "use master" - default is true. 
+	 * @param resolveMaster Resolves layout policy if setting is "use master" - default is true.
 	 */
 	getAlternateLayoutsForFolio(resolveMaster: boolean): any[];
 
@@ -4872,7 +4872,7 @@ declare class Document {
 
 	/**
 	 * Get the resolution strategy for style conflict, false if the user cancels
-	 * @param charOrParaStyle Style type to look at. 
+	 * @param charOrParaStyle Style type to look at.
 	 */
 	getStyleConflictResolutionStrategy(charOrParaStyle: StyleType): any;
 
@@ -4904,7 +4904,7 @@ declare class Document {
 	 * Imports the specified styles.
 	 * @param format The types of styles to import.
 	 * @param from The file containing the styles you want to import.
-	 * @param globalStrategy The resolution strategy to employ for imported styles that have the same names as existing styles. 
+	 * @param globalStrategy The resolution strategy to employ for imported styles that have the same names as existing styles.
 	 */
 	importStyles(format: ImportFormat, from: File, globalStrategy?: GlobalClashResolutionStrategy): void;
 
@@ -4924,14 +4924,14 @@ declare class Document {
 	/**
 	 * Load conditions from the specified file.
 	 * @param from The path to the file that contains the conditions.
-	 * @param loadConditionSets If true, load the condition sets as well. 
+	 * @param loadConditionSets If true, load the condition sets as well.
 	 */
 	loadConditions(from: File, loadConditionSets: boolean): void;
 
 	/**
 	 * Load masterpages from an InDesign file.
 	 * @param from The InDesign file to load the masters from.
-	 * @param globalStrategyForMasterPage the global clash resolution strategy for load master page 
+	 * @param globalStrategyForMasterPage the global clash resolution strategy for load master page
 	 */
 	loadMasters(from: File, globalStrategyForMasterPage?: GlobalClashResolutionStrategyForMasterPage): void;
 
@@ -4967,27 +4967,27 @@ declare class Document {
 	 * @param includingHiddenLayers If true, copies fonts and links from hidden layers to the package.
 	 * @param ignorePreflightErrors If true, ignores preflight errors and proceeds with the packaging. If false, cancels the packaging when errors exist.
 	 * @param creatingReport If true, creates a package report that includes printing instructions, print settings, lists of fonts, links and required inks, and other information.
-	 * @param includeIdml If true, generates and includes IDML in the package folder. 
-	 * @param includePdf If true, generates and includes PDF in the package folder. 
-	 * @param pdfStyle If specified and PDF is to be included, use this style for PDF export if it is valid, otherwise use the last used PDF preset. 
-	 * @param useDocumentHyphenationExceptionsOnly If this option is selected, InDesign flags this document so that it does not reflow when someone else opens or edits it on a computer that has different hyphenation and dictionary settings. 
-	 * @param versionComments The comments for the version. 
-	 * @param forceSave If true, forcibly saves a version. 
+	 * @param includeIdml If true, generates and includes IDML in the package folder.
+	 * @param includePdf If true, generates and includes PDF in the package folder.
+	 * @param pdfStyle If specified and PDF is to be included, use this style for PDF export if it is valid, otherwise use the last used PDF preset.
+	 * @param useDocumentHyphenationExceptionsOnly If this option is selected, InDesign flags this document so that it does not reflow when someone else opens or edits it on a computer that has different hyphenation and dictionary settings.
+	 * @param versionComments The comments for the version.
+	 * @param forceSave If true, forcibly saves a version.
 	 */
 	packageForPrint(to: File, copyingFonts: boolean, copyingLinkedGraphics: boolean, copyingProfiles: boolean, updatingGraphics: boolean, includingHiddenLayers: boolean, ignorePreflightErrors: boolean, creatingReport: boolean, includeIdml: boolean, includePdf: boolean, pdfStyle: string, useDocumentHyphenationExceptionsOnly: boolean, versionComments: string, forceSave?: boolean): boolean;
 
 	/**
 	 * Place one or more files following the behavior of the place menu item. This may load the place gun or replace the selected object, depending on current preferences.
 	 * @param fileName One or more files to place.
-	 * @param showingOptions Whether to display the import options dialog 
-	 * @param withProperties Initial values for properties of the placed object(s) 
+	 * @param showingOptions Whether to display the import options dialog
+	 * @param withProperties Initial values for properties of the placed object(s)
 	 */
 	place(fileName: File | File[], showingOptions?: boolean, withProperties?: object): void;
 
 	/**
 	 * Deprecated: Use ContentPlacerObject load method. Original Description: Place following the behavior of the place and link story menu item. This will load the place gun.
 	 * @param parentStory The story to place and link from.
-	 * @param showingOptions Whether to display the link options dialog 
+	 * @param showingOptions Whether to display the link options dialog
 	 */
 	placeAndLink(parentStory: Story, showingOptions?: boolean): void;
 
@@ -4999,14 +4999,14 @@ declare class Document {
 
 	/**
 	 * Prints the Document(s).
-	 * @param printDialog Whether to invoke the print dialog 
+	 * @param printDialog Whether to invoke the print dialog
 	 * @param using Printer preset to use.
 	 */
 	print(printDialog: boolean, using: PrinterPresetTypes | PrinterPreset): void;
 
 	/**
 	 * Print the Booklet using current document and Booklet and Print settings in the document
-	 * @param printBookletDialog Whether to invoke the print booklet dialog 
+	 * @param printBookletDialog Whether to invoke the print booklet dialog
 	 * @param using Printer preset to use.
 	 */
 	printBooklet(printBookletDialog?: boolean, using?: PrinterPresetTypes | PrinterPreset): void;
@@ -5025,7 +5025,7 @@ declare class Document {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -5046,23 +5046,23 @@ declare class Document {
 
 	/**
 	 * Reverts to the version of the document in Version Cue.
-	 * @param forceRevert Forcibly reverts to the project version. 
+	 * @param forceRevert Forcibly reverts to the project version.
 	 */
 	revertToProject(forceRevert?: boolean): void;
 
 	/**
 	 * Save the document
-	 * @param to Where to save the document. If the document is already saved, a copy is saved at this path, the original file is closed the new copy is opened 
-	 * @param stationery Whether to save the file as stationery 
-	 * @param versionComments The comment for this version 
-	 * @param forceSave Forcibly save a version 
+	 * @param to Where to save the document. If the document is already saved, a copy is saved at this path, the original file is closed the new copy is opened
+	 * @param stationery Whether to save the file as stationery
+	 * @param versionComments The comment for this version
+	 * @param forceSave Forcibly save a version
 	 */
 	save(to: File, stationery?: boolean, versionComments?: string, forceSave?: boolean): Document;
 
 	/**
 	 * Saves a copy of the document.
-	 * @param to The file path for the copy. Note: Leaves the original document open and does not open the copy. 
-	 * @param stationery If true, saves the file as stationery (Mac OS) or as a template (Windows). Note: The file extension for stationery and templates is different than the extension for regular files. 
+	 * @param to The file path for the copy. Note: Leaves the original document open and does not open the copy.
+	 * @param stationery If true, saves the file as stationery (Mac OS) or as a template (Windows). Note: The file extension for stationery and templates is different than the extension for regular files.
 	 */
 	saveACopy(to: File, stationery?: boolean): void;
 
@@ -5070,30 +5070,30 @@ declare class Document {
 	 * Saves the specified swatch(es) to a swatchbook file.
 	 * @param to The swatchbook file to save to.
 	 * @param swatchList The swatch(es) to save.
-	 * @param versionComments The comment for this version. 
-	 * @param forceSave If true, forcibly saves a version. 
+	 * @param versionComments The comment for this version.
+	 * @param forceSave If true, forcibly saves a version.
 	 */
 	saveSwatches(to: File, swatchList: Swatch[], versionComments: string, forceSave?: boolean): void;
 
 	/**
 	 * Saves a set of tags to an external file.
 	 * @param to The full path to the file in which to save the tags.
-	 * @param versionComments The comment for this version. 
-	 * @param forceSave If true, forcibly saves a version. 
+	 * @param versionComments The comment for this version.
+	 * @param forceSave If true, forcibly saves a version.
 	 */
 	saveXMLTags(to: File, versionComments: string, forceSave?: boolean): void;
 
 	/**
 	 * Selects the specified object(s).
 	 * @param selectableItems The objects to select.
-	 * @param existingSelection The selection status of the Document in relation to previously selected objects. 
+	 * @param existingSelection The selection status of the Document in relation to previously selected objects.
 	 */
 	select(selectableItems: object | object[] | NothingEnum | SelectAll, existingSelection?: SelectionOptions): void;
 
 	/**
 	 * Synchronizes the file with the Version Cue project.
-	 * @param syncConflictResolution The conflict resolution method to use during synchronization. 
-	 * @param versionComments The comments that describe the version. 
+	 * @param syncConflictResolution The conflict resolution method to use during synchronization.
+	 * @param versionComments The comments that describe the version.
 	 */
 	synchronizeWithVersionCue(syncConflictResolution?: SyncConflictResolution, versionComments?: string): VersionCueSyncStatus;
 
@@ -5136,9 +5136,9 @@ declare class Documents {
 
 	/**
 	 * Creates a new document.
-	 * @param showingWindow If true, displays the document. 
-	 * @param documentPreset The document preset to use. 
-	 * @param withProperties Initial values for properties of the new Document 
+	 * @param showingWindow If true, displays the document.
+	 * @param documentPreset The document preset to use.
+	 * @param withProperties Initial values for properties of the new Document
 	 */
 	add(showingWindow?: boolean, documentPreset?: DocumentPreset, withProperties?: object): Document;
 
@@ -5314,7 +5314,7 @@ declare class Window {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -5347,7 +5347,7 @@ declare class Window {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -5359,7 +5359,7 @@ declare class Window {
 	/**
 	 * Selects the specified object(s).
 	 * @param selectableItems The objects to select.
-	 * @param existingSelection The selection status of the Window in relation to previously selected objects. 
+	 * @param existingSelection The selection status of the Window in relation to previously selected objects.
 	 */
 	select(selectableItems: object | object[] | NothingEnum | SelectAll, existingSelection?: SelectionOptions): void;
 
@@ -5392,7 +5392,7 @@ declare class Windows {
 
 	/**
 	 * Creates a new Window.
-	 * @param withProperties Initial values for properties of the new Window 
+	 * @param withProperties Initial values for properties of the new Window
 	 */
 	add(withProperties: object): Window;
 
@@ -5837,10 +5837,10 @@ declare class ContentPlacerObject extends Preference {
 	/**
 	 * Load the Content Placer with one or more objects.
 	 * @param pageItems One or more page items to place or load
-	 * @param linkPageItems Whether to link pageItems in content placer (if true it will override link stories value) 
-	 * @param linkStories Whether to link stories in content placer (only applicable for single story, pageItem links will also be created in case of more than one item) 
-	 * @param mapStyles Whether to map styles in content placer 
-	 * @param showingOptions Whether to display the link options dialog 
+	 * @param linkPageItems Whether to link pageItems in content placer (if true it will override link stories value)
+	 * @param linkStories Whether to link stories in content placer (only applicable for single story, pageItem links will also be created in case of more than one item)
+	 * @param mapStyles Whether to map styles in content placer
+	 * @param showingOptions Whether to display the link options dialog
 	 */
 	load(pageItems: PageItem[], linkPageItems?: boolean, linkStories?: boolean, mapStyles?: boolean, showingOptions?: boolean): void;
 
@@ -6044,28 +6044,28 @@ declare class Book {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
 	/**
 	 * Close the Book
-	 * @param saving Whether to save changes before closing the Book 
-	 * @param savingIn The file in which to save the Book 
-	 * @param versionComments The comment for this version 
-	 * @param forceSave Forcibly save a version 
+	 * @param saving Whether to save changes before closing the Book
+	 * @param savingIn The file in which to save the Book
+	 * @param versionComments The comment for this version
+	 * @param forceSave Forcibly save a version
 	 */
 	close(saving?: SaveOptions, savingIn?: File, versionComments?: string, forceSave?: boolean): void;
 
 	/**
 	 * Exports the book to a file.
 	 * @param format The export format, specified as an enumeration value or as an extension that appears in the Save as type or Format menu in the Export dialog.
-	 * @param to The file to which to export the book. 
-	 * @param showingOptions Used to specify if the PDF Export Options Dialog needs to be shown or not 
-	 * @param using Used to specify the presets for the export which can be the object of the preset type, enumeration for existing presets or user defined presets, or a string naming the preset to be used, but in case Showing Options is true, the preset specified in the Export Dialog will over ride this parameter 
-	 * @param whichDocuments Used to specify a list of book content references, from the current book, where the list may contain duplicate entries and if the list is not specified then the entire book contents shall be exported 
-	 * @param versionComments The comment for this version. 
-	 * @param forceSave If true, forcibly saves a version. 
+	 * @param to The file to which to export the book.
+	 * @param showingOptions Used to specify if the PDF Export Options Dialog needs to be shown or not
+	 * @param using Used to specify the presets for the export which can be the object of the preset type, enumeration for existing presets or user defined presets, or a string naming the preset to be used, but in case Showing Options is true, the preset specified in the Export Dialog will over ride this parameter
+	 * @param whichDocuments Used to specify a list of book content references, from the current book, where the list may contain duplicate entries and if the list is not specified then the entire book contents shall be exported
+	 * @param versionComments The comment for this version.
+	 * @param forceSave If true, forcibly saves a version.
 	 */
 	exportFile(format: ExportFormat | string, to: File, showingOptions?: boolean, using?: PDFExportPreset, whichDocuments?: BookContent[], versionComments?: string, forceSave?: boolean): void;
 
@@ -6097,25 +6097,25 @@ declare class Book {
 	 * @param includingHiddenLayers If true, copies fonts and links from hidden layers to the package.
 	 * @param ignorePreflightErrors If true, ignores preflight errors and proceeds with the packaging. If false, cancels the packaging when errors exist.
 	 * @param creatingReport If true, creates a package report that includes printing instructions, print settings, lists of fonts, links and required inks, and other information.
-	 * @param includeIdml If true, generates and includes IDML in the package folder. 
-	 * @param includePdf If true, generates and includes PDF in the package folder. 
-	 * @param pdfStyle If specified and PDF is to be included, use this style for PDF export if it is valid, otherwise use the last used PDF preset. 
-	 * @param useDocumentHyphenationExceptionsOnly If this option is selected, InDesign flags this document so that it does not reflow when someone else opens or edits it on a computer that has different hyphenation and dictionary settings. 
-	 * @param versionComments The comments for the version. 
-	 * @param forceSave If true, forcibly saves a version. 
+	 * @param includeIdml If true, generates and includes IDML in the package folder.
+	 * @param includePdf If true, generates and includes PDF in the package folder.
+	 * @param pdfStyle If specified and PDF is to be included, use this style for PDF export if it is valid, otherwise use the last used PDF preset.
+	 * @param useDocumentHyphenationExceptionsOnly If this option is selected, InDesign flags this document so that it does not reflow when someone else opens or edits it on a computer that has different hyphenation and dictionary settings.
+	 * @param versionComments The comments for the version.
+	 * @param forceSave If true, forcibly saves a version.
 	 */
 	packageForPrint(to: File, copyingFonts: boolean, copyingLinkedGraphics: boolean, copyingProfiles: boolean, updatingGraphics: boolean, includingHiddenLayers: boolean, ignorePreflightErrors: boolean, creatingReport: boolean, includeIdml: boolean, includePdf: boolean, pdfStyle: string, useDocumentHyphenationExceptionsOnly: boolean, versionComments: string, forceSave?: boolean): boolean;
 
 	/**
 	 * Preflight a book and optionally save the resulting report.
-	 * @param to The preflight report to save to. 
-	 * @param autoOpen If true, automatically open the report after creation. 
+	 * @param to The preflight report to save to.
+	 * @param autoOpen If true, automatically open the report after creation.
 	 */
 	preflight(to: File, autoOpen?: boolean): void;
 
 	/**
 	 * Prints the Book(s).
-	 * @param printDialog Whether to invoke the print dialog 
+	 * @param printDialog Whether to invoke the print dialog
 	 * @param using Printer preset to use.
 	 */
 	print(printDialog: boolean, using: PrinterPresetTypes | PrinterPreset): void;
@@ -6124,7 +6124,7 @@ declare class Book {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -6135,9 +6135,9 @@ declare class Book {
 
 	/**
 	 * Saves the book.
-	 * @param to The file path. Note: Required only if the book has not been previously saved. If the book has previously been saved, specifying a path saves a copy and closes the original book. 
-	 * @param versionComments The comment for this version. 
-	 * @param forceSave If true, forcibly saves a version. 
+	 * @param to The file path. Note: Required only if the book has not been previously saved. If the book has previously been saved, specifying a path saves a copy and closes the original book.
+	 * @param versionComments The comment for this version.
+	 * @param forceSave If true, forcibly saves a version.
 	 */
 	save(to: File, versionComments: string, forceSave?: boolean): void;
 
@@ -6191,7 +6191,7 @@ declare class Books {
 	/**
 	 * Creates a new book.
 	 * @param fullName The full path name of the new book file, including the book file extension '.indb'.
-	 * @param withProperties Initial values for properties of the new Book 
+	 * @param withProperties Initial values for properties of the new Book
 	 */
 	add(fullName: File, withProperties: object): Book;
 
@@ -6346,7 +6346,7 @@ declare class BookContent {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -6370,15 +6370,15 @@ declare class BookContent {
 
 	/**
 	 * Moves the book content object.
-	 * @param to The location relative to the reference object or within the book. 
-	 * @param reference The reference object. Note: Required when the to parameter specifies before or after. 
+	 * @param to The location relative to the reference object or within the book.
+	 * @param reference The reference object. Note: Required when the to parameter specifies before or after.
 	 */
 	move(to?: LocationOptions, reference?: BookContent): BookContent;
 
 	/**
 	 * Preflight a book content object and optionally save the resulting report.
-	 * @param to The preflight report to save to. 
-	 * @param autoOpen If true, automatically open the report after creation. 
+	 * @param to The preflight report to save to.
+	 * @param autoOpen If true, automatically open the report after creation.
 	 */
 	preflight(to: File, autoOpen?: boolean): void;
 
@@ -6391,7 +6391,7 @@ declare class BookContent {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -6436,8 +6436,8 @@ declare class BookContents {
 	/**
 	 * Creates a new book content object.
 	 * @param fullName The full path name of the new book content object.
-	 * @param at The location of the book content object within the book. 
-	 * @param withProperties Initial values for properties of the new BookContent 
+	 * @param at The location of the book content object within the book.
+	 * @param withProperties Initial values for properties of the new BookContent
 	 */
 	add(fullName: File, at?: number, withProperties?: object): BookContent;
 
@@ -6618,7 +6618,7 @@ declare class Ink {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -6644,7 +6644,7 @@ declare class Ink {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -6872,7 +6872,7 @@ declare class TrapPreset {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -6909,7 +6909,7 @@ declare class TrapPreset {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -6942,7 +6942,7 @@ declare class TrapPresets {
 
 	/**
 	 * Creates a new TrapPreset.
-	 * @param withProperties Initial values for properties of the new TrapPreset 
+	 * @param withProperties Initial values for properties of the new TrapPreset
 	 */
 	add(withProperties: object): TrapPreset;
 
@@ -7070,7 +7070,7 @@ declare class MixedInks {
 	 * Creates a new mixed ink swatch.
 	 * @param inkList The inks to mix. Note: Must contain at least two process inks and one spot ink.
 	 * @param inkPercentages The percent to use of each ink in the ink list. (Range: 0 to 100 for each ink)
-	 * @param withProperties Initial values for properties of the new MixedInk 
+	 * @param withProperties Initial values for properties of the new MixedInk
 	 */
 	add(inkList: Ink[] | MixedInkGroup, inkPercentages: number[], withProperties: object): MixedInk;
 
@@ -7182,10 +7182,10 @@ declare class MixedInkGroups {
 	/**
 	 * Creates a new mixed ink group.
 	 * @param inkList The inks to include in the mix.
-	 * @param inkPercentages The percent of each ink in the ink list. (Range: 0 to 100 for each ink) 
-	 * @param repeatValues The number of repetitions for each ink in the ink list. (Range: 0 to 100 for each ink) 
-	 * @param incrementValues The increment percent per repetition for each ink. (Range: 0 to 100) Note: The cumulative ink percentage per ink cannot exceed 100.) 
-	 * @param withProperties Initial values for properties of the new MixedInkGroup 
+	 * @param inkPercentages The percent of each ink in the ink list. (Range: 0 to 100 for each ink)
+	 * @param repeatValues The number of repetitions for each ink in the ink list. (Range: 0 to 100 for each ink)
+	 * @param incrementValues The increment percent per repetition for each ink. (Range: 0 to 100) Note: The cumulative ink percentage per ink cannot exceed 100.)
+	 * @param withProperties Initial values for properties of the new MixedInkGroup
 	 */
 	add(inkList: Ink[], inkPercentages: number[], repeatValues: number[], incrementValues: number[], withProperties: object): MixedInkGroup;
 
@@ -7296,7 +7296,7 @@ declare class Gradients {
 
 	/**
 	 * Creates a new Gradient.
-	 * @param withProperties Initial values for properties of the new Gradient 
+	 * @param withProperties Initial values for properties of the new Gradient
 	 */
 	add(withProperties: object): Gradient;
 
@@ -7427,7 +7427,7 @@ declare class GradientStop {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -7445,7 +7445,7 @@ declare class GradientStop {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -7478,7 +7478,7 @@ declare class GradientStops {
 
 	/**
 	 * Creates a new GradientStop.
-	 * @param withProperties Initial values for properties of the new GradientStop 
+	 * @param withProperties Initial values for properties of the new GradientStop
 	 */
 	add(withProperties: object): GradientStop;
 
@@ -7602,7 +7602,7 @@ declare class Swatch {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -7637,7 +7637,7 @@ declare class Swatch {
 
 	/**
 	 * Deletes the swatch.
-	 * @param replacingWith The swatch to apply in place of the deleted swatch. 
+	 * @param replacingWith The swatch to apply in place of the deleted swatch.
 	 */
 	remove(replacingWith: Swatch): void;
 
@@ -7645,7 +7645,7 @@ declare class Swatch {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -7788,7 +7788,7 @@ declare class Colors {
 
 	/**
 	 * Creates a new Color.
-	 * @param withProperties Initial values for properties of the new Color 
+	 * @param withProperties Initial values for properties of the new Color
 	 */
 	add(withProperties: object): Color;
 
@@ -7900,7 +7900,7 @@ declare class Tints {
 	/**
 	 * Creates a new tint swatch.
 	 * @param baseColor The color that the tint is based upon.
-	 * @param withProperties Initial values for properties of the new Tint 
+	 * @param withProperties Initial values for properties of the new Tint
 	 */
 	add(baseColor: Color, withProperties: object): Tint;
 
@@ -8036,7 +8036,7 @@ declare class ColorGroup {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -8072,7 +8072,7 @@ declare class ColorGroup {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -8110,9 +8110,9 @@ declare class ColorGroups {
 
 	/**
 	 * Creates a new ColorGroup
-	 * @param name The color group name 
-	 * @param swatchList The swatches to add in color group. 
-	 * @param withProperties Initial values for properties of the new ColorGroup 
+	 * @param name The color group name
+	 * @param swatchList The swatches to add in color group.
+	 * @param withProperties Initial values for properties of the new ColorGroup
 	 */
 	add(name: string, swatchList: Swatch[], withProperties: object): ColorGroup;
 
@@ -8238,7 +8238,7 @@ declare class ColorGroupSwatch {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -8251,7 +8251,7 @@ declare class ColorGroupSwatch {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -8285,7 +8285,7 @@ declare class ColorGroupSwatches {
 	/**
 	 * Adds a color group swatch.
 	 * @param swatchItemRef swatch to be added to color group
-	 * @param withProperties Initial values for properties of the new ColorGroupSwatch 
+	 * @param withProperties Initial values for properties of the new ColorGroupSwatch
 	 */
 	add(swatchItemRef: Swatch, withProperties: object): ColorGroupSwatch;
 
@@ -8410,7 +8410,7 @@ declare class OpacityGradientStop {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -8428,7 +8428,7 @@ declare class OpacityGradientStop {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -8461,7 +8461,7 @@ declare class OpacityGradientStops {
 
 	/**
 	 * Creates a new OpacityGradientStop.
-	 * @param withProperties Initial values for properties of the new OpacityGradientStop 
+	 * @param withProperties Initial values for properties of the new OpacityGradientStop
 	 */
 	add(withProperties: object): OpacityGradientStop;
 
@@ -8585,7 +8585,7 @@ declare class DataMergeTextPlaceholder {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -8598,7 +8598,7 @@ declare class DataMergeTextPlaceholder {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -8634,7 +8634,7 @@ declare class DataMergeTextPlaceholders {
 	 * @param parentStory The story in which to insert the placeholder.
 	 * @param storyOffset The position within the story at which to insert the placeholder, specified as an offset number or an insertion point.
 	 * @param field The field to insert.
-	 * @param withProperties Initial values for properties of the new DataMergeTextPlaceholder 
+	 * @param withProperties Initial values for properties of the new DataMergeTextPlaceholder
 	 */
 	add(parentStory: Story, storyOffset: InsertionPoint | number, field: DataMergeField, withProperties: object): DataMergeTextPlaceholder;
 
@@ -8748,7 +8748,7 @@ declare class DataMergeImagePlaceholder {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -8761,7 +8761,7 @@ declare class DataMergeImagePlaceholder {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -8796,7 +8796,7 @@ declare class DataMergeImagePlaceholders {
 	 * Creates a data merge image placeholder.
 	 * @param placeholder The page item on which to place the placeholder.
 	 * @param field The data merge field to insert.
-	 * @param withProperties Initial values for properties of the new DataMergeImagePlaceholder 
+	 * @param withProperties Initial values for properties of the new DataMergeImagePlaceholder
 	 */
 	add(placeholder: PageItem, field: DataMergeField, withProperties: object): DataMergeImagePlaceholder;
 
@@ -8910,7 +8910,7 @@ declare class DataMergeField {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -8923,7 +8923,7 @@ declare class DataMergeField {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -9064,7 +9064,7 @@ declare class DataMergeQrcodePlaceholder {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -9077,7 +9077,7 @@ declare class DataMergeQrcodePlaceholder {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -9112,7 +9112,7 @@ declare class DataMergeQrcodePlaceholders {
 	 * Creates a data merge QR code placeholder.
 	 * @param placeholder The page item on which to place the placeholder.
 	 * @param field The data merge field to insert.
-	 * @param withProperties Initial values for properties of the new DataMergeQrcodePlaceholder 
+	 * @param withProperties Initial values for properties of the new DataMergeQrcodePlaceholder
 	 */
 	add(placeholder: PageItem, field: DataMergeField, withProperties: object): DataMergeQrcodePlaceholder;
 
@@ -18633,6 +18633,8 @@ declare enum ScriptLanguage {
 	 */
 	UNKNOWN = 1433299822,
 
+	VISUAL_BASIC = 1111111111111111
+
 }
 
 /**
@@ -22686,7 +22688,7 @@ declare class Hyperlink {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -22717,7 +22719,7 @@ declare class Hyperlink {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -22761,8 +22763,8 @@ declare class Hyperlinks {
 	/**
 	 * Creates a new hyperlink.
 	 * @param hyperlinkSource The hyperlinked object.
-	 * @param hyperlinkDestination The destination that the hyperlink points to. Can accept: Ordered array containing fileName:String, volumn:String, directoryId:Long Integer, dataLinkClassId:Long Integer, destinationUid:Long Integer, HyperlinkTextDestination, HyperlinkPageDestination, HyperlinkExternalPageDestination, HyperlinkURLDestination or ParagraphDestination. 
-	 * @param withProperties Initial values for properties of the new Hyperlink 
+	 * @param hyperlinkDestination The destination that the hyperlink points to. Can accept: Ordered array containing fileName:String, volumn:String, directoryId:Long Integer, dataLinkClassId:Long Integer, destinationUid:Long Integer, HyperlinkTextDestination, HyperlinkPageDestination, HyperlinkExternalPageDestination, HyperlinkURLDestination or ParagraphDestination.
+	 * @param withProperties Initial values for properties of the new Hyperlink
 	 */
 	add(hyperlinkSource: HyperlinkPageItemSource | HyperlinkTextSource | CrossReferenceSource, hyperlinkDestination: any, withProperties: object): Hyperlink;
 
@@ -22908,7 +22910,7 @@ declare class Bookmark {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -22932,7 +22934,7 @@ declare class Bookmark {
 
 	/**
 	 * Moves the bookmark to the specified location.
-	 * @param to The bookmark location relative to the reference object or within the containing object. 
+	 * @param to The bookmark location relative to the reference object or within the containing object.
 	 * @param reference The reference object. Note: Required when the to parameter specifies before or after.
 	 */
 	move(to?: LocationOptions, reference?: Bookmark | Document): Bookmark;
@@ -22946,7 +22948,7 @@ declare class Bookmark {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -22985,7 +22987,7 @@ declare class Bookmarks {
 	/**
 	 * Creates a new bookmark.
 	 * @param destination The bookmark destination.
-	 * @param withProperties Initial values for properties of the new Bookmark 
+	 * @param withProperties Initial values for properties of the new Bookmark
 	 */
 	add(destination: HyperlinkTextDestination | HyperlinkPageDestination | HyperlinkExternalPageDestination | Page, withProperties: object): Bookmark;
 
@@ -23126,7 +23128,7 @@ declare class HyperlinkPageItemSource {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -23157,7 +23159,7 @@ declare class HyperlinkPageItemSource {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -23196,7 +23198,7 @@ declare class HyperlinkPageItemSources {
 	/**
 	 * Creates a new hyperlink page item source.
 	 * @param source The page item to hyperlink.
-	 * @param withProperties Initial values for properties of the new HyperlinkPageItemSource 
+	 * @param withProperties Initial values for properties of the new HyperlinkPageItemSource
 	 */
 	add(source: PageItem, withProperties: object): HyperlinkPageItemSource;
 
@@ -23342,7 +23344,7 @@ declare class HyperlinkTextSource {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -23373,7 +23375,7 @@ declare class HyperlinkTextSource {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -23412,7 +23414,7 @@ declare class HyperlinkTextSources {
 	/**
 	 * Creates a new hyperlink text source.
 	 * @param source The text or insertion point to hyperlink.
-	 * @param withProperties Initial values for properties of the new HyperlinkTextSource 
+	 * @param withProperties Initial values for properties of the new HyperlinkTextSource
 	 */
 	add(source: Text, withProperties: object): HyperlinkTextSource;
 
@@ -23553,7 +23555,7 @@ declare class HyperlinkTextDestination {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -23584,7 +23586,7 @@ declare class HyperlinkTextDestination {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -23623,7 +23625,7 @@ declare class HyperlinkTextDestinations {
 	/**
 	 * Creates a new hyperlink text destination.
 	 * @param destination The text or insertion point location that the hyperlink points to.
-	 * @param withProperties Initial values for properties of the new HyperlinkTextDestination 
+	 * @param withProperties Initial values for properties of the new HyperlinkTextDestination
 	 */
 	add(destination: Text, withProperties: object): HyperlinkTextDestination;
 
@@ -23784,7 +23786,7 @@ declare class HyperlinkPageDestination {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -23815,7 +23817,7 @@ declare class HyperlinkPageDestination {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -23853,8 +23855,8 @@ declare class HyperlinkPageDestinations {
 
 	/**
 	 * Creates a new hyperlink page destination.
-	 * @param destination The document page that the hyperlink points to. 
-	 * @param withProperties Initial values for properties of the new HyperlinkPageDestination 
+	 * @param destination The document page that the hyperlink points to.
+	 * @param withProperties Initial values for properties of the new HyperlinkPageDestination
 	 */
 	add(destination: Page, withProperties: object): HyperlinkPageDestination;
 
@@ -24015,7 +24017,7 @@ declare class HyperlinkExternalPageDestination {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -24046,7 +24048,7 @@ declare class HyperlinkExternalPageDestination {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -24084,8 +24086,8 @@ declare class HyperlinkExternalPageDestinations {
 
 	/**
 	 * Creates a new hyperlink external page destination.
-	 * @param destination The destination page. 
-	 * @param withProperties Initial values for properties of the new HyperlinkExternalPageDestination 
+	 * @param destination The destination page.
+	 * @param withProperties Initial values for properties of the new HyperlinkExternalPageDestination
 	 */
 	add(destination: Page, withProperties: object): HyperlinkExternalPageDestination;
 
@@ -24226,7 +24228,7 @@ declare class HyperlinkURLDestination {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -24257,7 +24259,7 @@ declare class HyperlinkURLDestination {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -24295,8 +24297,8 @@ declare class HyperlinkURLDestinations {
 
 	/**
 	 * Creates a new hyperlink URL destination.
-	 * @param destination The URL that the hyperlink points to. 
-	 * @param withProperties Initial values for properties of the new HyperlinkURLDestination 
+	 * @param destination The URL that the hyperlink points to.
+	 * @param withProperties Initial values for properties of the new HyperlinkURLDestination
 	 */
 	add(destination: string, withProperties: object): HyperlinkURLDestination;
 
@@ -24437,7 +24439,7 @@ declare class CrossReferenceFormat {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -24468,7 +24470,7 @@ declare class CrossReferenceFormat {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -24501,8 +24503,8 @@ declare class CrossReferenceFormats {
 
 	/**
 	 * Creates a new cross reference format.
-	 * @param name The format name. 
-	 * @param withProperties Initial values for properties of the new CrossReferenceFormat 
+	 * @param name The format name.
+	 * @param withProperties Initial values for properties of the new CrossReferenceFormat
 	 */
 	add(name: string, withProperties: object): CrossReferenceFormat;
 
@@ -24615,7 +24617,7 @@ declare class CrossReferenceSources {
 	 * Creates a new cross reference text source.
 	 * @param source The text or insertion point to create the source.
 	 * @param appliedFormat Format used for cross reference source.
-	 * @param withProperties Initial values for properties of the new CrossReferenceSource 
+	 * @param withProperties Initial values for properties of the new CrossReferenceSource
 	 */
 	add(source: Text, appliedFormat: CrossReferenceFormat, withProperties: object): CrossReferenceSource;
 
@@ -24756,7 +24758,7 @@ declare class BuildingBlock {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -24774,7 +24776,7 @@ declare class BuildingBlock {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -24808,9 +24810,9 @@ declare class BuildingBlocks {
 	/**
 	 * Creates a new cross reference building block.
 	 * @param blockType Type of the building block.
-	 * @param appliedCharacterStyle Character style to be applied to the building block. 
-	 * @param customText Building block custom text. Currently this is only useful in custom string building block. It is ignored for other types of building blocks. 
-	 * @param withProperties Initial values for properties of the new BuildingBlock 
+	 * @param appliedCharacterStyle Character style to be applied to the building block.
+	 * @param customText Building block custom text. Currently this is only useful in custom string building block. It is ignored for other types of building blocks.
+	 * @param withProperties Initial values for properties of the new BuildingBlock
 	 */
 	add(blockType: BuildingBlockTypes, appliedCharacterStyle: CharacterStyle, customText: string, withProperties: object): BuildingBlock;
 
@@ -24900,7 +24902,7 @@ declare class ParagraphDestinations {
 	/**
 	 * Creates a new paragraph destination.
 	 * @param destination The text or insertion point inside the paragraph that the cross reference points to. The insertion point is always adjusted to the beginning of the paragraph.
-	 * @param withProperties Initial values for properties of the new ParagraphDestination 
+	 * @param withProperties Initial values for properties of the new ParagraphDestination
 	 */
 	add(destination: Text, withProperties: object): ParagraphDestination;
 
@@ -25046,13 +25048,13 @@ declare class Index {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
 	/**
 	 * Makes the initial letter for the specified index topic or group of index topics upper case.
-	 * @param capitalizationOption The entry or entries to capitalize. 
+	 * @param capitalizationOption The entry or entries to capitalize.
 	 */
 	capitalize(capitalizationOption?: IndexCapitalizationOptions): void;
 
@@ -25065,9 +25067,9 @@ declare class Index {
 	/**
 	 * Generates a new index story.
 	 * @param on The spread or page on which to place the story.
-	 * @param placePoint The coordinates of the upper left corner of the story bounding box, in the format [x, y]. 
-	 * @param destinationLayer The layer on which to place the story. 
-	 * @param autoflowing If true, allows the story to flow onto subsequent pages if the story does not fit on the specified page. If no subsequent pages exist in the document, creates the necessary pages. 
+	 * @param placePoint The coordinates of the upper left corner of the story bounding box, in the format [x, y].
+	 * @param destinationLayer The layer on which to place the story.
+	 * @param autoflowing If true, allows the story to flow onto subsequent pages if the story does not fit on the specified page. If no subsequent pages exist in the document, creates the necessary pages.
 	 * @param includeOverset If true, includes topics in overset text in the story.
 	 */
 	generate(on: Page | Spread | MasterSpread, placePoint: string[] | number[], destinationLayer: Layer, autoflowing?: boolean, includeOverset?: boolean): Story[];
@@ -25094,7 +25096,7 @@ declare class Index {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -25137,7 +25139,7 @@ declare class Indexes {
 
 	/**
 	 * Creates a new Index.
-	 * @param withProperties Initial values for properties of the new Index 
+	 * @param withProperties Initial values for properties of the new Index
 	 */
 	add(withProperties: object): Index;
 
@@ -25394,13 +25396,13 @@ declare class Topic {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
 	/**
 	 * Makes the initial letter for the specified index topic or group of index topics upper case.
-	 * @param capitalizationOption The entry or entries to capitalize. 
+	 * @param capitalizationOption The entry or entries to capitalize.
 	 */
 	capitalize(capitalizationOption?: IndexCapitalizationOptions): void;
 
@@ -25418,7 +25420,7 @@ declare class Topic {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -25452,8 +25454,8 @@ declare class Topics {
 	/**
 	 * Creates a new index topic.
 	 * @param name The name of the topic. Note: This is the text that appears in the index.
-	 * @param sortBy The string to sort this topic by instead of the topic name. Note: The actual topic text, rather than the sort order text, appears in the index. 
-	 * @param withProperties Initial values for properties of the new Topic 
+	 * @param sortBy The string to sort this topic by instead of the topic name. Note: The actual topic text, rather than the sort order text, appears in the index.
+	 * @param withProperties Initial values for properties of the new Topic
 	 */
 	add(name: string, sortBy: string, withProperties: object): Topic;
 
@@ -25593,7 +25595,7 @@ declare class CrossReference {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -25624,7 +25626,7 @@ declare class CrossReference {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -25659,8 +25661,8 @@ declare class CrossReferences {
 	 * Creates a new cross reference.
 	 * @param referencedTopic The topic that the cross reference points to.
 	 * @param crossReferenceType The cross reference type.
-	 * @param customTypeString The custom string to use in the cross reference. Valid only for custom cross reference types. 
-	 * @param withProperties Initial values for properties of the new CrossReference 
+	 * @param customTypeString The custom string to use in the cross reference. Valid only for custom cross reference types.
+	 * @param withProperties Initial values for properties of the new CrossReference
 	 */
 	add(referencedTopic: Topic, crossReferenceType: CrossReferenceType, customTypeString: string, withProperties: object): CrossReference;
 
@@ -25811,7 +25813,7 @@ declare class PageReference {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -25842,7 +25844,7 @@ declare class PageReference {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -25876,10 +25878,10 @@ declare class PageReferences {
 	/**
 	 * Creates a new page reference.
 	 * @param source The text or insertion point to which the page reference points.
-	 * @param pageReferenceType The page number for an index page reference or the last page in an index page reference page range. 
+	 * @param pageReferenceType The page number for an index page reference or the last page in an index page reference page range.
 	 * @param pageReferenceLimit The paragraph style or number of paragraphs or pages that defines the last page in a page range. Valid only when page reference type specifies the next use of a paragraph style or a number of paragraphs or pages. .
 	 * @param pageNumberStyleOverride The style override for the page number.
-	 * @param withProperties Initial values for properties of the new PageReference 
+	 * @param withProperties Initial values for properties of the new PageReference
 	 */
 	add(source: Text, pageReferenceType?: PageReferenceType, pageReferenceLimit?: ParagraphStyle | number, pageNumberStyleOverride?: CharacterStyle, withProperties?: object): PageReference;
 
@@ -26020,7 +26022,7 @@ declare class IndexSection {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -26046,7 +26048,7 @@ declare class IndexSection {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -26189,10 +26191,10 @@ declare class FormFields {
 
 	/**
 	 * Creates a new FormField
-	 * @param layer The layer on which to create the FormField. 
-	 * @param at The location at which to insert the FormField relative to the reference object or within the container object. 
+	 * @param layer The layer on which to create the FormField.
+	 * @param at The location at which to insert the FormField relative to the reference object or within the container object.
 	 * @param reference The reference object. Note: Required when the at parameter is before or after.
-	 * @param withProperties Initial values for properties of the new FormField 
+	 * @param withProperties Initial values for properties of the new FormField
 	 */
 	add(layer: Layer, at?: LocationOptions, reference?: Document | Spread | MasterSpread | Page | Layer | PageItem, withProperties?: object): FormField;
 
@@ -26491,7 +26493,7 @@ declare class Button extends FormField {
 
 	/**
 	 * Brings the Button to the front of its layer or in front of a particular item.
-	 * @param reference The reference object to bring the object in front of (must have same parent) 
+	 * @param reference The reference object to bring the object in front of (must have same parent)
 	 */
 	bringToFront(reference: PageItem): void;
 
@@ -26507,7 +26509,7 @@ declare class Button extends FormField {
 
 	/**
 	 * Sends the Button to the back of its layer or behind a particular item (must have same parent).
-	 * @param reference The reference object to send the object behind 
+	 * @param reference The reference object to send the object behind
 	 */
 	sendToBack(reference: PageItem): void;
 
@@ -26530,10 +26532,10 @@ declare class Buttons {
 
 	/**
 	 * Creates a new Button
-	 * @param layer The layer on which to create the Button. 
-	 * @param at The location at which to insert the Button relative to the reference object or within the container object. 
+	 * @param layer The layer on which to create the Button.
+	 * @param at The location at which to insert the Button relative to the reference object or within the container object.
 	 * @param reference The reference object. Note: Required when the at parameter is before or after.
-	 * @param withProperties Initial values for properties of the new Button 
+	 * @param withProperties Initial values for properties of the new Button
 	 */
 	add(layer: Layer, at?: LocationOptions, reference?: Document | Spread | MasterSpread | Page | Layer | PageItem, withProperties?: object): Button;
 
@@ -26754,7 +26756,7 @@ declare class State {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -26789,7 +26791,7 @@ declare class State {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -26822,7 +26824,7 @@ declare class States {
 
 	/**
 	 * Creates a new State.
-	 * @param withProperties Initial values for properties of the new State 
+	 * @param withProperties Initial values for properties of the new State
 	 */
 	add(withProperties: object): State;
 
@@ -27012,7 +27014,7 @@ declare class MultiStateObject extends FormField {
 
 	/**
 	 * Brings the MultiStateObject to the front of its layer or in front of a particular item.
-	 * @param reference The reference object to bring the object in front of (must have same parent) 
+	 * @param reference The reference object to bring the object in front of (must have same parent)
 	 */
 	bringToFront(reference: PageItem): void;
 
@@ -27028,7 +27030,7 @@ declare class MultiStateObject extends FormField {
 
 	/**
 	 * Sends the MultiStateObject to the back of its layer or behind a particular item (must have same parent).
-	 * @param reference The reference object to send the object behind 
+	 * @param reference The reference object to send the object behind
 	 */
 	sendToBack(reference: PageItem): void;
 
@@ -27051,10 +27053,10 @@ declare class MultiStateObjects {
 
 	/**
 	 * Creates a new MultiStateObject
-	 * @param layer The layer on which to create the MultiStateObject. 
-	 * @param at The location at which to insert the MultiStateObject relative to the reference object or within the container object. 
+	 * @param layer The layer on which to create the MultiStateObject.
+	 * @param at The location at which to insert the MultiStateObject relative to the reference object or within the container object.
 	 * @param reference The reference object. Note: Required when the at parameter is before or after.
-	 * @param withProperties Initial values for properties of the new MultiStateObject 
+	 * @param withProperties Initial values for properties of the new MultiStateObject
 	 */
 	add(layer: Layer, at?: LocationOptions, reference?: Document | Spread | MasterSpread | Page | Layer | PageItem, withProperties?: object): MultiStateObject;
 
@@ -27338,7 +27340,7 @@ declare class CheckBox extends FormField {
 
 	/**
 	 * Brings the CheckBox to the front of its layer or in front of a particular item.
-	 * @param reference The reference object to bring the object in front of (must have same parent) 
+	 * @param reference The reference object to bring the object in front of (must have same parent)
 	 */
 	bringToFront(reference: PageItem): void;
 
@@ -27354,7 +27356,7 @@ declare class CheckBox extends FormField {
 
 	/**
 	 * Sends the CheckBox to the back of its layer or behind a particular item (must have same parent).
-	 * @param reference The reference object to send the object behind 
+	 * @param reference The reference object to send the object behind
 	 */
 	sendToBack(reference: PageItem): void;
 
@@ -27377,10 +27379,10 @@ declare class CheckBoxes {
 
 	/**
 	 * Creates a new CheckBox
-	 * @param layer The layer on which to create the CheckBox. 
-	 * @param at The location at which to insert the CheckBox relative to the reference object or within the container object. 
+	 * @param layer The layer on which to create the CheckBox.
+	 * @param at The location at which to insert the CheckBox relative to the reference object or within the container object.
 	 * @param reference The reference object. Note: Required when the at parameter is before or after.
-	 * @param withProperties Initial values for properties of the new CheckBox 
+	 * @param withProperties Initial values for properties of the new CheckBox
 	 */
 	add(layer: Layer, at?: LocationOptions, reference?: Document | Spread | MasterSpread | Page | Layer | PageItem, withProperties?: object): CheckBox;
 
@@ -27669,7 +27671,7 @@ declare class ComboBox extends FormField {
 
 	/**
 	 * Brings the ComboBox to the front of its layer or in front of a particular item.
-	 * @param reference The reference object to bring the object in front of (must have same parent) 
+	 * @param reference The reference object to bring the object in front of (must have same parent)
 	 */
 	bringToFront(reference: PageItem): void;
 
@@ -27685,7 +27687,7 @@ declare class ComboBox extends FormField {
 
 	/**
 	 * Sends the ComboBox to the back of its layer or behind a particular item (must have same parent).
-	 * @param reference The reference object to send the object behind 
+	 * @param reference The reference object to send the object behind
 	 */
 	sendToBack(reference: PageItem): void;
 
@@ -27708,10 +27710,10 @@ declare class ComboBoxes {
 
 	/**
 	 * Creates a new ComboBox
-	 * @param layer The layer on which to create the ComboBox. 
-	 * @param at The location at which to insert the ComboBox relative to the reference object or within the container object. 
+	 * @param layer The layer on which to create the ComboBox.
+	 * @param at The location at which to insert the ComboBox relative to the reference object or within the container object.
 	 * @param reference The reference object. Note: Required when the at parameter is before or after.
-	 * @param withProperties Initial values for properties of the new ComboBox 
+	 * @param withProperties Initial values for properties of the new ComboBox
 	 */
 	add(layer: Layer, at?: LocationOptions, reference?: Document | Spread | MasterSpread | Page | Layer | PageItem, withProperties?: object): ComboBox;
 
@@ -28005,7 +28007,7 @@ declare class ListBox extends FormField {
 
 	/**
 	 * Brings the ListBox to the front of its layer or in front of a particular item.
-	 * @param reference The reference object to bring the object in front of (must have same parent) 
+	 * @param reference The reference object to bring the object in front of (must have same parent)
 	 */
 	bringToFront(reference: PageItem): void;
 
@@ -28021,7 +28023,7 @@ declare class ListBox extends FormField {
 
 	/**
 	 * Sends the ListBox to the back of its layer or behind a particular item (must have same parent).
-	 * @param reference The reference object to send the object behind 
+	 * @param reference The reference object to send the object behind
 	 */
 	sendToBack(reference: PageItem): void;
 
@@ -28044,10 +28046,10 @@ declare class ListBoxes {
 
 	/**
 	 * Creates a new ListBox
-	 * @param layer The layer on which to create the ListBox. 
-	 * @param at The location at which to insert the ListBox relative to the reference object or within the container object. 
+	 * @param layer The layer on which to create the ListBox.
+	 * @param at The location at which to insert the ListBox relative to the reference object or within the container object.
 	 * @param reference The reference object. Note: Required when the at parameter is before or after.
-	 * @param withProperties Initial values for properties of the new ListBox 
+	 * @param withProperties Initial values for properties of the new ListBox
 	 */
 	add(layer: Layer, at?: LocationOptions, reference?: Document | Spread | MasterSpread | Page | Layer | PageItem, withProperties?: object): ListBox;
 
@@ -28331,7 +28333,7 @@ declare class RadioButton extends FormField {
 
 	/**
 	 * Brings the RadioButton to the front of its layer or in front of a particular item.
-	 * @param reference The reference object to bring the object in front of (must have same parent) 
+	 * @param reference The reference object to bring the object in front of (must have same parent)
 	 */
 	bringToFront(reference: PageItem): void;
 
@@ -28347,7 +28349,7 @@ declare class RadioButton extends FormField {
 
 	/**
 	 * Sends the RadioButton to the back of its layer or behind a particular item (must have same parent).
-	 * @param reference The reference object to send the object behind 
+	 * @param reference The reference object to send the object behind
 	 */
 	sendToBack(reference: PageItem): void;
 
@@ -28370,10 +28372,10 @@ declare class RadioButtons {
 
 	/**
 	 * Creates a new RadioButton
-	 * @param layer The layer on which to create the RadioButton. 
-	 * @param at The location at which to insert the RadioButton relative to the reference object or within the container object. 
+	 * @param layer The layer on which to create the RadioButton.
+	 * @param at The location at which to insert the RadioButton relative to the reference object or within the container object.
 	 * @param reference The reference object. Note: Required when the at parameter is before or after.
-	 * @param withProperties Initial values for properties of the new RadioButton 
+	 * @param withProperties Initial values for properties of the new RadioButton
 	 */
 	add(layer: Layer, at?: LocationOptions, reference?: Document | Spread | MasterSpread | Page | Layer | PageItem, withProperties?: object): RadioButton;
 
@@ -28667,7 +28669,7 @@ declare class TextBox extends FormField {
 
 	/**
 	 * Brings the TextBox to the front of its layer or in front of a particular item.
-	 * @param reference The reference object to bring the object in front of (must have same parent) 
+	 * @param reference The reference object to bring the object in front of (must have same parent)
 	 */
 	bringToFront(reference: PageItem): void;
 
@@ -28683,7 +28685,7 @@ declare class TextBox extends FormField {
 
 	/**
 	 * Sends the TextBox to the back of its layer or behind a particular item (must have same parent).
-	 * @param reference The reference object to send the object behind 
+	 * @param reference The reference object to send the object behind
 	 */
 	sendToBack(reference: PageItem): void;
 
@@ -28706,10 +28708,10 @@ declare class TextBoxes {
 
 	/**
 	 * Creates a new TextBox
-	 * @param layer The layer on which to create the TextBox. 
-	 * @param at The location at which to insert the TextBox relative to the reference object or within the container object. 
+	 * @param layer The layer on which to create the TextBox.
+	 * @param at The location at which to insert the TextBox relative to the reference object or within the container object.
 	 * @param reference The reference object. Note: Required when the at parameter is before or after.
-	 * @param withProperties Initial values for properties of the new TextBox 
+	 * @param withProperties Initial values for properties of the new TextBox
 	 */
 	add(layer: Layer, at?: LocationOptions, reference?: Document | Spread | MasterSpread | Page | Layer | PageItem, withProperties?: object): TextBox;
 
@@ -28978,7 +28980,7 @@ declare class SignatureField extends FormField {
 
 	/**
 	 * Brings the SignatureField to the front of its layer or in front of a particular item.
-	 * @param reference The reference object to bring the object in front of (must have same parent) 
+	 * @param reference The reference object to bring the object in front of (must have same parent)
 	 */
 	bringToFront(reference: PageItem): void;
 
@@ -28994,7 +28996,7 @@ declare class SignatureField extends FormField {
 
 	/**
 	 * Sends the SignatureField to the back of its layer or behind a particular item (must have same parent).
-	 * @param reference The reference object to send the object behind 
+	 * @param reference The reference object to send the object behind
 	 */
 	sendToBack(reference: PageItem): void;
 
@@ -29017,10 +29019,10 @@ declare class SignatureFields {
 
 	/**
 	 * Creates a new SignatureField
-	 * @param layer The layer on which to create the SignatureField. 
-	 * @param at The location at which to insert the SignatureField relative to the reference object or within the container object. 
+	 * @param layer The layer on which to create the SignatureField.
+	 * @param at The location at which to insert the SignatureField relative to the reference object or within the container object.
 	 * @param reference The reference object. Note: Required when the at parameter is before or after.
-	 * @param withProperties Initial values for properties of the new SignatureField 
+	 * @param withProperties Initial values for properties of the new SignatureField
 	 */
 	add(layer: Layer, at?: LocationOptions, reference?: Document | Spread | MasterSpread | Page | Layer | PageItem, withProperties?: object): SignatureField;
 
@@ -29204,7 +29206,7 @@ declare class Movie extends MediaItem {
 
 	/**
 	 * Brings the Movie to the front of its layer or in front of a particular item.
-	 * @param reference The reference object to bring the object in front of (must have same parent) 
+	 * @param reference The reference object to bring the object in front of (must have same parent)
 	 */
 	bringToFront(reference: PageItem): void;
 
@@ -29215,7 +29217,7 @@ declare class Movie extends MediaItem {
 
 	/**
 	 * Sends the Movie to the back of its layer or behind a particular item (must have same parent).
-	 * @param reference The reference object to send the object behind 
+	 * @param reference The reference object to send the object behind
 	 */
 	sendToBack(reference: PageItem): void;
 
@@ -29243,10 +29245,10 @@ declare class Movies {
 
 	/**
 	 * Creates a new Movie
-	 * @param layer The layer on which to create the Movie. 
-	 * @param at The location at which to insert the Movie relative to the reference object or within the container object. 
+	 * @param layer The layer on which to create the Movie.
+	 * @param at The location at which to insert the Movie relative to the reference object or within the container object.
 	 * @param reference The reference object. Note: Required when the at parameter is before or after.
-	 * @param withProperties Initial values for properties of the new Movie 
+	 * @param withProperties Initial values for properties of the new Movie
 	 */
 	add(layer: Layer, at?: LocationOptions, reference?: Document | Spread | MasterSpread | Page | Layer | PageItem, withProperties?: object): Movie;
 
@@ -29377,7 +29379,7 @@ declare class NavigationPoint {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -29395,7 +29397,7 @@ declare class NavigationPoint {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -29428,7 +29430,7 @@ declare class NavigationPoints {
 
 	/**
 	 * Creates a new NavigationPoint.
-	 * @param withProperties Initial values for properties of the new NavigationPoint 
+	 * @param withProperties Initial values for properties of the new NavigationPoint
 	 */
 	add(withProperties: object): NavigationPoint;
 
@@ -29582,7 +29584,7 @@ declare class Sound extends MediaItem {
 
 	/**
 	 * Brings the Sound to the front of its layer or in front of a particular item.
-	 * @param reference The reference object to bring the object in front of (must have same parent) 
+	 * @param reference The reference object to bring the object in front of (must have same parent)
 	 */
 	bringToFront(reference: PageItem): void;
 
@@ -29593,7 +29595,7 @@ declare class Sound extends MediaItem {
 
 	/**
 	 * Sends the Sound to the back of its layer or behind a particular item (must have same parent).
-	 * @param reference The reference object to send the object behind 
+	 * @param reference The reference object to send the object behind
 	 */
 	sendToBack(reference: PageItem): void;
 
@@ -29616,10 +29618,10 @@ declare class Sounds {
 
 	/**
 	 * Creates a new Sound
-	 * @param layer The layer on which to create the Sound. 
-	 * @param at The location at which to insert the Sound relative to the reference object or within the container object. 
+	 * @param layer The layer on which to create the Sound.
+	 * @param at The location at which to insert the Sound relative to the reference object or within the container object.
 	 * @param reference The reference object. Note: Required when the at parameter is before or after.
-	 * @param withProperties Initial values for properties of the new Sound 
+	 * @param withProperties Initial values for properties of the new Sound
 	 */
 	add(layer: Layer, at?: LocationOptions, reference?: Document | Spread | MasterSpread | Page | Layer | PageItem, withProperties?: object): Sound;
 
@@ -29760,7 +29762,7 @@ declare class Behavior {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -29791,7 +29793,7 @@ declare class Behavior {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -29924,7 +29926,7 @@ declare class GotoFirstPageBehaviors {
 
 	/**
 	 * Creates a new GotoFirstPageBehavior.
-	 * @param withProperties Initial values for properties of the new GotoFirstPageBehavior 
+	 * @param withProperties Initial values for properties of the new GotoFirstPageBehavior
 	 */
 	add(withProperties: object): GotoFirstPageBehavior;
 
@@ -30030,7 +30032,7 @@ declare class GotoLastPageBehaviors {
 
 	/**
 	 * Creates a new GotoLastPageBehavior.
-	 * @param withProperties Initial values for properties of the new GotoLastPageBehavior 
+	 * @param withProperties Initial values for properties of the new GotoLastPageBehavior
 	 */
 	add(withProperties: object): GotoLastPageBehavior;
 
@@ -30136,7 +30138,7 @@ declare class GotoNextPageBehaviors {
 
 	/**
 	 * Creates a new GotoNextPageBehavior.
-	 * @param withProperties Initial values for properties of the new GotoNextPageBehavior 
+	 * @param withProperties Initial values for properties of the new GotoNextPageBehavior
 	 */
 	add(withProperties: object): GotoNextPageBehavior;
 
@@ -30242,7 +30244,7 @@ declare class GotoPreviousPageBehaviors {
 
 	/**
 	 * Creates a new GotoPreviousPageBehavior.
-	 * @param withProperties Initial values for properties of the new GotoPreviousPageBehavior 
+	 * @param withProperties Initial values for properties of the new GotoPreviousPageBehavior
 	 */
 	add(withProperties: object): GotoPreviousPageBehavior;
 
@@ -30348,7 +30350,7 @@ declare class GotoNextViewBehaviors {
 
 	/**
 	 * Creates a new GotoNextViewBehavior.
-	 * @param withProperties Initial values for properties of the new GotoNextViewBehavior 
+	 * @param withProperties Initial values for properties of the new GotoNextViewBehavior
 	 */
 	add(withProperties: object): GotoNextViewBehavior;
 
@@ -30454,7 +30456,7 @@ declare class GotoPreviousViewBehaviors {
 
 	/**
 	 * Creates a new GotoPreviousViewBehavior.
-	 * @param withProperties Initial values for properties of the new GotoPreviousViewBehavior 
+	 * @param withProperties Initial values for properties of the new GotoPreviousViewBehavior
 	 */
 	add(withProperties: object): GotoPreviousViewBehavior;
 
@@ -30560,7 +30562,7 @@ declare class GotoURLBehaviors {
 
 	/**
 	 * Creates a new GotoURLBehavior.
-	 * @param withProperties Initial values for properties of the new GotoURLBehavior 
+	 * @param withProperties Initial values for properties of the new GotoURLBehavior
 	 */
 	add(withProperties: object): GotoURLBehavior;
 
@@ -30676,7 +30678,7 @@ declare class MovieBehaviors {
 
 	/**
 	 * Creates a new MovieBehavior.
-	 * @param withProperties Initial values for properties of the new MovieBehavior 
+	 * @param withProperties Initial values for properties of the new MovieBehavior
 	 */
 	add(withProperties: object): MovieBehavior;
 
@@ -30787,7 +30789,7 @@ declare class ShowHideFieldsBehaviors {
 
 	/**
 	 * Creates a new ShowHideFieldsBehavior.
-	 * @param withProperties Initial values for properties of the new ShowHideFieldsBehavior 
+	 * @param withProperties Initial values for properties of the new ShowHideFieldsBehavior
 	 */
 	add(withProperties: object): ShowHideFieldsBehavior;
 
@@ -30903,7 +30905,7 @@ declare class AnimationBehaviors {
 
 	/**
 	 * Creates a new AnimationBehavior.
-	 * @param withProperties Initial values for properties of the new AnimationBehavior 
+	 * @param withProperties Initial values for properties of the new AnimationBehavior
 	 */
 	add(withProperties: object): AnimationBehavior;
 
@@ -31009,7 +31011,7 @@ declare class OpenFileBehaviors {
 
 	/**
 	 * Creates a new OpenFileBehavior.
-	 * @param withProperties Initial values for properties of the new OpenFileBehavior 
+	 * @param withProperties Initial values for properties of the new OpenFileBehavior
 	 */
 	add(withProperties: object): OpenFileBehavior;
 
@@ -31120,7 +31122,7 @@ declare class GotoNextStateBehaviors {
 
 	/**
 	 * Creates a new GotoNextStateBehavior.
-	 * @param withProperties Initial values for properties of the new GotoNextStateBehavior 
+	 * @param withProperties Initial values for properties of the new GotoNextStateBehavior
 	 */
 	add(withProperties: object): GotoNextStateBehavior;
 
@@ -31231,7 +31233,7 @@ declare class GotoPreviousStateBehaviors {
 
 	/**
 	 * Creates a new GotoPreviousStateBehavior.
-	 * @param withProperties Initial values for properties of the new GotoPreviousStateBehavior 
+	 * @param withProperties Initial values for properties of the new GotoPreviousStateBehavior
 	 */
 	add(withProperties: object): GotoPreviousStateBehavior;
 
@@ -31347,7 +31349,7 @@ declare class GotoStateBehaviors {
 
 	/**
 	 * Creates a new GotoStateBehavior.
-	 * @param withProperties Initial values for properties of the new GotoStateBehavior 
+	 * @param withProperties Initial values for properties of the new GotoStateBehavior
 	 */
 	add(withProperties: object): GotoStateBehavior;
 
@@ -31453,7 +31455,7 @@ declare class ViewZoomBehaviors {
 
 	/**
 	 * Creates a new ViewZoomBehavior.
-	 * @param withProperties Initial values for properties of the new ViewZoomBehavior 
+	 * @param withProperties Initial values for properties of the new ViewZoomBehavior
 	 */
 	add(withProperties: object): ViewZoomBehavior;
 
@@ -31564,7 +31566,7 @@ declare class SoundBehaviors {
 
 	/**
 	 * Creates a new SoundBehavior.
-	 * @param withProperties Initial values for properties of the new SoundBehavior 
+	 * @param withProperties Initial values for properties of the new SoundBehavior
 	 */
 	add(withProperties: object): SoundBehavior;
 
@@ -31685,7 +31687,7 @@ declare class GotoAnchorBehaviors {
 
 	/**
 	 * Creates a new GotoAnchorBehavior.
-	 * @param withProperties Initial values for properties of the new GotoAnchorBehavior 
+	 * @param withProperties Initial values for properties of the new GotoAnchorBehavior
 	 */
 	add(withProperties: object): GotoAnchorBehavior;
 
@@ -31796,7 +31798,7 @@ declare class GotoPageBehaviors {
 
 	/**
 	 * Creates a new GotoPageBehavior.
-	 * @param withProperties Initial values for properties of the new GotoPageBehavior 
+	 * @param withProperties Initial values for properties of the new GotoPageBehavior
 	 */
 	add(withProperties: object): GotoPageBehavior;
 
@@ -31897,7 +31899,7 @@ declare class ClearFormBehaviors {
 
 	/**
 	 * Creates a new ClearFormBehavior.
-	 * @param withProperties Initial values for properties of the new ClearFormBehavior 
+	 * @param withProperties Initial values for properties of the new ClearFormBehavior
 	 */
 	add(withProperties: object): ClearFormBehavior;
 
@@ -31998,7 +32000,7 @@ declare class PrintFormBehaviors {
 
 	/**
 	 * Creates a new PrintFormBehavior.
-	 * @param withProperties Initial values for properties of the new PrintFormBehavior 
+	 * @param withProperties Initial values for properties of the new PrintFormBehavior
 	 */
 	add(withProperties: object): PrintFormBehavior;
 
@@ -32104,7 +32106,7 @@ declare class SubmitFormBehaviors {
 
 	/**
 	 * Creates a new SubmitFormBehavior.
-	 * @param withProperties Initial values for properties of the new SubmitFormBehavior 
+	 * @param withProperties Initial values for properties of the new SubmitFormBehavior
 	 */
 	add(withProperties: object): SubmitFormBehavior;
 
@@ -32246,7 +32248,7 @@ declare class TimingList {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -32264,7 +32266,7 @@ declare class TimingList {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -32298,7 +32300,7 @@ declare class TimingLists {
 	/**
 	 * Adds a new event-triggered timing list object.
 	 * @param triggerEvent Trigger Event
-	 * @param withProperties Initial values for properties of the new TimingList 
+	 * @param withProperties Initial values for properties of the new TimingList
 	 */
 	add(triggerEvent: DynamicTriggerEvents, withProperties: object): TimingList;
 
@@ -32422,7 +32424,7 @@ declare class TimingGroup {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -32447,7 +32449,7 @@ declare class TimingGroup {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -32486,8 +32488,8 @@ declare class TimingGroups {
 	/**
 	 * Adds a new timing group.
 	 * @param dynamicTarget A page item target that is an animation, media, or mso.
-	 * @param delaySeconds The time delay in seconds for a target. 
-	 * @param withProperties Initial values for properties of the new TimingGroup 
+	 * @param delaySeconds The time delay in seconds for a target.
+	 * @param withProperties Initial values for properties of the new TimingGroup
 	 */
 	add(dynamicTarget: PageItem | Graphic | Behavior | MediaItem, delaySeconds?: number, withProperties?: object): TimingGroup;
 
@@ -32606,7 +32608,7 @@ declare class TimingTarget {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -32631,7 +32633,7 @@ declare class TimingTarget {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -32670,8 +32672,8 @@ declare class TimingTargets {
 	/**
 	 * Adds a new target item.
 	 * @param dynamicTarget A page item target that is an animation, media, or mso.
-	 * @param delaySeconds The time delay in seconds for a target. 
-	 * @param withProperties Initial values for properties of the new TimingTarget 
+	 * @param delaySeconds The time delay in seconds for a target.
+	 * @param withProperties Initial values for properties of the new TimingTarget
 	 */
 	add(dynamicTarget: PageItem | Graphic | Behavior | MediaItem, delaySeconds?: number, withProperties?: object): TimingTarget;
 
@@ -32935,7 +32937,7 @@ declare class Layer {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -32971,7 +32973,7 @@ declare class Layer {
 	/**
 	 * Moves the Layer to the specified location.
 	 * @param to The location relative to the reference object or within the containing object.
-	 * @param reference The reference object. Note: Required when the to value specifies before or after. 
+	 * @param reference The reference object. Note: Required when the to value specifies before or after.
 	 */
 	move(to: LocationOptions, reference: Layer): Layer;
 
@@ -32984,7 +32986,7 @@ declare class Layer {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -33017,7 +33019,7 @@ declare class Layers {
 
 	/**
 	 * Creates a new Layer.
-	 * @param withProperties Initial values for properties of the new Layer 
+	 * @param withProperties Initial values for properties of the new Layer
 	 */
 	add(withProperties: object): Layer;
 
@@ -33318,32 +33320,32 @@ declare class Spread {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
 	/**
 	 * Duplicate an object and place it into the target.
 	 * @param pageItems One or more page items to place or load
-	 * @param linkPageItems Whether to link pageItems in content placer (if true it will override link stories value) 
-	 * @param linkStories Whether to link stories in content placer (only applicable for single story, pageItem links will also be created in case of more than one item) 
-	 * @param mapStyles Whether to map styles in content placer 
-	 * @param placePoint The point at which to place 
-	 * @param destinationLayer The layer on which to place 
-	 * @param showingOptions Whether to display the link options dialog 
+	 * @param linkPageItems Whether to link pageItems in content placer (if true it will override link stories value)
+	 * @param linkStories Whether to link stories in content placer (only applicable for single story, pageItem links will also be created in case of more than one item)
+	 * @param mapStyles Whether to map styles in content placer
+	 * @param placePoint The point at which to place
+	 * @param destinationLayer The layer on which to place
+	 * @param showingOptions Whether to display the link options dialog
 	 */
 	contentPlace(pageItems: PageItem[], linkPageItems?: boolean, linkStories?: boolean, mapStyles?: boolean, placePoint?: string[] | number[], destinationLayer?: Layer, showingOptions?: boolean): any[];
 
 	/**
 	 * Creates multiple guides on all pages of the spread.
-	 * @param numberOfRows The number of rows to create on each page. 
+	 * @param numberOfRows The number of rows to create on each page.
 	 * @param numberOfColumns The number of columns to create on each page.
-	 * @param rowGutter The height of the gutter between rows. 
-	 * @param columnGutter The width of the gutter between columns. 
+	 * @param rowGutter The height of the gutter between rows.
+	 * @param columnGutter The width of the gutter between columns.
 	 * @param guideColor The color to make the guides, specified either as an array of three doubles, each in the range 0 to 255 and representing R, G, and B values, or as a UI color.
-	 * @param fitMargins If true, the row height and column width are calculated based on the space within the page margins. If false, row height and column width are calculated based on the full page. 
-	 * @param removeExisting If true, removes existing guides when creating new ones. 
-	 * @param layer The layer on which to create the guides. 
+	 * @param fitMargins If true, the row height and column width are calculated based on the space within the page margins. If false, row height and column width are calculated based on the full page.
+	 * @param removeExisting If true, removes existing guides when creating new ones.
+	 * @param layer The layer on which to create the guides.
 	 */
 	createGuides(numberOfRows?: number, numberOfColumns?: number, rowGutter?: string | number, columnGutter?: string | number, guideColor?: [number, number, number] | UIColors, fitMargins?: boolean, removeExisting?: boolean, layer?: Layer): void;
 
@@ -33354,7 +33356,7 @@ declare class Spread {
 
 	/**
 	 * Duplicates the spread.
-	 * @param to The location of the spread relative to the reference object or within the document. 
+	 * @param to The location of the spread relative to the reference object or within the document.
 	 * @param reference The reference object. Note: Required only when the to parameter specifies before or after.
 	 */
 	duplicate(to?: LocationOptions, reference?: Spread | Document | MasterSpread): any;
@@ -33387,20 +33389,20 @@ declare class Spread {
 	/**
 	 * Places the file.
 	 * @param fileName The file to place
-	 * @param placePoint The point at which to place 
-	 * @param destinationLayer The layer on which to place 
-	 * @param showingOptions Whether to display the import options dialog 
-	 * @param autoflowing Whether to autoflow placed text 
-	 * @param withProperties Initial values for properties of the placed object(s) 
+	 * @param placePoint The point at which to place
+	 * @param destinationLayer The layer on which to place
+	 * @param showingOptions Whether to display the import options dialog
+	 * @param autoflowing Whether to autoflow placed text
+	 * @param withProperties Initial values for properties of the placed object(s)
 	 */
 	place(fileName: File, placePoint: string[] | number[], destinationLayer: Layer, showingOptions?: boolean, autoflowing?: boolean, withProperties?: object): any[];
 
 	/**
 	 * Deprecated: Use contentPlace method. Original Description: Create a linked story and place it into the target.
 	 * @param parentStory The story to place and link from.
-	 * @param placePoint The point at which to place 
-	 * @param destinationLayer The layer on which to place 
-	 * @param showingOptions Whether to display the link options dialog 
+	 * @param placePoint The point at which to place
+	 * @param destinationLayer The layer on which to place
+	 * @param showingOptions Whether to display the link options dialog
 	 */
 	placeAndLink(parentStory: Story, placePoint: string[] | number[], destinationLayer: Layer, showingOptions?: boolean): Story;
 
@@ -33408,7 +33410,7 @@ declare class Spread {
 	 * Places the XML element onto a page. If the place point is above an existing page item, place the XML element into the page item.
 	 * @param using The XML element to place.
 	 * @param placePoint The point at which to place the object, specified in the format [x, y].
-	 * @param autoflowing If true, autoflows placed text. 
+	 * @param autoflowing If true, autoflows placed text.
 	 */
 	placeXML(using: XMLElement, placePoint: string[] | number[], autoflowing?: boolean): PageItem;
 
@@ -33421,7 +33423,7 @@ declare class Spread {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -33434,20 +33436,20 @@ declare class Spread {
 	 * Get the coordinates of the given location in the specified coordinate system.
 	 * @param location The location requested. Can accept: Array of 2 Reals, AnchorPoint enumerator or Array of Arrays of 2 Reals, CoordinateSpaces enumerators, AnchorPoint enumerators, BoundingBoxLimits enumerators or Long Integers.
 	 * @param in The coordinate space to use.
-	 * @param consideringRulerUnits If true then a ruler location is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page. 
+	 * @param consideringRulerUnits If true then a ruler location is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page.
 	 */
 	resolve(location: any, in_: CoordinateSpaces, consideringRulerUnits?: boolean): any;
 
 	/**
 	 * Selects the object.
-	 * @param existingSelection The selection status of the Spread in relation to previously selected objects. 
+	 * @param existingSelection The selection status of the Spread in relation to previously selected objects.
 	 */
 	select(existingSelection?: SelectionOptions): void;
 
 	/**
 	 * Replaces the content of XML element with content imported from a file.
 	 * @param using The file path to the import file.
-	 * @param relativeBasePath Base path used to resolve relative paths. 
+	 * @param relativeBasePath Base path used to resolve relative paths.
 	 */
 	setContent(using: string, relativeBasePath: string): PageItem;
 
@@ -33467,7 +33469,7 @@ declare class Spread {
 	 * @param from The temporary origin during the transformation. Can accept: Array of 2 Reals, AnchorPoint enumerator or Array of Arrays of 2 Reals, CoordinateSpaces enumerators, AnchorPoint enumerators, BoundingBoxLimits enumerators or Long Integers.
 	 * @param withMatrix Transform matrix.
 	 * @param replacingCurrent Transform components to consider; providing this optional parameter causes the target's existing transform components to be replaced with new values.Without this parameter, the given matrix is concatenated onto the target's existing transform combining the effect of the two.
-	 * @param consideringRulerUnits If true then a ruler based origin is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page. 
+	 * @param consideringRulerUnits If true then a ruler based origin is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page.
 	 */
 	transform(in_: CoordinateSpaces, from: any, withMatrix: [number, number, number, number, number, number] | TransformationMatrix, replacingCurrent: MatrixContent | MatrixContent[] | number, consideringRulerUnits?: boolean): void;
 
@@ -33498,7 +33500,7 @@ declare class Spreads {
 	 * Creates a new spread.
 	 * @param at The location of the spread relative to the reference object or within the document.
 	 * @param reference The reference object. Note: Required when the at parameter specifies before or after.
-	 * @param withProperties Initial values for properties of the new Spread 
+	 * @param withProperties Initial values for properties of the new Spread
 	 */
 	add(at?: LocationOptions, reference?: Spread | Document, withProperties?: object): Spread;
 
@@ -33819,19 +33821,19 @@ declare class Page {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
 	/**
 	 * Duplicate an object and place it into the target.
 	 * @param pageItems One or more page items to place or load
-	 * @param linkPageItems Whether to link pageItems in content placer (if true it will override link stories value) 
-	 * @param linkStories Whether to link stories in content placer (only applicable for single story, pageItem links will also be created in case of more than one item) 
-	 * @param mapStyles Whether to map styles in content placer 
-	 * @param placePoint The point at which to place 
-	 * @param destinationLayer The layer on which to place 
-	 * @param showingOptions Whether to display the link options dialog 
+	 * @param linkPageItems Whether to link pageItems in content placer (if true it will override link stories value)
+	 * @param linkStories Whether to link stories in content placer (only applicable for single story, pageItem links will also be created in case of more than one item)
+	 * @param mapStyles Whether to map styles in content placer
+	 * @param placePoint The point at which to place
+	 * @param destinationLayer The layer on which to place
+	 * @param showingOptions Whether to display the link options dialog
 	 */
 	contentPlace(pageItems: PageItem[], linkPageItems?: boolean, linkStories?: boolean, mapStyles?: boolean, placePoint?: string[] | number[], destinationLayer?: Layer, showingOptions?: boolean): any[];
 
@@ -33879,27 +33881,27 @@ declare class Page {
 	 * Moves the page.
 	 * @param to The new location of the page relative to the reference object or within the document or spread.
 	 * @param reference The reference object. Note: Required when the to parameter value specifies before or after.
-	 * @param binding The location of the binding spine in spreads. 
+	 * @param binding The location of the binding spine in spreads.
 	 */
 	move(to?: LocationOptions, reference?: Page | Spread, binding?: BindingOptions): Page;
 
 	/**
 	 * Places the file.
 	 * @param fileName The file to place
-	 * @param placePoint The point at which to place 
-	 * @param destinationLayer The layer on which to place 
-	 * @param showingOptions Whether to display the import options dialog 
-	 * @param autoflowing Whether to autoflow placed text 
-	 * @param withProperties Initial values for properties of the placed object(s) 
+	 * @param placePoint The point at which to place
+	 * @param destinationLayer The layer on which to place
+	 * @param showingOptions Whether to display the import options dialog
+	 * @param autoflowing Whether to autoflow placed text
+	 * @param withProperties Initial values for properties of the placed object(s)
 	 */
 	place(fileName: File, placePoint: string[] | number[], destinationLayer: Layer, showingOptions?: boolean, autoflowing?: boolean, withProperties?: object): any[];
 
 	/**
 	 * Deprecated: Use contentPlace method. Original Description: Create a linked story and place it into the target.
 	 * @param parentStory The story to place and link from.
-	 * @param placePoint The point at which to place 
-	 * @param destinationLayer The layer on which to place 
-	 * @param showingOptions Whether to display the link options dialog 
+	 * @param placePoint The point at which to place
+	 * @param destinationLayer The layer on which to place
+	 * @param showingOptions Whether to display the link options dialog
 	 */
 	placeAndLink(parentStory: Story, placePoint: string[] | number[], destinationLayer: Layer, showingOptions?: boolean): Story;
 
@@ -33907,7 +33909,7 @@ declare class Page {
 	 * Places the XML element onto a page. If the place point is above an existing page item, place the XML element into the page item.
 	 * @param using The XML element to place.
 	 * @param placePoint The point at which to place the object, specified in the format [x, y].
-	 * @param autoflowing If true, autoflows placed text. 
+	 * @param autoflowing If true, autoflows placed text.
 	 */
 	placeXML(using: XMLElement, placePoint: string[] | number[], autoflowing?: boolean): PageItem;
 
@@ -33927,7 +33929,7 @@ declare class Page {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -33942,8 +33944,8 @@ declare class Page {
 	 * @param from The transform origin. Legal specifications: relative to bounding box: anchor | {anchor | {x,y}, bounds kind [, coordinate space]}; relative to coordinate space: {x,y} | {{x,y}[, coordinate space]}; relative to layout window ruler: {{x,y}, page index | bounds kind}. Can accept: Array of 2 Reals, AnchorPoint enumerator or Array of Arrays of 2 Reals, CoordinateSpaces enumerators, AnchorPoint enumerators, BoundingBoxLimits enumerators or Long Integers.
 	 * @param by How the current dimensions are affected by the given values
 	 * @param values The width and height values. Legal dimensions specifications: {x, y [, coordinate space]}, {x, resize constraint [, coordinate space]}, or {resize constraint, y [, coordinate space]}; where x and y are real numbers and coordinate space is used to determine _only_ the unit of length for x and y; coordinate space is ignored for the 'current dimensions times' resize method).
-	 * @param resizeIndividually If false and multiple page items are targeted, the new dimensions are attained only by moving the individual items rather than resizing them. 
-	 * @param consideringRulerUnits If true then a ruler location is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page. 
+	 * @param resizeIndividually If false and multiple page items are targeted, the new dimensions are attained only by moving the individual items rather than resizing them.
+	 * @param consideringRulerUnits If true then a ruler location is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page.
 	 */
 	resize(in_: any, from: any, by: ResizeMethods, values: number[] | ResizeConstraints | CoordinateSpaces, resizeIndividually?: boolean, consideringRulerUnits?: boolean): void;
 
@@ -33951,20 +33953,20 @@ declare class Page {
 	 * Get the coordinates of the given location in the specified coordinate system.
 	 * @param location The location requested. Can accept: Array of 2 Reals, AnchorPoint enumerator or Array of Arrays of 2 Reals, CoordinateSpaces enumerators, AnchorPoint enumerators, BoundingBoxLimits enumerators or Long Integers.
 	 * @param in The coordinate space to use.
-	 * @param consideringRulerUnits If true then a ruler location is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page. 
+	 * @param consideringRulerUnits If true then a ruler location is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page.
 	 */
 	resolve(location: any, in_: CoordinateSpaces, consideringRulerUnits?: boolean): any;
 
 	/**
 	 * Selects the object.
-	 * @param existingSelection The selection status of the Page in relation to previously selected objects. 
+	 * @param existingSelection The selection status of the Page in relation to previously selected objects.
 	 */
 	select(existingSelection?: SelectionOptions): void;
 
 	/**
 	 * Replaces the content of XML element with content imported from a file.
 	 * @param using The file path to the import file.
-	 * @param relativeBasePath Base path used to resolve relative paths. 
+	 * @param relativeBasePath Base path used to resolve relative paths.
 	 */
 	setContent(using: string, relativeBasePath: string): PageItem;
 
@@ -33989,7 +33991,7 @@ declare class Page {
 	 * @param from The temporary origin during the transformation. Can accept: Array of 2 Reals, AnchorPoint enumerator or Array of Arrays of 2 Reals, CoordinateSpaces enumerators, AnchorPoint enumerators, BoundingBoxLimits enumerators or Long Integers.
 	 * @param withMatrix Transform matrix.
 	 * @param replacingCurrent Transform components to consider; providing this optional parameter causes the target's existing transform components to be replaced with new values.Without this parameter, the given matrix is concatenated onto the target's existing transform combining the effect of the two.
-	 * @param consideringRulerUnits If true then a ruler based origin is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page. 
+	 * @param consideringRulerUnits If true then a ruler based origin is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page.
 	 */
 	transform(in_: CoordinateSpaces, from: any, withMatrix: [number, number, number, number, number, number] | TransformationMatrix, replacingCurrent: MatrixContent | MatrixContent[] | number, consideringRulerUnits?: boolean): void;
 
@@ -34020,7 +34022,7 @@ declare class Pages {
 	 * Creates a new page.
 	 * @param at The location of the new page relative to the reference object or within the document or spread.
 	 * @param reference The reference object. Note: Required when the at parameter value specifies before or after.
-	 * @param withProperties Initial values for properties of the new Page 
+	 * @param withProperties Initial values for properties of the new Page
 	 */
 	add(at?: LocationOptions, reference?: Page | Spread | MasterSpread | Document, withProperties?: object): Page;
 
@@ -34311,32 +34313,32 @@ declare class MasterSpread {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
 	/**
 	 * Duplicate an object and place it into the target.
 	 * @param pageItems One or more page items to place or load
-	 * @param linkPageItems Whether to link pageItems in content placer (if true it will override link stories value) 
-	 * @param linkStories Whether to link stories in content placer (only applicable for single story, pageItem links will also be created in case of more than one item) 
-	 * @param mapStyles Whether to map styles in content placer 
-	 * @param placePoint The point at which to place 
-	 * @param destinationLayer The layer on which to place 
-	 * @param showingOptions Whether to display the link options dialog 
+	 * @param linkPageItems Whether to link pageItems in content placer (if true it will override link stories value)
+	 * @param linkStories Whether to link stories in content placer (only applicable for single story, pageItem links will also be created in case of more than one item)
+	 * @param mapStyles Whether to map styles in content placer
+	 * @param placePoint The point at which to place
+	 * @param destinationLayer The layer on which to place
+	 * @param showingOptions Whether to display the link options dialog
 	 */
 	contentPlace(pageItems: PageItem[], linkPageItems?: boolean, linkStories?: boolean, mapStyles?: boolean, placePoint?: string[] | number[], destinationLayer?: Layer, showingOptions?: boolean): any[];
 
 	/**
 	 * Creates multiple guides on all pages of the spread.
-	 * @param numberOfRows The number of rows to create on each page. 
+	 * @param numberOfRows The number of rows to create on each page.
 	 * @param numberOfColumns The number of columns to create on each page.
-	 * @param rowGutter The height of the gutter between rows. 
-	 * @param columnGutter The width of the gutter between columns. 
+	 * @param rowGutter The height of the gutter between rows.
+	 * @param columnGutter The width of the gutter between columns.
 	 * @param guideColor The color to make the guides, specified either as an array of three doubles, each in the range 0 to 255 and representing R, G, and B values, or as a UI color.
-	 * @param fitMargins If true, the row height and column width are calculated based on the space within the page margins. If false, row height and column width are calculated based on the full page. 
-	 * @param removeExisting If true, removes existing guides when creating new ones. 
-	 * @param layer The layer on which to create the guides. 
+	 * @param fitMargins If true, the row height and column width are calculated based on the space within the page margins. If false, row height and column width are calculated based on the full page.
+	 * @param removeExisting If true, removes existing guides when creating new ones.
+	 * @param layer The layer on which to create the guides.
 	 */
 	createGuides(numberOfRows?: number, numberOfColumns?: number, rowGutter?: string | number, columnGutter?: string | number, guideColor?: [number, number, number] | UIColors, fitMargins?: boolean, removeExisting?: boolean, layer?: Layer): void;
 
@@ -34347,7 +34349,7 @@ declare class MasterSpread {
 
 	/**
 	 * Duplicates the spread.
-	 * @param to The location of the spread relative to the reference object or within the document. 
+	 * @param to The location of the spread relative to the reference object or within the document.
 	 * @param reference The reference object. Note: Required only when the to parameter specifies before or after.
 	 */
 	duplicate(to?: LocationOptions, reference?: MasterSpread | Document): any;
@@ -34373,20 +34375,20 @@ declare class MasterSpread {
 	/**
 	 * Places the file.
 	 * @param fileName The file to place
-	 * @param placePoint The point at which to place 
-	 * @param destinationLayer The layer on which to place 
-	 * @param showingOptions Whether to display the import options dialog 
-	 * @param autoflowing Whether to autoflow placed text 
-	 * @param withProperties Initial values for properties of the placed object(s) 
+	 * @param placePoint The point at which to place
+	 * @param destinationLayer The layer on which to place
+	 * @param showingOptions Whether to display the import options dialog
+	 * @param autoflowing Whether to autoflow placed text
+	 * @param withProperties Initial values for properties of the placed object(s)
 	 */
 	place(fileName: File, placePoint: string[] | number[], destinationLayer: Layer, showingOptions?: boolean, autoflowing?: boolean, withProperties?: object): any[];
 
 	/**
 	 * Deprecated: Use contentPlace method. Original Description: Create a linked story and place it into the target.
 	 * @param parentStory The story to place and link from.
-	 * @param placePoint The point at which to place 
-	 * @param destinationLayer The layer on which to place 
-	 * @param showingOptions Whether to display the link options dialog 
+	 * @param placePoint The point at which to place
+	 * @param destinationLayer The layer on which to place
+	 * @param showingOptions Whether to display the link options dialog
 	 */
 	placeAndLink(parentStory: Story, placePoint: string[] | number[], destinationLayer: Layer, showingOptions?: boolean): Story;
 
@@ -34399,7 +34401,7 @@ declare class MasterSpread {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -34412,13 +34414,13 @@ declare class MasterSpread {
 	 * Get the coordinates of the given location in the specified coordinate system.
 	 * @param location The location requested. Can accept: Array of 2 Reals, AnchorPoint enumerator or Array of Arrays of 2 Reals, CoordinateSpaces enumerators, AnchorPoint enumerators, BoundingBoxLimits enumerators or Long Integers.
 	 * @param in The coordinate space to use.
-	 * @param consideringRulerUnits If true then a ruler location is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page. 
+	 * @param consideringRulerUnits If true then a ruler location is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page.
 	 */
 	resolve(location: any, in_: CoordinateSpaces, consideringRulerUnits?: boolean): any;
 
 	/**
 	 * Selects the object.
-	 * @param existingSelection The selection status of the MasterSpread in relation to previously selected objects. 
+	 * @param existingSelection The selection status of the MasterSpread in relation to previously selected objects.
 	 */
 	select(existingSelection?: SelectionOptions): void;
 
@@ -34438,7 +34440,7 @@ declare class MasterSpread {
 	 * @param from The temporary origin during the transformation. Can accept: Array of 2 Reals, AnchorPoint enumerator or Array of Arrays of 2 Reals, CoordinateSpaces enumerators, AnchorPoint enumerators, BoundingBoxLimits enumerators or Long Integers.
 	 * @param withMatrix Transform matrix.
 	 * @param replacingCurrent Transform components to consider; providing this optional parameter causes the target's existing transform components to be replaced with new values.Without this parameter, the given matrix is concatenated onto the target's existing transform combining the effect of the two.
-	 * @param consideringRulerUnits If true then a ruler based origin is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page. 
+	 * @param consideringRulerUnits If true then a ruler based origin is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page.
 	 */
 	transform(in_: CoordinateSpaces, from: any, withMatrix: [number, number, number, number, number, number] | TransformationMatrix, replacingCurrent: MatrixContent | MatrixContent[] | number, consideringRulerUnits?: boolean): void;
 
@@ -34467,8 +34469,8 @@ declare class MasterSpreads {
 
 	/**
 	 * Creates a new master spread.
-	 * @param pagesPerSpread The number of pages to include in the master spread. 
-	 * @param withProperties Initial values for properties of the new MasterSpread 
+	 * @param pagesPerSpread The number of pages to include in the master spread.
+	 * @param withProperties Initial values for properties of the new MasterSpread
 	 */
 	add(pagesPerSpread: number, withProperties: object): MasterSpread;
 
@@ -34995,15 +34997,15 @@ declare class PageItem {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
 	/**
 	 * Applies the specified object style.
 	 * @param using The object style to apply.
-	 * @param clearingOverrides If true, clears the PageItem's existing attributes before applying the style. 
-	 * @param clearingOverridesThroughRootObjectStyle If true, clears attributes and formatting applied to the PageItem that are not defined in the object style. 
+	 * @param clearingOverrides If true, clears the PageItem's existing attributes before applying the style.
+	 * @param clearingOverridesThroughRootObjectStyle If true, clears attributes and formatting applied to the PageItem that are not defined in the object style.
 	 */
 	applyObjectStyle(using: ObjectStyle, clearingOverrides?: boolean, clearingOverridesThroughRootObjectStyle?: boolean): void;
 
@@ -35011,10 +35013,10 @@ declare class PageItem {
 	 * asynchronously exports the object(s) to a file.
 	 * @param format The export format, specified as an enumeration value or as an extension that appears in the Save as type or Format menu in the Export dialog.
 	 * @param to The path to the export file.
-	 * @param showingOptions If true, displays the export options dialog. 
-	 * @param using The export style. 
-	 * @param versionComments The comment for this version. 
-	 * @param forceSave If true, forcibly saves a version. 
+	 * @param showingOptions If true, displays the export options dialog.
+	 * @param using The export style.
+	 * @param versionComments The comment for this version.
+	 * @param forceSave If true, forcibly saves a version.
 	 */
 	asynchronousExportFile(format: ExportFormat | string, to: File, showingOptions?: boolean, using?: PDFExportPreset, versionComments?: string, forceSave?: boolean): BackgroundTask;
 
@@ -35025,7 +35027,7 @@ declare class PageItem {
 
 	/**
 	 * Finds objects that match the find what value and replace the objects with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeObject(reverseOrder: boolean): PageItem[];
 
@@ -35042,29 +35044,29 @@ declare class PageItem {
 	/**
 	 * Duplicate an object and place it into the target page item.
 	 * @param pageItems One or more page items to place or load
-	 * @param linkPageItems Whether to link pageItems in content placer (if true it will override link stories value) 
-	 * @param linkStories Whether to link stories in content placer (only applicable for single story, pageItem links will also be created in case of more than one item) 
-	 * @param mapStyles Whether to map styles in content placer 
-	 * @param showingOptions Whether to display the link options dialog 
+	 * @param linkPageItems Whether to link pageItems in content placer (if true it will override link stories value)
+	 * @param linkStories Whether to link stories in content placer (only applicable for single story, pageItem links will also be created in case of more than one item)
+	 * @param mapStyles Whether to map styles in content placer
+	 * @param showingOptions Whether to display the link options dialog
 	 */
 	contentPlace(pageItems: PageItem[], linkPageItems?: boolean, linkStories?: boolean, mapStyles?: boolean, showingOptions?: boolean): any[];
 
 	/**
 	 * Converts the PageItem to a different shape.
 	 * @param given The PageItem's new shape.
-	 * @param numberOfSides The number of sides for the resulting polygon. (Range: 3 to 100) 
+	 * @param numberOfSides The number of sides for the resulting polygon. (Range: 3 to 100)
 	 * @param insetPercentage The star inset percentage for the resulting polygon. (Range: 0.0 to 100.0)
-	 * @param cornerRadius The corner radius of the resulting rectangle. 
+	 * @param cornerRadius The corner radius of the resulting rectangle.
 	 */
 	convertShape(given: ConvertShapeOptions, numberOfSides: number, insetPercentage: number, cornerRadius: string | number): void;
 
 	/**
 	 * Create Email QR Code on the page item or document
-	 * @param emailAddress QR code Email Address 
-	 * @param subject QR code Email Subject 
-	 * @param body QR code Email Body Message 
+	 * @param emailAddress QR code Email Address
+	 * @param subject QR code Email Subject
+	 * @param body QR code Email Body Message
 	 * @param qrCodeSwatch Swatch to be applied on generated QR Code Graphic .
-	 * @param withProperties Initial values for properties of the new PageItem. Above parameters can also be passed as properties 
+	 * @param withProperties Initial values for properties of the new PageItem. Above parameters can also be passed as properties
 	 */
 	createEmailQRCode(emailAddress: string, subject: string, body: string, qrCodeSwatch: Swatch | string, withProperties: string[]): void;
 
@@ -35072,7 +35074,7 @@ declare class PageItem {
 	 * Create Hyperlink QR Code on the page item or document
 	 * @param urlLink QR code Hyperlink URL
 	 * @param qrCodeSwatch Swatch to be applied on generated QR Code Graphic .
-	 * @param withProperties Initial values for properties of the new PageItem. Above parameters can also be passed as properties 
+	 * @param withProperties Initial values for properties of the new PageItem. Above parameters can also be passed as properties
 	 */
 	createHyperlinkQRCode(urlLink: string, qrCodeSwatch: Swatch | string, withProperties: string[]): void;
 
@@ -35080,36 +35082,36 @@ declare class PageItem {
 	 * Create Plain Text QR Code on the page item
 	 * @param plainText QR code Plain Text
 	 * @param qrCodeSwatch Swatch to be applied on generated QR Code Graphic .
-	 * @param withProperties Initial values for properties of the new PageItem. Above parameters can also be passed as properties 
+	 * @param withProperties Initial values for properties of the new PageItem. Above parameters can also be passed as properties
 	 */
 	createPlainTextQRCode(plainText: string, qrCodeSwatch: Swatch | string, withProperties: string[]): void;
 
 	/**
 	 * Create Text Msg QR Code on the page item or document
-	 * @param cellNumber QR code Text Phone Number 
-	 * @param textMessage QR code Text Message 
+	 * @param cellNumber QR code Text Phone Number
+	 * @param textMessage QR code Text Message
 	 * @param qrCodeSwatch Swatch to be applied on generated QR Code Graphic .
-	 * @param withProperties Initial values for properties of the new PageItem. Above parameters can also be passed as properties 
+	 * @param withProperties Initial values for properties of the new PageItem. Above parameters can also be passed as properties
 	 */
 	createTextMsgQRCode(cellNumber: string, textMessage: string, qrCodeSwatch: Swatch | string, withProperties: string[]): void;
 
 	/**
 	 * Create Business Card QR Code on the page item or load on document's placegun
-	 * @param firstName QR code Business Card First Name 
-	 * @param lastName QR code Business Card Last Name 
-	 * @param jobTitle QR code Business Card Title 
-	 * @param cellPhone QR code Business Card Cell Phone Number 
-	 * @param phone QR code Business Card Phone Number 
-	 * @param email QR code Business Card Email Address 
-	 * @param organisation QR code Business Card Organisation 
-	 * @param streetAddress QR code Business Card Street Address 
-	 * @param city QR code Business Card City 
-	 * @param adrState QR code Business Card State 
-	 * @param country QR code Business Card Country 
-	 * @param postalCode QR code Business Card Postal Code 
-	 * @param website QR code Business Card URL 
+	 * @param firstName QR code Business Card First Name
+	 * @param lastName QR code Business Card Last Name
+	 * @param jobTitle QR code Business Card Title
+	 * @param cellPhone QR code Business Card Cell Phone Number
+	 * @param phone QR code Business Card Phone Number
+	 * @param email QR code Business Card Email Address
+	 * @param organisation QR code Business Card Organisation
+	 * @param streetAddress QR code Business Card Street Address
+	 * @param city QR code Business Card City
+	 * @param adrState QR code Business Card State
+	 * @param country QR code Business Card Country
+	 * @param postalCode QR code Business Card Postal Code
+	 * @param website QR code Business Card URL
 	 * @param qrCodeSwatch Swatch to be applied on generated QR Code Graphic .
-	 * @param withProperties Initial values for properties of the new PageItem. Above parameters can also be passed as properties 
+	 * @param withProperties Initial values for properties of the new PageItem. Above parameters can also be passed as properties
 	 */
 	createVCardQRCode(firstName: string, lastName: string, jobTitle: string, cellPhone: string, phone: string, email: string, organisation: string, streetAddress: string, city: string, adrState: string, country: string, postalCode: string, website: string, qrCodeSwatch: Swatch | string, withProperties: string[]): void;
 
@@ -35121,7 +35123,7 @@ declare class PageItem {
 	/**
 	 * Duplicates the PageItem at the specified location or offset.
 	 * @param to The location of the new PageItem, specified in coordinates in the format [x, y].
-	 * @param by Amount by which to offset the new PageItem from the original PageItem's position. 
+	 * @param by Amount by which to offset the new PageItem from the original PageItem's position.
 	 */
 	duplicate(to: [number | string, number | string] | Spread | Page | Layer, by: string[] | number[]): PageItem;
 
@@ -35129,10 +35131,10 @@ declare class PageItem {
 	 * Exports the object(s) to a file.
 	 * @param format The export format, specified as an enumeration value or as an extension that appears in the Save as type or Format menu in the Export dialog.
 	 * @param to The path to the export file.
-	 * @param showingOptions If true, displays the export options dialog. 
-	 * @param using The export style. 
-	 * @param versionComments The comment for this version. 
-	 * @param forceSave If true, forcibly saves a version. 
+	 * @param showingOptions If true, displays the export options dialog.
+	 * @param using The export style.
+	 * @param versionComments The comment for this version.
+	 * @param forceSave If true, forcibly saves a version.
 	 */
 	exportFile(format: ExportFormat | string, to: File, showingOptions?: boolean, using?: PDFExportPreset, versionComments?: string, forceSave?: boolean): void;
 
@@ -35144,7 +35146,7 @@ declare class PageItem {
 
 	/**
 	 * Finds objects that match the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findObject(reverseOrder: boolean): PageItem[];
 
@@ -35182,7 +35184,7 @@ declare class PageItem {
 	/**
 	 * Moves the PageItem to a new location. Note: Either the 'to' or 'by' parameter is required; if both parameters are defined, only the to value is used.
 	 * @param to The new location of the PageItem,in the format (x, y).
-	 * @param by The amount (in measurement units) to move the PageItem relative to its current position, in the format (x, y). 
+	 * @param by The amount (in measurement units) to move the PageItem relative to its current position, in the format (x, y).
 	 */
 	move(to: [number | string, number | string] | Spread | Page | Layer, by: string[] | number[]): void;
 
@@ -35195,8 +35197,8 @@ declare class PageItem {
 	/**
 	 * Places the file.
 	 * @param fileName The file to place
-	 * @param showingOptions Whether to display the import options dialog 
-	 * @param withProperties Initial values for properties of the placed object(s) 
+	 * @param showingOptions Whether to display the import options dialog
+	 * @param withProperties Initial values for properties of the placed object(s)
 	 */
 	place(fileName: File, showingOptions?: boolean, withProperties?: object): any[];
 
@@ -35208,7 +35210,7 @@ declare class PageItem {
 
 	/**
 	 * Apply an item's scaling to its content if possible.
-	 * @param to The scale factors to be left on the item.The default is {1.0, 1.0}. 
+	 * @param to The scale factors to be left on the item.The default is {1.0, 1.0}.
 	 */
 	redefineScaling(to: number[]): void;
 
@@ -35228,7 +35230,7 @@ declare class PageItem {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -35243,8 +35245,8 @@ declare class PageItem {
 	 * @param from The transform origin. Legal specifications: relative to bounding box: anchor | {anchor | {x,y}, bounds kind [, coordinate space]}; relative to coordinate space: {x,y} | {{x,y}[, coordinate space]}; relative to layout window ruler: {{x,y}, page index | bounds kind}. Can accept: Array of 2 Reals, AnchorPoint enumerator or Array of Arrays of 2 Reals, CoordinateSpaces enumerators, AnchorPoint enumerators, BoundingBoxLimits enumerators or Long Integers.
 	 * @param by How the current dimensions are affected by the given values
 	 * @param values The width and height values. Legal dimensions specifications: {x, y [, coordinate space]}, {x, resize constraint [, coordinate space]}, or {resize constraint, y [, coordinate space]}; where x and y are real numbers and coordinate space is used to determine _only_ the unit of length for x and y; coordinate space is ignored for the 'current dimensions times' resize method).
-	 * @param resizeIndividually If false and multiple page items are targeted, the new dimensions are attained only by moving the individual items rather than resizing them. 
-	 * @param consideringRulerUnits If true then a ruler location is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page. 
+	 * @param resizeIndividually If false and multiple page items are targeted, the new dimensions are attained only by moving the individual items rather than resizing them.
+	 * @param consideringRulerUnits If true then a ruler location is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page.
 	 */
 	resize(in_: any, from: any, by: ResizeMethods, values: number[] | ResizeConstraints | CoordinateSpaces, resizeIndividually?: boolean, consideringRulerUnits?: boolean): void;
 
@@ -35252,20 +35254,20 @@ declare class PageItem {
 	 * Get the coordinates of the given location in the specified coordinate system.
 	 * @param location The location requested. Can accept: Array of 2 Reals, AnchorPoint enumerator or Array of Arrays of 2 Reals, CoordinateSpaces enumerators, AnchorPoint enumerators, BoundingBoxLimits enumerators or Long Integers.
 	 * @param in The coordinate space to use.
-	 * @param consideringRulerUnits If true then a ruler location is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page. 
+	 * @param consideringRulerUnits If true then a ruler location is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page.
 	 */
 	resolve(location: any, in_: CoordinateSpaces, consideringRulerUnits?: boolean): any;
 
 	/**
 	 * Selects the object.
-	 * @param existingSelection The selection status of the PageItem in relation to previously selected objects. 
+	 * @param existingSelection The selection status of the PageItem in relation to previously selected objects.
 	 */
 	select(existingSelection?: SelectionOptions): void;
 
 	/**
 	 * Stores the object in the specified library.
 	 * @param using The library in which to store the object.
-	 * @param withProperties Initial values for properties of the new PageItem 
+	 * @param withProperties Initial values for properties of the new PageItem
 	 */
 	store(using: Library, withProperties: object): Asset;
 
@@ -35285,7 +35287,7 @@ declare class PageItem {
 	 * @param from The temporary origin during the transformation. Can accept: Array of 2 Reals, AnchorPoint enumerator or Array of Arrays of 2 Reals, CoordinateSpaces enumerators, AnchorPoint enumerators, BoundingBoxLimits enumerators or Long Integers.
 	 * @param withMatrix Transform matrix.
 	 * @param replacingCurrent Transform components to consider; providing this optional parameter causes the target's existing transform components to be replaced with new values.Without this parameter, the given matrix is concatenated onto the target's existing transform combining the effect of the two.
-	 * @param consideringRulerUnits If true then a ruler based origin is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page. 
+	 * @param consideringRulerUnits If true then a ruler based origin is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page.
 	 */
 	transform(in_: CoordinateSpaces, from: any, withMatrix: [number, number, number, number, number, number] | TransformationMatrix, replacingCurrent: MatrixContent | MatrixContent[] | number, consideringRulerUnits?: boolean): void;
 
@@ -35449,10 +35451,10 @@ declare class Ovals {
 
 	/**
 	 * Creates a new Oval
-	 * @param layer The layer on which to create the Oval. 
-	 * @param at The location at which to insert the Oval relative to the reference object or within the container object. 
+	 * @param layer The layer on which to create the Oval.
+	 * @param at The location at which to insert the Oval relative to the reference object or within the container object.
 	 * @param reference The reference object. Note: Required when the at parameter is before or after.
-	 * @param withProperties Initial values for properties of the new Oval 
+	 * @param withProperties Initial values for properties of the new Oval
 	 */
 	add(layer: Layer, at?: LocationOptions, reference?: Document | Spread | MasterSpread | Page | Layer | PageItem, withProperties?: object): Oval;
 
@@ -35573,10 +35575,10 @@ declare class Rectangles {
 
 	/**
 	 * Creates a new Rectangle
-	 * @param layer The layer on which to create the Rectangle. 
-	 * @param at The location at which to insert the Rectangle relative to the reference object or within the container object. 
+	 * @param layer The layer on which to create the Rectangle.
+	 * @param at The location at which to insert the Rectangle relative to the reference object or within the container object.
 	 * @param reference The reference object. Note: Required when the at parameter is before or after.
-	 * @param withProperties Initial values for properties of the new Rectangle 
+	 * @param withProperties Initial values for properties of the new Rectangle
 	 */
 	add(layer: Layer, at?: LocationOptions, reference?: Document | Spread | MasterSpread | Page | Layer | PageItem, withProperties?: object): Rectangle;
 
@@ -35677,10 +35679,10 @@ declare class GraphicLines {
 
 	/**
 	 * Creates a new GraphicLine
-	 * @param layer The layer on which to create the GraphicLine. 
-	 * @param at The location at which to insert the GraphicLine relative to the reference object or within the container object. 
+	 * @param layer The layer on which to create the GraphicLine.
+	 * @param at The location at which to insert the GraphicLine relative to the reference object or within the container object.
 	 * @param reference The reference object. Note: Required when the at parameter is before or after.
-	 * @param withProperties Initial values for properties of the new GraphicLine 
+	 * @param withProperties Initial values for properties of the new GraphicLine
 	 */
 	add(layer: Layer, at?: LocationOptions, reference?: Document | Spread | MasterSpread | Page | Layer | PageItem, withProperties?: object): GraphicLine;
 
@@ -35801,12 +35803,12 @@ declare class Polygons {
 
 	/**
 	 * Creates a new Polygon.
-	 * @param layer The layer on which to create the Polygon. 
-	 * @param numberOfSides The number of sides to give the Polygon. (Range: 3 to 100) 
-	 * @param insetPercentage The star inset percentage applied to the Polygon. 
-	 * @param at The location at which to insert the Polygon relative to the reference object or within the container object. 
+	 * @param layer The layer on which to create the Polygon.
+	 * @param numberOfSides The number of sides to give the Polygon. (Range: 3 to 100)
+	 * @param insetPercentage The star inset percentage applied to the Polygon.
+	 * @param at The location at which to insert the Polygon relative to the reference object or within the container object.
 	 * @param reference The reference object. Note: Required when the at parameter is before or after.
-	 * @param withProperties Initial values for properties of the new Polygon 
+	 * @param withProperties Initial values for properties of the new Polygon
 	 */
 	add(layer: Layer, numberOfSides: number, insetPercentage: number, at?: LocationOptions, reference?: Document | Spread | MasterSpread | Page | Layer | PageItem, withProperties?: object): Polygon;
 
@@ -36005,7 +36007,7 @@ declare class Group extends PageItem {
 
 	/**
 	 * Brings the Group to the front of its layer or in front of a particular item.
-	 * @param reference The reference object to bring the object in front of (must have same parent) 
+	 * @param reference The reference object to bring the object in front of (must have same parent)
 	 */
 	bringToFront(reference: PageItem): void;
 
@@ -36016,7 +36018,7 @@ declare class Group extends PageItem {
 
 	/**
 	 * Sends the Group to the back of its layer or behind a particular item (must have same parent).
-	 * @param reference The reference object to send the object behind 
+	 * @param reference The reference object to send the object behind
 	 */
 	sendToBack(reference: PageItem): void;
 
@@ -36045,10 +36047,10 @@ declare class Groups {
 	/**
 	 * Creates a new Group.
 	 * @param groupItems The objects to group.
-	 * @param layer The layer on which to create the Group. 
-	 * @param at The location at which to insert the Group relative to the reference object or within the container object. 
+	 * @param layer The layer on which to create the Group.
+	 * @param at The location at which to insert the Group relative to the reference object or within the container object.
 	 * @param reference The reference object. Note: Required when the at parameter is before or after.
-	 * @param withProperties Initial values for properties of the new Group 
+	 * @param withProperties Initial values for properties of the new Group
 	 */
 	add(groupItems: PageItem[], layer: Layer, at?: LocationOptions, reference?: Document | Spread | MasterSpread | Page | Layer | PageItem, withProperties?: object): Group;
 
@@ -36915,7 +36917,7 @@ declare class TransformationMatrix {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -36945,29 +36947,29 @@ declare class TransformationMatrix {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
 	/**
 	 * Rotate the transformation matrix.
-	 * @param byAngle The counterclockwise rotation angle 
-	 * @param byCosine The cosine of the desired rotation 
-	 * @param bySine The sine of the desired rotation 
+	 * @param byAngle The counterclockwise rotation angle
+	 * @param byCosine The cosine of the desired rotation
+	 * @param bySine The sine of the desired rotation
 	 */
 	rotateMatrix(byAngle: number, byCosine: number, bySine: number): TransformationMatrix;
 
 	/**
 	 * Scale the transformation matrix.
-	 * @param horizontallyBy The horizontal scale factor 
-	 * @param verticallyBy The vertical scale factor 
+	 * @param horizontallyBy The horizontal scale factor
+	 * @param verticallyBy The vertical scale factor
 	 */
 	scaleMatrix(horizontallyBy: number, verticallyBy: number): TransformationMatrix;
 
 	/**
 	 * Shear the transformation matrix.
-	 * @param byAngle The horizontal shear angle 
-	 * @param bySlope The horizontal shear slope 
+	 * @param byAngle The horizontal shear angle
+	 * @param bySlope The horizontal shear slope
 	 */
 	shearMatrix(byAngle: number, bySlope: number): TransformationMatrix;
 
@@ -36983,8 +36985,8 @@ declare class TransformationMatrix {
 
 	/**
 	 * Translate the transformation matrix.
-	 * @param horizontallyBy The horizontal translation distance 
-	 * @param verticallyBy The vertical translation distance 
+	 * @param horizontallyBy The horizontal translation distance
+	 * @param verticallyBy The vertical translation distance
 	 */
 	translateMatrix(horizontallyBy: number, verticallyBy: number): TransformationMatrix;
 
@@ -37007,15 +37009,15 @@ declare class TransformationMatrices {
 
 	/**
 	 * Create a new TransformationMatrix.
-	 * @param horizontalScaleFactor The horizontal scale factor of the transformation matrix 
-	 * @param verticalScaleFactor The vertical scale factor of the transformation matrix 
-	 * @param clockwiseShearAngle The shear angle of the transformation matrix 
-	 * @param counterclockwiseRotationAngle The rotation angle of the transformation matrix 
-	 * @param horizontalTranslation The horizontal translation of the transformation matrix 
-	 * @param verticalTranslation The vertical translation of the transformation matrix 
-	 * @param matrixValues The values of the transformation matrix 
-	 * @param matrixMapping The mapping the transformation matrix performs on the unit triangle. Can accept: Array of Array of 2 Arrays of 2 Reals. 
-	 * @param withProperties Initial values for properties of the new TransformationMatrix 
+	 * @param horizontalScaleFactor The horizontal scale factor of the transformation matrix
+	 * @param verticalScaleFactor The vertical scale factor of the transformation matrix
+	 * @param clockwiseShearAngle The shear angle of the transformation matrix
+	 * @param counterclockwiseRotationAngle The rotation angle of the transformation matrix
+	 * @param horizontalTranslation The horizontal translation of the transformation matrix
+	 * @param verticalTranslation The vertical translation of the transformation matrix
+	 * @param matrixValues The values of the transformation matrix
+	 * @param matrixMapping The mapping the transformation matrix performs on the unit triangle. Can accept: Array of Array of 2 Arrays of 2 Reals.
+	 * @param withProperties Initial values for properties of the new TransformationMatrix
 	 */
 	add(horizontalScaleFactor: number, verticalScaleFactor: number, clockwiseShearAngle: number, counterclockwiseRotationAngle: number, horizontalTranslation: number, verticalTranslation: number, matrixValues: number[], matrixMapping: any[], withProperties: object): TransformationMatrix;
 
@@ -37251,7 +37253,7 @@ declare class Guide {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -37285,8 +37287,8 @@ declare class Guide {
 
 	/**
 	 * Moves the guide to a new location. Note: Either the to or the by parameter is required; if both parameters are defined, only the to value is used.
-	 * @param to The new location of the guide, in the format [x, y]. 
-	 * @param by The amount to move the guide relative to its current position, in the format [x, y]. 
+	 * @param to The new location of the guide, in the format [x, y].
+	 * @param by The amount to move the guide relative to its current position, in the format [x, y].
 	 */
 	move(to: string[] | number[], by: string[] | number[]): void;
 
@@ -37305,7 +37307,7 @@ declare class Guide {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -37318,13 +37320,13 @@ declare class Guide {
 	 * Get the coordinates of the given location in the specified coordinate system.
 	 * @param location The location requested. Can accept: Array of 2 Reals, AnchorPoint enumerator or Array of Arrays of 2 Reals, CoordinateSpaces enumerators, AnchorPoint enumerators, BoundingBoxLimits enumerators or Long Integers.
 	 * @param in The coordinate space to use.
-	 * @param consideringRulerUnits If true then a ruler location is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page. 
+	 * @param consideringRulerUnits If true then a ruler location is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page.
 	 */
 	resolve(location: any, in_: CoordinateSpaces, consideringRulerUnits?: boolean): any;
 
 	/**
 	 * Selects the object.
-	 * @param existingSelection The selection status of the Guide in relation to previously selected objects. 
+	 * @param existingSelection The selection status of the Guide in relation to previously selected objects.
 	 */
 	select(existingSelection?: SelectionOptions): void;
 
@@ -37363,8 +37365,8 @@ declare class Guides {
 
 	/**
 	 * Creates a new guide.
-	 * @param layer The layer on which to create the guide. 
-	 * @param withProperties Initial values for properties of the new Guide 
+	 * @param layer The layer on which to create the guide.
+	 * @param withProperties Initial values for properties of the new Guide
 	 */
 	add(layer: Layer, withProperties: object): Guide;
 
@@ -37627,7 +37629,7 @@ declare class Section {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -37658,7 +37660,7 @@ declare class Section {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -37691,8 +37693,8 @@ declare class Sections {
 
 	/**
 	 * Creates a new section.
-	 * @param reference The page on which the section begins. 
-	 * @param withProperties Initial values for properties of the new Section 
+	 * @param reference The page on which the section begins.
+	 * @param withProperties Initial values for properties of the new Section
 	 */
 	add(reference: Page, withProperties: object): Section;
 
@@ -37823,7 +37825,7 @@ declare class Path {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -37841,7 +37843,7 @@ declare class Path {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -37879,7 +37881,7 @@ declare class Paths {
 
 	/**
 	 * Creates a new Path.
-	 * @param withProperties Initial values for properties of the new Path 
+	 * @param withProperties Initial values for properties of the new Path
 	 */
 	add(withProperties: object): Path;
 
@@ -38003,7 +38005,7 @@ declare class PathPoint {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -38015,7 +38017,7 @@ declare class PathPoint {
 	/**
 	 * Join this path point to another path point. The two points must be end points and their paths combined into a single path on a single page item.
 	 * @param reference The reference object. The path point to join to
-	 * @param given The join option to use. 
+	 * @param given The join option to use.
 	 */
 	join(reference: PathPoint, given: JoinOptions): void;
 
@@ -38028,7 +38030,7 @@ declare class PathPoint {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -38061,7 +38063,7 @@ declare class PathPoints {
 
 	/**
 	 * Creates a new PathPoint.
-	 * @param withProperties Initial values for properties of the new PathPoint 
+	 * @param withProperties Initial values for properties of the new PathPoint
 	 */
 	add(withProperties: object): PathPoint;
 
@@ -38324,14 +38326,14 @@ declare class SplineItem extends PageItem {
 
 	/**
 	 * Brings the SplineItem to the front of its layer or in front of a particular item.
-	 * @param reference The reference object to bring the object in front of (must have same parent) 
+	 * @param reference The reference object to bring the object in front of (must have same parent)
 	 */
 	bringToFront(reference: PageItem): void;
 
 	/**
 	 * Checks in the story or stories.
-	 * @param versionComments The comment for this version. 
-	 * @param forceSave If true, forcibly saves a version. 
+	 * @param versionComments The comment for this version.
+	 * @param forceSave If true, forcibly saves a version.
 	 */
 	checkIn(versionComments: string, forceSave?: boolean): boolean;
 
@@ -38381,7 +38383,7 @@ declare class SplineItem extends PageItem {
 
 	/**
 	 * Sends the SplineItem to the back of its layer or behind a particular item (must have same parent).
-	 * @param reference The reference object to send the object behind 
+	 * @param reference The reference object to send the object behind
 	 */
 	sendToBack(reference: PageItem): void;
 
@@ -38503,7 +38505,7 @@ declare class EPSText extends PageItem {
 
 	/**
 	 * Brings the EPSText to the front of its layer or in front of a particular item.
-	 * @param reference The reference object to bring the object in front of (must have same parent) 
+	 * @param reference The reference object to bring the object in front of (must have same parent)
 	 */
 	bringToFront(reference: PageItem): void;
 
@@ -38514,7 +38516,7 @@ declare class EPSText extends PageItem {
 
 	/**
 	 * Sends the EPSText to the back of its layer or behind a particular item (must have same parent).
-	 * @param reference The reference object to send the object behind 
+	 * @param reference The reference object to send the object behind
 	 */
 	sendToBack(reference: PageItem): void;
 
@@ -38657,7 +38659,7 @@ declare class ImportedPages {
 
 	/**
 	 * Creates a new ImportedPage.
-	 * @param withProperties Initial values for properties of the new ImportedPage 
+	 * @param withProperties Initial values for properties of the new ImportedPage
 	 */
 	add(withProperties: object): ImportedPage;
 
@@ -39018,7 +39020,7 @@ declare class Snippet {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -39049,7 +39051,7 @@ declare class Snippet {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -39253,13 +39255,13 @@ declare class MotionPreset {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
 	/**
 	 * Duplicates the motion preset.
-	 * @param name The name for the duplicated motion preset. 
+	 * @param name The name for the duplicated motion preset.
 	 */
 	duplicate(name: string): MotionPreset;
 
@@ -39290,7 +39292,7 @@ declare class MotionPreset {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -39329,7 +39331,7 @@ declare class MotionPresets {
 
 	/**
 	 * Creates a new MotionPreset.
-	 * @param withProperties Initial values for properties of the new MotionPreset 
+	 * @param withProperties Initial values for properties of the new MotionPreset
 	 */
 	add(withProperties: object): MotionPreset;
 
@@ -39475,7 +39477,7 @@ declare class Article {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -39500,7 +39502,7 @@ declare class Article {
 	/**
 	 * Moves the Article to the specified location.
 	 * @param to The location relative to the reference object or within the containing object.
-	 * @param reference The reference object. Note: Required when the to value specifies before or after. 
+	 * @param reference The reference object. Note: Required when the to value specifies before or after.
 	 */
 	move(to: LocationOptions, reference: Article): Article;
 
@@ -39513,7 +39515,7 @@ declare class Article {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -39546,11 +39548,11 @@ declare class Articles {
 
 	/**
 	 * Creates a new Article
-	 * @param name The article name 
-	 * @param articleExportStatus The article's export status 
-	 * @param at The location relative to the reference object or within the containing object. 
-	 * @param reference The reference object. Note: Required when the to value specifies before or after. 
-	 * @param withProperties Initial values for properties of the new Article 
+	 * @param name The article name
+	 * @param articleExportStatus The article's export status
+	 * @param at The location relative to the reference object or within the containing object.
+	 * @param reference The reference object. Note: Required when the to value specifies before or after.
+	 * @param withProperties Initial values for properties of the new Article
 	 */
 	add(name: string, articleExportStatus: boolean, at?: LocationOptions, reference?: Article, withProperties?: object): Article;
 
@@ -39676,7 +39678,7 @@ declare class ArticleMember {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -39688,7 +39690,7 @@ declare class ArticleMember {
 	/**
 	 * Moves the ArticleMember to the specified location.
 	 * @param to The location relative to the reference object or within the containing object.
-	 * @param reference The reference object. Note: Required when the to value specifies before or after. 
+	 * @param reference The reference object. Note: Required when the to value specifies before or after.
 	 */
 	move(to: LocationOptions, reference: ArticleMember): ArticleMember;
 
@@ -39701,7 +39703,7 @@ declare class ArticleMember {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -39735,9 +39737,9 @@ declare class ArticleMembers {
 	/**
 	 * Adds a new member.
 	 * @param itemRef page item to be added to article
-	 * @param at The location relative to the reference object or within the containing object. 
-	 * @param reference The reference object. Note: Required when the to value specifies before or after. 
-	 * @param withProperties Initial values for properties of the new ArticleMember 
+	 * @param at The location relative to the reference object or within the containing object.
+	 * @param reference The reference object. Note: Required when the to value specifies before or after.
+	 * @param withProperties Initial values for properties of the new ArticleMember
 	 */
 	add(itemRef: PageItem, at?: LocationOptions, reference?: ArticleMember, withProperties?: object): ArticleMember;
 
@@ -39857,7 +39859,7 @@ declare class ArticleChild {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -39869,7 +39871,7 @@ declare class ArticleChild {
 	/**
 	 * Moves the ArticleChild to the specified location.
 	 * @param to The location relative to the reference object or within the containing object.
-	 * @param reference The reference object. Note: Required when the to value specifies before or after. 
+	 * @param reference The reference object. Note: Required when the to value specifies before or after.
 	 */
 	move(to: LocationOptions, reference: ArticleChild): ArticleChild;
 
@@ -39877,7 +39879,7 @@ declare class ArticleChild {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -40009,10 +40011,10 @@ declare class HtmlItems {
 
 	/**
 	 * Creates a new HtmlItem
-	 * @param layer The layer on which to create the HtmlItem. 
-	 * @param at The location at which to insert the HtmlItem relative to the reference object or within the container object. 
+	 * @param layer The layer on which to create the HtmlItem.
+	 * @param at The location at which to insert the HtmlItem relative to the reference object or within the container object.
 	 * @param reference The reference object. Note: Required when the at parameter is before or after.
-	 * @param withProperties Initial values for properties of the new HtmlItem 
+	 * @param withProperties Initial values for properties of the new HtmlItem
 	 */
 	add(layer: Layer, at?: LocationOptions, reference?: Document | Spread | MasterSpread | Page | Layer | PageItem, withProperties?: object): HtmlItem;
 
@@ -40153,7 +40155,7 @@ declare class Library {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -40171,14 +40173,14 @@ declare class Library {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
 	/**
 	 * Stores the specified object in the library.
 	 * @param using The page item(s) to store.
-	 * @param withProperties Initial values for properties of the new Library 
+	 * @param withProperties Initial values for properties of the new Library
 	 */
 	store(using: PageItem[] | Movies | Sounds | Graphics | XMLElements, withProperties: object): Asset;
 
@@ -40212,7 +40214,7 @@ declare class Libraries {
 	/**
 	 * Creates a new object libary.
 	 * @param fullName The library's path and file name.
-	 * @param withProperties Initial values for properties of the new Library 
+	 * @param withProperties Initial values for properties of the new Library
 	 */
 	add(fullName: File, withProperties: object): Library;
 
@@ -40352,7 +40354,7 @@ declare class Asset {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -40389,13 +40391,13 @@ declare class Asset {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
 	/**
 	 * Selects the object.
-	 * @param existingSelection The selection status of the Asset in relation to previously selected objects. 
+	 * @param existingSelection The selection status of the Asset in relation to previously selected objects.
 	 */
 	select(existingSelection?: SelectionOptions): void;
 
@@ -40693,22 +40695,22 @@ declare class Link {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
 	/**
 	 * Check in to Version Cue.
-	 * @param versionComments The comment for this version 
-	 * @param forceSave Forcibly save a version 
+	 * @param versionComments The comment for this version
+	 * @param forceSave Forcibly save a version
 	 */
 	checkIn(versionComments: string, forceSave?: boolean): void;
 
 	/**
 	 * Copies the link file to the specified location.
 	 * @param to The file or folder to which to copy the file.
-	 * @param versionComments The comment for this version. 
-	 * @param forceSave If true, forcibly saves a version. 
+	 * @param versionComments The comment for this version.
+	 * @param forceSave If true, forcibly saves a version.
 	 */
 	copyLink(to: File, versionComments: string, forceSave?: boolean): void;
 
@@ -40755,7 +40757,7 @@ declare class Link {
 	/**
 	 * Experimental: Relink the text fragment link to a new uri
 	 * @param linkResourceURI Resource URI to relink to.
-	 * @param name The tag name for the key. 
+	 * @param name The tag name for the key.
 	 */
 	relinkTextFragmentLink(linkResourceURI: string, name: string): void;
 
@@ -40763,7 +40765,7 @@ declare class Link {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -40799,9 +40801,9 @@ declare class Link {
 
 	/**
 	 * Unembeds the source file. If no folder is specified, creates a link to the original source file; if a folder is specified, copies the file to the folder and creates a link to the copied file.
-	 * @param to The folder to which to copy the unembedded file. 
-	 * @param versionComments The comment for this version. 
-	 * @param forceSave If true, forcibly saves a version. 
+	 * @param to The folder to which to copy the unembedded file.
+	 * @param versionComments The comment for this version.
+	 * @param forceSave If true, forcibly saves a version.
 	 */
 	unembed(to: File, versionComments: string, forceSave?: boolean): void;
 
@@ -40944,7 +40946,7 @@ declare class HttpLinkConnectionManagerObject {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -40976,7 +40978,7 @@ declare class HttpLinkConnectionManagerObject {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -41490,7 +41492,7 @@ declare class ObjectStyle {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -41526,7 +41528,7 @@ declare class ObjectStyle {
 
 	/**
 	 * Deletes the style.
-	 * @param replacingWith The style to apply in place of the deleted style. 
+	 * @param replacingWith The style to apply in place of the deleted style.
 	 */
 	remove(replacingWith: ObjectStyle): void;
 
@@ -41534,7 +41536,7 @@ declare class ObjectStyle {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -41581,7 +41583,7 @@ declare class ObjectStyles {
 
 	/**
 	 * Creates a new ObjectStyle.
-	 * @param withProperties Initial values for properties of the new ObjectStyle 
+	 * @param withProperties Initial values for properties of the new ObjectStyle
 	 */
 	add(withProperties: object): ObjectStyle;
 
@@ -41717,7 +41719,7 @@ declare class ObjectStyleExportTagMap {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -41735,7 +41737,7 @@ declare class ObjectStyleExportTagMap {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -41772,7 +41774,7 @@ declare class ObjectStyleExportTagMaps {
 	 * @param exportTag The tag to map.
 	 * @param exportClass The class to map.
 	 * @param exportAttributes The attributes to map.
-	 * @param withProperties Initial values for properties of the new ObjectStyleExportTagMap 
+	 * @param withProperties Initial values for properties of the new ObjectStyleExportTagMap
 	 */
 	add(exportType: string, exportTag: string, exportClass: string, exportAttributes: string, withProperties: object): ObjectStyleExportTagMap;
 
@@ -44316,7 +44318,7 @@ declare class DocumentPreset {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -44352,7 +44354,7 @@ declare class DocumentPreset {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -44385,7 +44387,7 @@ declare class DocumentPresets {
 
 	/**
 	 * Creates a new DocumentPreset.
-	 * @param withProperties Initial values for properties of the new DocumentPreset 
+	 * @param withProperties Initial values for properties of the new DocumentPreset
 	 */
 	add(withProperties: object): DocumentPreset;
 
@@ -45785,7 +45787,7 @@ declare class GraphicLayer {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -45798,7 +45800,7 @@ declare class GraphicLayer {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -46733,7 +46735,7 @@ declare class PDFExportPreset {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -46756,7 +46758,7 @@ declare class PDFExportPreset {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -46789,7 +46791,7 @@ declare class PDFExportPresets {
 
 	/**
 	 * Creates a new PDFExportPreset.
-	 * @param withProperties Initial values for properties of the new PDFExportPreset 
+	 * @param withProperties Initial values for properties of the new PDFExportPreset
 	 */
 	add(withProperties: object): PDFExportPreset;
 
@@ -47303,8 +47305,8 @@ declare class PageItemDefault extends Preference {
 	/**
 	 * Applies the specified object style.
 	 * @param using The object style to apply.
-	 * @param clearingOverrides If true, clears the PageItemDefault's existing attributes before applying the style. 
-	 * @param clearingOverridesThroughRootObjectStyle If true, clears attributes and formatting applied to the PageItemDefault that are not defined in the object style. 
+	 * @param clearingOverrides If true, clears the PageItemDefault's existing attributes before applying the style.
+	 * @param clearingOverridesThroughRootObjectStyle If true, clears attributes and formatting applied to the PageItemDefault that are not defined in the object style.
 	 */
 	applyObjectStyle(using: ObjectStyle, clearingOverrides?: boolean, clearingOverridesThroughRootObjectStyle?: boolean): void;
 
@@ -47846,7 +47848,7 @@ declare class Preference {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -47859,7 +47861,7 @@ declare class Preference {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -56299,7 +56301,7 @@ declare class PrinterPreset {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -56322,7 +56324,7 @@ declare class PrinterPreset {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -56355,7 +56357,7 @@ declare class PrinterPresets {
 
 	/**
 	 * Creates a new PrinterPreset.
-	 * @param withProperties Initial values for properties of the new PrinterPreset 
+	 * @param withProperties Initial values for properties of the new PrinterPreset
 	 */
 	add(withProperties: object): PrinterPreset;
 
@@ -56784,7 +56786,7 @@ declare class AnchoredObjectSetting extends Preference {
 	/**
 	 * Inserts the anchored object into specified story.
 	 * @param storyOffset The location within the story, specified as an insertion point.
-	 * @param anchoredPosition The position of the anchored object relative to the anchor. 
+	 * @param anchoredPosition The position of the anchored object relative to the anchor.
 	 */
 	insertAnchoredObject(storyOffset: InsertionPoint, anchoredPosition: AnchorPosition): void;
 
@@ -57669,7 +57671,7 @@ declare class FlattenerPreset {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -57705,7 +57707,7 @@ declare class FlattenerPreset {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -57738,7 +57740,7 @@ declare class FlattenerPresets {
 
 	/**
 	 * Creates a new FlattenerPreset.
-	 * @param withProperties Initial values for properties of the new FlattenerPreset 
+	 * @param withProperties Initial values for properties of the new FlattenerPreset
 	 */
 	add(withProperties: object): FlattenerPreset;
 
@@ -59259,7 +59261,7 @@ declare class MetadataPreference extends Preference {
 	/**
 	 * Uses metadata from the specified external file to define any undefined metadata properties in the document.
 	 * @param from The path to the external file that contains the metadata.
-	 * @param affectAll If true, also replaces existing metadata with data from the external file. If false, does not replace existing metadata. Note: Defaults to false. 
+	 * @param affectAll If true, also replaces existing metadata with data from the external file. If false, does not replace existing metadata. Note: Defaults to false.
 	 */
 	append(from: File, affectAll?: boolean): void;
 
@@ -59274,8 +59276,8 @@ declare class MetadataPreference extends Preference {
 	 * Creates an empty container.
 	 * @param namespace The namespace of the container.
 	 * @param path The path to the container.
-	 * @param index The index of the item within the container. Specified values must be 1 or greater. To append the item to the end of the index and allow the next available value to be assigned, use 0. 
-	 * @param container The container type. Note: Required when the new item is the first item added to the container. 
+	 * @param index The index of the item within the container. Specified values must be 1 or greater. To append the item to the end of the index and allow the next available value to be assigned, use 0.
+	 * @param container The container type. Note: Required when the new item is the first item added to the container.
 	 */
 	createContainerItem(namespace: string, path: string, index?: number, container?: ContainerType): void;
 
@@ -59289,7 +59291,7 @@ declare class MetadataPreference extends Preference {
 	/**
 	 * Replaces the current metadata in the document with metadata from the specified file.
 	 * @param using The full path to the file that contains the replacement metadata.
-	 * @param affectAll If true, treats all properties as external. Note: Defaults to false. 
+	 * @param affectAll If true, treats all properties as external. Note: Defaults to false.
 	 */
 	replace(using: File, affectAll?: boolean): void;
 
@@ -59393,7 +59395,7 @@ declare class DisplaySetting {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -59406,7 +59408,7 @@ declare class DisplaySetting {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -60417,14 +60419,14 @@ declare class DataMerge extends Preference {
 	/**
 	 * Merges records and exports to PDF.
 	 * @param to The path of exported PDF file.
-	 * @param using The PDF export style to use. 
-	 * @param outputOversetReportFile The path to the file in which to store the overset report. 
+	 * @param using The PDF export style to use.
+	 * @param outputOversetReportFile The path to the file in which to store the overset report.
 	 */
 	exportFile(to: File, using: PDFExportPreset, outputOversetReportFile: File): void;
 
 	/**
 	 * Merges records and produces an optional overset report.
-	 * @param outputOversetReportFile The path to the file in which to store the overset report. 
+	 * @param outputOversetReportFile The path to the file in which to store the overset report.
 	 */
 	mergeRecords(outputOversetReportFile: File): void;
 
@@ -61577,14 +61579,14 @@ declare class EPubExportPreviewAppPreference extends Preference {
 	 * @param applicationPath The full path of the application to be added.
 	 * @param selectedForReflowableEpub Check if the app is selected in Reflowable ePub export.
 	 * @param selectedForFixedLayoutEpub Check if the app is selected in Fixed Layout ePub export.
-	 * @param withProperties Initial values for properties of the new EPubExportPreviewAppPreference 
+	 * @param withProperties Initial values for properties of the new EPubExportPreviewAppPreference
 	 */
 	addApplication(applicationPath: string, selectedForReflowableEpub: boolean, selectedForFixedLayoutEpub: boolean, withProperties: object): void;
 
 	/**
 	 * Get the application at index.
 	 * @param indexOfApp The index of the application to get information for.
-	 * @param withProperties Initial values for properties of the new EPubExportPreviewAppPreference 
+	 * @param withProperties Initial values for properties of the new EPubExportPreviewAppPreference
 	 */
 	getApplicationAtIndex(indexOfApp: boolean, withProperties: object): any;
 
@@ -61596,7 +61598,7 @@ declare class EPubExportPreviewAppPreference extends Preference {
 	/**
 	 * Remove an application at specified index.
 	 * @param indexOfApp The index of the application to be removed.
-	 * @param withProperties Initial values for properties of the new EPubExportPreviewAppPreference 
+	 * @param withProperties Initial values for properties of the new EPubExportPreviewAppPreference
 	 */
 	removeApplication(indexOfApp: number, withProperties: object): void;
 
@@ -61768,7 +61770,7 @@ declare class ParaStyleMapping {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -61786,7 +61788,7 @@ declare class ParaStyleMapping {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -61822,7 +61824,7 @@ declare class ParaStyleMappings {
 	 * @param sourceStyleName The source style name.
 	 * @param destinationStyleName The destination style name.
 	 * @param mappingRuleType The mapping type
-	 * @param withProperties Initial values for properties of the new ParaStyleMapping 
+	 * @param withProperties Initial values for properties of the new ParaStyleMapping
 	 */
 	add(sourceStyleName: string, destinationStyleName: string, mappingRuleType: MapType, withProperties: object): ParaStyleMapping;
 
@@ -61941,7 +61943,7 @@ declare class CellStyleMapping {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -61959,7 +61961,7 @@ declare class CellStyleMapping {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -61995,7 +61997,7 @@ declare class CellStyleMappings {
 	 * @param sourceStyleName The source style name.
 	 * @param destinationStyleName The destination style name.
 	 * @param mappingRuleType The mapping type
-	 * @param withProperties Initial values for properties of the new CellStyleMapping 
+	 * @param withProperties Initial values for properties of the new CellStyleMapping
 	 */
 	add(sourceStyleName: string, destinationStyleName: string, mappingRuleType: MapType, withProperties: object): CellStyleMapping;
 
@@ -62114,7 +62116,7 @@ declare class CharStyleMapping {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -62132,7 +62134,7 @@ declare class CharStyleMapping {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -62168,7 +62170,7 @@ declare class CharStyleMappings {
 	 * @param sourceStyleName The source style name.
 	 * @param destinationStyleName The destination style name.
 	 * @param mappingRuleType The mapping type
-	 * @param withProperties Initial values for properties of the new CharStyleMapping 
+	 * @param withProperties Initial values for properties of the new CharStyleMapping
 	 */
 	add(sourceStyleName: string, destinationStyleName: string, mappingRuleType: MapType, withProperties: object): CharStyleMapping;
 
@@ -62287,7 +62289,7 @@ declare class TableStyleMapping {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -62305,7 +62307,7 @@ declare class TableStyleMapping {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -62341,7 +62343,7 @@ declare class TableStyleMappings {
 	 * @param sourceStyleName The source style name.
 	 * @param destinationStyleName The destination style name.
 	 * @param mappingRuleType The mapping type
-	 * @param withProperties Initial values for properties of the new TableStyleMapping 
+	 * @param withProperties Initial values for properties of the new TableStyleMapping
 	 */
 	add(sourceStyleName: string, destinationStyleName: string, mappingRuleType: MapType, withProperties: object): TableStyleMapping;
 
@@ -62506,7 +62508,7 @@ declare class PreflightRule {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -62519,7 +62521,7 @@ declare class PreflightRule {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -62682,7 +62684,7 @@ declare class RuleDataObject {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -62700,7 +62702,7 @@ declare class RuleDataObject {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -62736,7 +62738,7 @@ declare class RuleDataObjects {
 	 * @param name The name of the rule data to add
 	 * @param dataType The type of data
 	 * @param dataValue The value of data. Can accept: String, Real, Long Integer, Short Integer, Boolean, Object or Array of Strings, Reals, Long Integers, Short Integers, Booleans, Objects or Arrays of Array of Arrays of Array of Strings, Reals, Long Integers, Short Integers, Booleans or Objects.
-	 * @param withProperties Initial values for properties of the new RuleDataObject 
+	 * @param withProperties Initial values for properties of the new RuleDataObject
 	 */
 	add(name: string, dataType: RuleDataType, dataValue: any, withProperties: object): RuleDataObject;
 
@@ -62838,7 +62840,7 @@ declare class PreflightRuleInstances {
 	/**
 	 * Adds a new preflight rule to the profile.
 	 * @param id The ID of the rule to be added
-	 * @param withProperties Initial values for properties of the new PreflightRuleInstance 
+	 * @param withProperties Initial values for properties of the new PreflightRuleInstance
 	 */
 	add(id: string, withProperties: object): any;
 
@@ -62984,7 +62986,7 @@ declare class PreflightProfile {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -63020,7 +63022,7 @@ declare class PreflightProfile {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -63070,7 +63072,7 @@ declare class PreflightProfiles {
 
 	/**
 	 * Creates a new PreflightProfile.
-	 * @param withProperties Initial values for properties of the new PreflightProfile 
+	 * @param withProperties Initial values for properties of the new PreflightProfile
 	 */
 	add(withProperties: object): PreflightProfile;
 
@@ -63216,7 +63218,7 @@ declare class PreflightProcess {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -63234,14 +63236,14 @@ declare class PreflightProcess {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
 	/**
 	 * Saves a report of the completed preflight process.
 	 * @param to The preflight report to save to.
-	 * @param autoOpen If true, automatically open the report after creation. 
+	 * @param autoOpen If true, automatically open the report after creation.
 	 */
 	saveReport(to: File, autoOpen?: boolean): void;
 
@@ -63257,7 +63259,7 @@ declare class PreflightProcess {
 
 	/**
 	 * Waits for the process to finish, up to an optional maximum amount of time. No other processes get cycles during this time.
-	 * @param waitTime The maximum time to wait, in seconds; if omitted, waits until completion no matter how long it takes. 
+	 * @param waitTime The maximum time to wait, in seconds; if omitted, waits until completion no matter how long it takes.
 	 */
 	waitForProcess(waitTime: number): boolean;
 
@@ -63282,8 +63284,8 @@ declare class PreflightProcesses {
 	 * Adds a new preflight process.
 	 * @param targetObject The document the process should inspect.
 	 * @param appliedProfile The preflight profile that should be used.
-	 * @param preflightOptions The preflight options that should be used. 
-	 * @param withProperties Initial values for properties of the new PreflightProcess 
+	 * @param preflightOptions The preflight options that should be used.
+	 * @param withProperties Initial values for properties of the new PreflightProcess
 	 */
 	add(targetObject: Document, appliedProfile: PreflightProfile, preflightOptions: PreflightOption, withProperties: object): PreflightProcess;
 
@@ -63417,7 +63419,7 @@ declare class PreflightProfileRule {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -63448,7 +63450,7 @@ declare class PreflightProfileRule {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -63482,7 +63484,7 @@ declare class PreflightProfileRules {
 	/**
 	 * Adds a new preflight rule to the profile.
 	 * @param id The ID of the rule to be added
-	 * @param withProperties Initial values for properties of the new PreflightProfileRule 
+	 * @param withProperties Initial values for properties of the new PreflightProfileRule
 	 */
 	add(id: string, withProperties: object): any;
 
@@ -63613,7 +63615,7 @@ declare class StrokeStyle {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -63637,7 +63639,7 @@ declare class StrokeStyle {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -63780,7 +63782,7 @@ declare class DashedStrokeStyles {
 
 	/**
 	 * Creates a new DashedStrokeStyle.
-	 * @param withProperties Initial values for properties of the new DashedStrokeStyle 
+	 * @param withProperties Initial values for properties of the new DashedStrokeStyle
 	 */
 	add(withProperties: object): DashedStrokeStyle;
 
@@ -63891,7 +63893,7 @@ declare class DottedStrokeStyles {
 
 	/**
 	 * Creates a new DottedStrokeStyle.
-	 * @param withProperties Initial values for properties of the new DottedStrokeStyle 
+	 * @param withProperties Initial values for properties of the new DottedStrokeStyle
 	 */
 	add(withProperties: object): DottedStrokeStyle;
 
@@ -63997,7 +63999,7 @@ declare class StripedStrokeStyles {
 
 	/**
 	 * Creates a new StripedStrokeStyle.
-	 * @param withProperties Initial values for properties of the new StripedStrokeStyle 
+	 * @param withProperties Initial values for properties of the new StripedStrokeStyle
 	 */
 	add(withProperties: object): StripedStrokeStyle;
 
@@ -64183,7 +64185,7 @@ declare class TOCStyle {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -64219,7 +64221,7 @@ declare class TOCStyle {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -64252,7 +64254,7 @@ declare class TOCStyles {
 
 	/**
 	 * Creates a new TOCStyle.
-	 * @param withProperties Initial values for properties of the new TOCStyle 
+	 * @param withProperties Initial values for properties of the new TOCStyle
 	 */
 	add(withProperties: object): TOCStyle;
 
@@ -64408,7 +64410,7 @@ declare class TOCStyleEntry {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -64426,7 +64428,7 @@ declare class TOCStyleEntry {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -64459,8 +64461,8 @@ declare class TOCStyleEntries {
 
 	/**
 	 * Adds a TOC style entry.
-	 * @param styleName The paragraph style to include as TOC entries in the TOC. 
-	 * @param withProperties Initial values for properties of the new TOCStyleEntry 
+	 * @param styleName The paragraph style to include as TOC entries in the TOC.
+	 * @param withProperties Initial values for properties of the new TOCStyleEntry
 	 */
 	add(styleName: string, withProperties: object): TOCStyleEntry;
 
@@ -65285,7 +65287,7 @@ declare class Cell {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -65296,31 +65298,31 @@ declare class Cell {
 
 	/**
 	 * Finds glyphs that match the find what value and replaces the glyphs with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeGlyph(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value and replaces the text with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeGrep(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value and replaces the text with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeText(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find character type value and replaces the text with the change character type value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeTransliterate(reverseOrder: boolean): Text[];
 
 	/**
 	 * Clear Cell Style Overrides
-	 * @param clearingOverridesThroughRootCellStyle If true, clears all overrides, whether or not they are defined in the underlying cell style 
+	 * @param clearingOverridesThroughRootCellStyle If true, clears all overrides, whether or not they are defined in the underlying cell style
 	 */
 	clearCellStyleOverrides(clearingOverridesThroughRootCellStyle?: boolean): void;
 
@@ -65350,25 +65352,25 @@ declare class Cell {
 
 	/**
 	 * Finds glyphs that match the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findGlyph(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findGrep(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findText(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find character type value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findTransliterate(reverseOrder: boolean): Text[];
 
@@ -65404,13 +65406,13 @@ declare class Cell {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
 	/**
 	 * Selects the object.
-	 * @param existingSelection The selection status of the Cell in relation to previously selected objects. 
+	 * @param existingSelection The selection status of the Cell in relation to previously selected objects.
 	 */
 	select(existingSelection?: SelectionOptions): void;
 
@@ -66339,7 +66341,7 @@ declare class Table {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -66350,25 +66352,25 @@ declare class Table {
 
 	/**
 	 * Finds glyphs that match the find what value and replaces the glyphs with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeGlyph(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value and replaces the text with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeGrep(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value and replaces the text with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeText(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find character type value and replaces the text with the change character type value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeTransliterate(reverseOrder: boolean): Text[];
 
@@ -66384,8 +66386,8 @@ declare class Table {
 
 	/**
 	 * Converts the table to text.
-	 * @param columnSeparator The character to insert between the each column's content in the converted text. Note: Can be defined as any single character, such as a letter, number, or punctuation mark, or by typing a space or tab. Use the actual character rather than its name, such as ',' rather than 'Comma'. Precede double or single quotes or a backslash with an extra backslash as an escape character. For paragraphs, use ^p. 
-	 * @param rowSeparator The character to use to separate each row's content in the converted text. Note: Can be defined as any single character, such as a letter, number, or punctuation mark, or by typing a space or tab. Use the actual character rather than its name, such as , rather than Comma. Precede double or single quotes or a backslash with an extra backslash as an escape character. For paragraphs, use ^p. 
+	 * @param columnSeparator The character to insert between the each column's content in the converted text. Note: Can be defined as any single character, such as a letter, number, or punctuation mark, or by typing a space or tab. Use the actual character rather than its name, such as ',' rather than 'Comma'. Precede double or single quotes or a backslash with an extra backslash as an escape character. For paragraphs, use ^p.
+	 * @param rowSeparator The character to use to separate each row's content in the converted text. Note: Can be defined as any single character, such as a letter, number, or punctuation mark, or by typing a space or tab. Use the actual character rather than its name, such as , rather than Comma. Precede double or single quotes or a backslash with an extra backslash as an escape character. For paragraphs, use ^p.
 	 */
 	convertToText(columnSeparator: string, rowSeparator: string): Text;
 
@@ -66403,25 +66405,25 @@ declare class Table {
 
 	/**
 	 * Finds glyphs that match the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findGlyph(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findGrep(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findText(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find character type value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findTransliterate(reverseOrder: boolean): Text[];
 
@@ -66457,13 +66459,13 @@ declare class Table {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
 	/**
 	 * Selects the object.
-	 * @param existingSelection The selection status of the Table in relation to previously selected objects. 
+	 * @param existingSelection The selection status of the Table in relation to previously selected objects.
 	 */
 	select(existingSelection?: SelectionOptions): void;
 
@@ -66503,7 +66505,7 @@ declare class Tables {
 	 * Creates a new table.
 	 * @param to The location of the new table relative to the reference object or within the container object.
 	 * @param reference The reference object. Note: Required when the to value specifies before or after.
-	 * @param withProperties Initial values for properties of the new Table 
+	 * @param withProperties Initial values for properties of the new Table
 	 */
 	add(to?: LocationOptions, reference?: Table | XMLElement | XmlStory | TextFrame | EndnoteTextFrame | Text | InsertionPoint | TextStyleRange | Paragraph | TextColumn | Line | Word | Character | Story | Cell, withProperties?: object): Table;
 
@@ -67139,31 +67141,31 @@ declare class Column {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
 	/**
 	 * Finds glyphs that match the find what value and replaces the glyphs with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeGlyph(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value and replaces the text with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeGrep(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value and replaces the text with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeText(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find character type value and replaces the text with the change character type value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeTransliterate(reverseOrder: boolean): Text[];
 
@@ -67175,25 +67177,25 @@ declare class Column {
 
 	/**
 	 * Finds glyphs that match the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findGlyph(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findGrep(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findText(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find character type value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findTransliterate(reverseOrder: boolean): Text[];
 
@@ -67229,13 +67231,13 @@ declare class Column {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
 	/**
 	 * Selects the object.
-	 * @param existingSelection The selection status of the Column in relation to previously selected objects. 
+	 * @param existingSelection The selection status of the Column in relation to previously selected objects.
 	 */
 	select(existingSelection?: SelectionOptions): void;
 
@@ -67281,7 +67283,7 @@ declare class Columns {
 	 * Creates a new Column.
 	 * @param at The Column's location relative to the reference object or within the table.
 	 * @param reference The reference object. Note: The reference object must be within the table. Required only when the at value contains before or after.
-	 * @param withProperties Initial values for properties of the new Column 
+	 * @param withProperties Initial values for properties of the new Column
 	 */
 	add(at?: LocationOptions, reference?: Row | Column | Cell | Table, withProperties?: object): any;
 
@@ -67911,31 +67913,31 @@ declare class Row {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
 	/**
 	 * Finds glyphs that match the find what value and replaces the glyphs with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeGlyph(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value and replaces the text with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeGrep(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value and replaces the text with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeText(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find character type value and replaces the text with the change character type value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeTransliterate(reverseOrder: boolean): Text[];
 
@@ -67947,25 +67949,25 @@ declare class Row {
 
 	/**
 	 * Finds glyphs that match the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findGlyph(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findGrep(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findText(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find character type value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findTransliterate(reverseOrder: boolean): Text[];
 
@@ -68001,13 +68003,13 @@ declare class Row {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
 	/**
 	 * Selects the object.
-	 * @param existingSelection The selection status of the Row in relation to previously selected objects. 
+	 * @param existingSelection The selection status of the Row in relation to previously selected objects.
 	 */
 	select(existingSelection?: SelectionOptions): void;
 
@@ -68053,7 +68055,7 @@ declare class Rows {
 	 * Creates a new Row.
 	 * @param at The Row's location relative to the reference object or within the table.
 	 * @param reference The reference object. Note: The reference object must be within the table. Required only when the at value contains before or after.
-	 * @param withProperties Initial values for properties of the new Row 
+	 * @param withProperties Initial values for properties of the new Row
 	 */
 	add(at?: LocationOptions, reference?: Row | Column | Cell | Table, withProperties?: object): any;
 
@@ -68758,7 +68760,7 @@ declare class TableStyle {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -68794,7 +68796,7 @@ declare class TableStyle {
 
 	/**
 	 * Deletes the style.
-	 * @param replacingWith The style to apply in place of the deleted style. 
+	 * @param replacingWith The style to apply in place of the deleted style.
 	 */
 	remove(replacingWith: TableStyle): void;
 
@@ -68802,7 +68804,7 @@ declare class TableStyle {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -68835,7 +68837,7 @@ declare class TableStyles {
 
 	/**
 	 * Creates a new TableStyle.
-	 * @param withProperties Initial values for properties of the new TableStyle 
+	 * @param withProperties Initial values for properties of the new TableStyle
 	 */
 	add(withProperties: object): TableStyle;
 
@@ -68981,7 +68983,7 @@ declare class TableStyleGroup {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -69025,7 +69027,7 @@ declare class TableStyleGroup {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -69058,7 +69060,7 @@ declare class TableStyleGroups {
 
 	/**
 	 * Creates a new TableStyleGroup.
-	 * @param withProperties Initial values for properties of the new TableStyleGroup 
+	 * @param withProperties Initial values for properties of the new TableStyleGroup
 	 */
 	add(withProperties: object): TableStyleGroup;
 
@@ -69544,7 +69546,7 @@ declare class CellStyle {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -69580,7 +69582,7 @@ declare class CellStyle {
 
 	/**
 	 * Deletes the style.
-	 * @param replacingWith The style to apply in place of the deleted style. 
+	 * @param replacingWith The style to apply in place of the deleted style.
 	 */
 	remove(replacingWith: CellStyle): void;
 
@@ -69588,7 +69590,7 @@ declare class CellStyle {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -69621,7 +69623,7 @@ declare class CellStyles {
 
 	/**
 	 * Creates a new CellStyle.
-	 * @param withProperties Initial values for properties of the new CellStyle 
+	 * @param withProperties Initial values for properties of the new CellStyle
 	 */
 	add(withProperties: object): CellStyle;
 
@@ -69767,7 +69769,7 @@ declare class CellStyleGroup {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -69811,7 +69813,7 @@ declare class CellStyleGroup {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -69844,7 +69846,7 @@ declare class CellStyleGroups {
 
 	/**
 	 * Creates a new CellStyleGroup.
-	 * @param withProperties Initial values for properties of the new CellStyleGroup 
+	 * @param withProperties Initial values for properties of the new CellStyleGroup
 	 */
 	add(withProperties: object): CellStyleGroup;
 
@@ -69975,7 +69977,7 @@ declare class NestedLineStyle {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -69993,7 +69995,7 @@ declare class NestedLineStyle {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -70026,7 +70028,7 @@ declare class NestedLineStyles {
 
 	/**
 	 * Creates a new NestedLineStyle.
-	 * @param withProperties Initial values for properties of the new NestedLineStyle 
+	 * @param withProperties Initial values for properties of the new NestedLineStyle
 	 */
 	add(withProperties: object): NestedLineStyle;
 
@@ -70140,7 +70142,7 @@ declare class NestedGrepStyle {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -70158,7 +70160,7 @@ declare class NestedGrepStyle {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -70191,7 +70193,7 @@ declare class NestedGrepStyles {
 
 	/**
 	 * Creates a new NestedGrepStyle.
-	 * @param withProperties Initial values for properties of the new NestedGrepStyle 
+	 * @param withProperties Initial values for properties of the new NestedGrepStyle
 	 */
 	add(withProperties: object): NestedGrepStyle;
 
@@ -72140,7 +72142,7 @@ declare class Text {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -72153,14 +72155,14 @@ declare class Text {
 	/**
 	 * Apply one or more conditions.
 	 * @param using The condition(s) to apply
-	 * @param removeExisting If true, remove existing conditions. 
+	 * @param removeExisting If true, remove existing conditions.
 	 */
 	applyConditions(using: Condition[], removeExisting?: boolean): void;
 
 	/**
 	 * Apply a paragraph style.
 	 * @param using The paragraph style to apply.
-	 * @param clearingOverrides If true, clear any text attributes before applying the style. 
+	 * @param clearingOverrides If true, clear any text attributes before applying the style.
 	 */
 	applyParagraphStyle(using: ParagraphStyle, clearingOverrides?: boolean): void;
 
@@ -72168,10 +72170,10 @@ declare class Text {
 	 * asynchronously exports the object(s) to a file.
 	 * @param format The export format, specified as an enumeration value or as an extension that appears in the Save as type or Format menu in the Export dialog.
 	 * @param to The path to the export file.
-	 * @param showingOptions If true, displays the export options dialog. 
-	 * @param using The export style. 
-	 * @param versionComments The comment for this version. 
-	 * @param forceSave If true, forcibly saves a version. 
+	 * @param showingOptions If true, displays the export options dialog.
+	 * @param using The export style.
+	 * @param versionComments The comment for this version.
+	 * @param forceSave If true, forcibly saves a version.
 	 */
 	asynchronousExportFile(format: ExportFormat | string, to: File, showingOptions?: boolean, using?: PDFExportPreset, versionComments?: string, forceSave?: boolean): BackgroundTask;
 
@@ -72182,25 +72184,25 @@ declare class Text {
 
 	/**
 	 * Finds glyphs that match the find what value and replaces the glyphs with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeGlyph(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value and replaces the text with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeGrep(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value and replaces the text with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeText(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find character type value and replaces the text with the change character type value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeTransliterate(reverseOrder: boolean): Text[];
 
@@ -72212,7 +72214,7 @@ declare class Text {
 
 	/**
 	 * Clears the specified types of override.
-	 * @param overridesToClear The types of override to clear. 
+	 * @param overridesToClear The types of override to clear.
 	 */
 	clearOverrides(overridesToClear?: OverrideType): void;
 
@@ -72228,19 +72230,19 @@ declare class Text {
 
 	/**
 	 * Converts the text to a table.
-	 * @param columnSeparator The character that starts a new column in the new table. 
-	 * @param rowSeparator The character starts a new row in the new table. 
-	 * @param numberOfColumns The number of columns in the table. Note: Valid only when the column and row separator characters are the same. 
+	 * @param columnSeparator The character that starts a new column in the new table.
+	 * @param rowSeparator The character starts a new row in the new table.
+	 * @param numberOfColumns The number of columns in the table. Note: Valid only when the column and row separator characters are the same.
 	 */
 	convertToTable(columnSeparator: string, rowSeparator: string, numberOfColumns?: number): Table;
 
 	/**
 	 * Create Email QR Code on the page item or document
-	 * @param emailAddress QR code Email Address 
-	 * @param subject QR code Email Subject 
-	 * @param body QR code Email Body Message 
+	 * @param emailAddress QR code Email Address
+	 * @param subject QR code Email Subject
+	 * @param body QR code Email Body Message
 	 * @param qrCodeSwatch Swatch to be applied on generated QR Code Graphic .
-	 * @param withProperties Initial values for properties of the new Text. Above parameters can also be passed as properties 
+	 * @param withProperties Initial values for properties of the new Text. Above parameters can also be passed as properties
 	 */
 	createEmailQRCode(emailAddress: string, subject: string, body: string, qrCodeSwatch: Swatch | string, withProperties: string[]): void;
 
@@ -72248,7 +72250,7 @@ declare class Text {
 	 * Create Hyperlink QR Code on the page item or document
 	 * @param urlLink QR code Hyperlink URL
 	 * @param qrCodeSwatch Swatch to be applied on generated QR Code Graphic .
-	 * @param withProperties Initial values for properties of the new Text. Above parameters can also be passed as properties 
+	 * @param withProperties Initial values for properties of the new Text. Above parameters can also be passed as properties
 	 */
 	createHyperlinkQRCode(urlLink: string, qrCodeSwatch: Swatch | string, withProperties: string[]): void;
 
@@ -72262,7 +72264,7 @@ declare class Text {
 	 * Create Plain Text QR Code on the page item
 	 * @param plainText QR code Plain Text
 	 * @param qrCodeSwatch Swatch to be applied on generated QR Code Graphic .
-	 * @param withProperties Initial values for properties of the new Text. Above parameters can also be passed as properties 
+	 * @param withProperties Initial values for properties of the new Text. Above parameters can also be passed as properties
 	 */
 	createPlainTextQRCode(plainText: string, qrCodeSwatch: Swatch | string, withProperties: string[]): void;
 
@@ -72279,10 +72281,10 @@ declare class Text {
 
 	/**
 	 * Create Text Msg QR Code on the page item or document
-	 * @param cellNumber QR code Text Phone Number 
-	 * @param textMessage QR code Text Message 
+	 * @param cellNumber QR code Text Phone Number
+	 * @param textMessage QR code Text Message
 	 * @param qrCodeSwatch Swatch to be applied on generated QR Code Graphic .
-	 * @param withProperties Initial values for properties of the new Text. Above parameters can also be passed as properties 
+	 * @param withProperties Initial values for properties of the new Text. Above parameters can also be passed as properties
 	 */
 	createTextMsgQRCode(cellNumber: string, textMessage: string, qrCodeSwatch: Swatch | string, withProperties: string[]): void;
 
@@ -72298,21 +72300,21 @@ declare class Text {
 
 	/**
 	 * Create Business Card QR Code on the page item or load on document's placegun
-	 * @param firstName QR code Business Card First Name 
-	 * @param lastName QR code Business Card Last Name 
-	 * @param jobTitle QR code Business Card Title 
-	 * @param cellPhone QR code Business Card Cell Phone Number 
-	 * @param phone QR code Business Card Phone Number 
-	 * @param email QR code Business Card Email Address 
-	 * @param organisation QR code Business Card Organisation 
-	 * @param streetAddress QR code Business Card Street Address 
-	 * @param city QR code Business Card City 
-	 * @param adrState QR code Business Card State 
-	 * @param country QR code Business Card Country 
-	 * @param postalCode QR code Business Card Postal Code 
-	 * @param website QR code Business Card URL 
+	 * @param firstName QR code Business Card First Name
+	 * @param lastName QR code Business Card Last Name
+	 * @param jobTitle QR code Business Card Title
+	 * @param cellPhone QR code Business Card Cell Phone Number
+	 * @param phone QR code Business Card Phone Number
+	 * @param email QR code Business Card Email Address
+	 * @param organisation QR code Business Card Organisation
+	 * @param streetAddress QR code Business Card Street Address
+	 * @param city QR code Business Card City
+	 * @param adrState QR code Business Card State
+	 * @param country QR code Business Card Country
+	 * @param postalCode QR code Business Card Postal Code
+	 * @param website QR code Business Card URL
 	 * @param qrCodeSwatch Swatch to be applied on generated QR Code Graphic .
-	 * @param withProperties Initial values for properties of the new Text. Above parameters can also be passed as properties 
+	 * @param withProperties Initial values for properties of the new Text. Above parameters can also be passed as properties
 	 */
 	createVCardQRCode(firstName: string, lastName: string, jobTitle: string, cellPhone: string, phone: string, email: string, organisation: string, streetAddress: string, city: string, adrState: string, country: string, postalCode: string, website: string, qrCodeSwatch: Swatch | string, withProperties: string[]): void;
 
@@ -72327,40 +72329,40 @@ declare class Text {
 	 * Exports the object(s) to a file.
 	 * @param format The export format, specified as an enumeration value or as an extension that appears in the Save as type or Format menu in the Export dialog.
 	 * @param to The path to the export file.
-	 * @param showingOptions If true, displays the export options dialog. 
-	 * @param using The export style. 
-	 * @param versionComments The comment for this version. 
-	 * @param forceSave If true, forcibly saves a version. 
+	 * @param showingOptions If true, displays the export options dialog.
+	 * @param using The export style.
+	 * @param versionComments The comment for this version.
+	 * @param forceSave If true, forcibly saves a version.
 	 */
 	exportFile(format: ExportFormat | string, to: File, showingOptions?: boolean, using?: PDFExportPreset, versionComments?: string, forceSave?: boolean): void;
 
 	/**
 	 * Finds glyphs that match the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findGlyph(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findGrep(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds hyperlink sources that intersecting with specified text range.
-	 * @param sortOrder The sort order of found ranges. 
+	 * @param sortOrder The sort order of found ranges.
 	 */
 	findHyperlinks(sortOrder: RangeSortOrder): HyperlinkTextSource[];
 
 	/**
 	 * Finds text that matches the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findText(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find character type value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findTransliterate(reverseOrder: boolean): Text[];
 
@@ -72385,8 +72387,8 @@ declare class Text {
 	/**
 	 * Places the file.
 	 * @param fileName The file to place
-	 * @param showingOptions Whether to display the import options dialog 
-	 * @param withProperties Initial values for properties of the placed object(s) 
+	 * @param showingOptions Whether to display the import options dialog
+	 * @param withProperties Initial values for properties of the placed object(s)
 	 */
 	place(fileName: File, showingOptions?: boolean, withProperties?: object): any[];
 
@@ -72404,13 +72406,13 @@ declare class Text {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
 	/**
 	 * Selects the object.
-	 * @param existingSelection The selection status of the Text in relation to previously selected objects. 
+	 * @param existingSelection The selection status of the Text in relation to previously selected objects.
 	 */
 	select(existingSelection?: SelectionOptions): void;
 
@@ -72422,7 +72424,7 @@ declare class Text {
 	/**
 	 * If true, text has local overrides
 	 * @param charOrParaStyle Style type to look at.
-	 * @param charStyleAsOverride Whether to consider character styles as overrides or not 
+	 * @param charStyleAsOverride Whether to consider character styles as overrides or not
 	 */
 	textHasOverrides(charOrParaStyle: StyleType, charStyleAsOverride?: boolean): boolean;
 
@@ -73040,7 +73042,7 @@ declare class InsertionPoint extends Text {
 	/**
 	 * Experimental: Place the text fragment fetched from url onto insertion point and create a link
 	 * @param linkResourceURI Resource URI for the link.
-	 * @param name The tag name for the key. 
+	 * @param name The tag name for the key.
 	 */
 	createTextFragmentLink(linkResourceURI: string, name: string): Link;
 
@@ -73385,31 +73387,31 @@ declare class TextFrame extends PageItem {
 
 	/**
 	 * Brings the TextFrame to the front of its layer or in front of a particular item.
-	 * @param reference The reference object to bring the object in front of (must have same parent) 
+	 * @param reference The reference object to bring the object in front of (must have same parent)
 	 */
 	bringToFront(reference: PageItem): void;
 
 	/**
 	 * Finds glyphs that match the find what value and replaces the glyphs with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeGlyph(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value and replaces the text with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeGrep(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value and replaces the text with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeText(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find character type value and replaces the text with the change character type value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeTransliterate(reverseOrder: boolean): Text[];
 
@@ -73432,25 +73434,25 @@ declare class TextFrame extends PageItem {
 
 	/**
 	 * Finds glyphs that match the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findGlyph(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findGrep(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findText(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find character type value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findTransliterate(reverseOrder: boolean): Text[];
 
@@ -73475,7 +73477,7 @@ declare class TextFrame extends PageItem {
 	/**
 	 * Deprecated: Use contentPlace method. Original Description: Create a linked story and place it into the target page item.
 	 * @param parentStory The story to place and link from.
-	 * @param showingOptions Whether to display the link options dialog 
+	 * @param showingOptions Whether to display the link options dialog
 	 */
 	placeAndLink(parentStory: Story, showingOptions?: boolean): Story;
 
@@ -73496,7 +73498,7 @@ declare class TextFrame extends PageItem {
 
 	/**
 	 * Sends the TextFrame to the back of its layer or behind a particular item (must have same parent).
-	 * @param reference The reference object to send the object behind 
+	 * @param reference The reference object to send the object behind
 	 */
 	sendToBack(reference: PageItem): void;
 
@@ -73525,10 +73527,10 @@ declare class TextFrames {
 
 	/**
 	 * Creates a new TextFrame
-	 * @param layer The layer on which to create the TextFrame. 
-	 * @param at The location at which to insert the TextFrame relative to the reference object or within the container object. 
+	 * @param layer The layer on which to create the TextFrame.
+	 * @param at The location at which to insert the TextFrame relative to the reference object or within the container object.
 	 * @param reference The reference object. Note: Required when the at parameter is before or after.
-	 * @param withProperties Initial values for properties of the new TextFrame 
+	 * @param withProperties Initial values for properties of the new TextFrame
 	 */
 	add(layer: Layer, at?: LocationOptions, reference?: Document | Spread | MasterSpread | Page | Layer | PageItem, withProperties?: object): TextFrame;
 
@@ -75569,7 +75571,7 @@ declare class Story {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -75577,10 +75579,10 @@ declare class Story {
 	 * asynchronously exports the object(s) to a file.
 	 * @param format The export format, specified as an enumeration value or as an extension that appears in the Save as type or Format menu in the Export dialog.
 	 * @param to The path to the export file.
-	 * @param showingOptions If true, displays the export options dialog. 
-	 * @param using The export style. 
-	 * @param versionComments The comment for this version. 
-	 * @param forceSave If true, forcibly saves a version. 
+	 * @param showingOptions If true, displays the export options dialog.
+	 * @param using The export style.
+	 * @param versionComments The comment for this version.
+	 * @param forceSave If true, forcibly saves a version.
 	 */
 	asynchronousExportFile(format: ExportFormat | string, to: File, showingOptions?: boolean, using?: PDFExportPreset, versionComments?: string, forceSave?: boolean): BackgroundTask;
 
@@ -75591,25 +75593,25 @@ declare class Story {
 
 	/**
 	 * Finds glyphs that match the find what value and replaces the glyphs with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeGlyph(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value and replaces the text with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeGrep(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value and replaces the text with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeText(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find character type value and replaces the text with the change character type value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeTransliterate(reverseOrder: boolean): Text[];
 
@@ -75621,8 +75623,8 @@ declare class Story {
 
 	/**
 	 * Checks in the story or stories.
-	 * @param versionComments The comment for this version. 
-	 * @param forceSave If true, forcibly saves a version. 
+	 * @param versionComments The comment for this version.
+	 * @param forceSave If true, forcibly saves a version.
 	 */
 	checkIn(versionComments: string, forceSave?: boolean): boolean;
 
@@ -75633,7 +75635,7 @@ declare class Story {
 
 	/**
 	 * Clears the specified types of override.
-	 * @param overridesToClear The types of override to clear. 
+	 * @param overridesToClear The types of override to clear.
 	 */
 	clearOverrides(overridesToClear?: OverrideType): void;
 
@@ -75659,10 +75661,10 @@ declare class Story {
 	 * Exports the object(s) to a file.
 	 * @param format The export format, specified as an enumeration value or as an extension that appears in the Save as type or Format menu in the Export dialog.
 	 * @param to The path to the export file.
-	 * @param showingOptions If true, displays the export options dialog. 
-	 * @param using The export style. 
-	 * @param versionComments The comment for this version. 
-	 * @param forceSave If true, forcibly saves a version. 
+	 * @param showingOptions If true, displays the export options dialog.
+	 * @param using The export style.
+	 * @param versionComments The comment for this version.
+	 * @param forceSave If true, forcibly saves a version.
 	 */
 	exportFile(format: ExportFormat | string, to: File, showingOptions?: boolean, using?: PDFExportPreset, versionComments?: string, forceSave?: boolean): void;
 
@@ -75674,25 +75676,25 @@ declare class Story {
 
 	/**
 	 * Finds glyphs that match the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findGlyph(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findGrep(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findText(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find character type value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findTransliterate(reverseOrder: boolean): Text[];
 
@@ -75741,7 +75743,7 @@ declare class Story {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -77524,7 +77526,7 @@ declare class ParagraphStyle {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -77556,7 +77558,7 @@ declare class ParagraphStyle {
 
 	/**
 	 * Deletes the paragraph style forcefully. For internal use only.
-	 * @param replacingWith The style to apply in place of the deleted style. 
+	 * @param replacingWith The style to apply in place of the deleted style.
 	 */
 	forceDelete(replacingWith: ParagraphStyle): void;
 
@@ -77581,7 +77583,7 @@ declare class ParagraphStyle {
 
 	/**
 	 * Deletes the style.
-	 * @param replacingWith The style to apply in place of the deleted style. 
+	 * @param replacingWith The style to apply in place of the deleted style.
 	 */
 	remove(replacingWith: ParagraphStyle): void;
 
@@ -77589,7 +77591,7 @@ declare class ParagraphStyle {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -77622,7 +77624,7 @@ declare class ParagraphStyles {
 
 	/**
 	 * Creates a new ParagraphStyle.
-	 * @param withProperties Initial values for properties of the new ParagraphStyle 
+	 * @param withProperties Initial values for properties of the new ParagraphStyle
 	 */
 	add(withProperties: object): ParagraphStyle;
 
@@ -78523,7 +78525,7 @@ declare class CharacterStyle {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -78569,7 +78571,7 @@ declare class CharacterStyle {
 
 	/**
 	 * Deletes the style.
-	 * @param replacingWith The style to apply in place of the deleted style. 
+	 * @param replacingWith The style to apply in place of the deleted style.
 	 */
 	remove(replacingWith: CharacterStyle): void;
 
@@ -78577,7 +78579,7 @@ declare class CharacterStyle {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -78610,7 +78612,7 @@ declare class CharacterStyles {
 
 	/**
 	 * Creates a new CharacterStyle.
-	 * @param withProperties Initial values for properties of the new CharacterStyle 
+	 * @param withProperties Initial values for properties of the new CharacterStyle
 	 */
 	add(withProperties: object): CharacterStyle;
 
@@ -78746,7 +78748,7 @@ declare class TabStop {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -78764,7 +78766,7 @@ declare class TabStop {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -78797,7 +78799,7 @@ declare class TabStops {
 
 	/**
 	 * Creates a new TabStop.
-	 * @param withProperties Initial values for properties of the new TabStop 
+	 * @param withProperties Initial values for properties of the new TabStop
 	 */
 	add(withProperties: object): TabStop;
 
@@ -78921,7 +78923,7 @@ declare class NestedStyle {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -78939,7 +78941,7 @@ declare class NestedStyle {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -78972,7 +78974,7 @@ declare class NestedStyles {
 
 	/**
 	 * Creates a new NestedStyle.
-	 * @param withProperties Initial values for properties of the new NestedStyle 
+	 * @param withProperties Initial values for properties of the new NestedStyle
 	 */
 	add(withProperties: object): NestedStyle;
 
@@ -79136,7 +79138,7 @@ declare class Endnote {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -79174,7 +79176,7 @@ declare class Endnote {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -79352,7 +79354,7 @@ declare class EndnoteRange {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -79383,7 +79385,7 @@ declare class EndnoteRange {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -79511,10 +79513,10 @@ declare class EndnoteTextFrames {
 
 	/**
 	 * Creates a new EndnoteTextFrame
-	 * @param layer The layer on which to create the EndnoteTextFrame. 
-	 * @param at The location at which to insert the EndnoteTextFrame relative to the reference object or within the container object. 
+	 * @param layer The layer on which to create the EndnoteTextFrame.
+	 * @param at The location at which to insert the EndnoteTextFrame relative to the reference object or within the container object.
 	 * @param reference The reference object. Note: Required when the at parameter is before or after.
-	 * @param withProperties Initial values for properties of the new EndnoteTextFrame 
+	 * @param withProperties Initial values for properties of the new EndnoteTextFrame
 	 */
 	add(layer: Layer, at?: LocationOptions, reference?: Document | Spread | MasterSpread | Page | Layer | PageItem, withProperties?: object): EndnoteTextFrame;
 
@@ -79675,7 +79677,7 @@ declare class Language {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -79701,7 +79703,7 @@ declare class Language {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -79915,7 +79917,7 @@ declare class LanguageWithVendors {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -79947,7 +79949,7 @@ declare class LanguageWithVendors {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -80190,7 +80192,7 @@ declare class Font {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -80216,7 +80218,7 @@ declare class Font {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -80388,7 +80390,7 @@ declare class KinsokuTable {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -80419,7 +80421,7 @@ declare class KinsokuTable {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -80453,7 +80455,7 @@ declare class KinsokuTables {
 	/**
 	 * Creates a new kinsoku table.
 	 * @param name The name of the new kinsoku table.
-	 * @param withProperties Initial values for properties of the new KinsokuTable 
+	 * @param withProperties Initial values for properties of the new KinsokuTable
 	 */
 	add(name: string, withProperties: object): KinsokuTable;
 
@@ -80594,7 +80596,7 @@ declare class MojikumiTable {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -80625,7 +80627,7 @@ declare class MojikumiTable {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -80659,7 +80661,7 @@ declare class MojikumiTables {
 	/**
 	 * Creates a new mojikumi table.
 	 * @param name The name of the new mojikumi table.
-	 * @param withProperties Initial values for properties of the new MojikumiTable 
+	 * @param withProperties Initial values for properties of the new MojikumiTable
 	 */
 	add(name: string, withProperties: object): MojikumiTable;
 
@@ -80790,14 +80792,14 @@ declare class HyphenationException {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
 	/**
 	 * Adds the specified words to the hyphenation exceptions list.
 	 * @param addedExceptions The list of words to add.
-	 * @param removedList If true, adds the words to the removed exceptions list. If false or unspecified, adds the words to the added exceptions list. 
+	 * @param removedList If true, adds the words to the removed exceptions list. If false or unspecified, adds the words to the added exceptions list.
 	 */
 	addException(addedExceptions: string[], removedList?: boolean): void;
 
@@ -80810,14 +80812,14 @@ declare class HyphenationException {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
 	/**
 	 * Removes the specified words from the hyphenation exceptions list.
 	 * @param removedExceptions The list of words to remove.
-	 * @param removedList If true, removes the words from the removed exceptions list. If false or unspecified, adds the words to the added exceptions list. 
+	 * @param removedList If true, removes the words from the removed exceptions list. If false or unspecified, adds the words to the added exceptions list.
 	 */
 	removeException(removedExceptions: string[], removedList?: boolean): void;
 
@@ -80969,14 +80971,14 @@ declare class UserDictionary {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
 	/**
 	 * Adds the specified words to the specified list in the dictionary.
 	 * @param addedWords The words to add.
-	 * @param removedList If true, adds the words to the removed words list. If false or unspecified, adds the words to the added words list. 
+	 * @param removedList If true, adds the words to the removed words list. If false or unspecified, adds the words to the added words list.
 	 */
 	addWord(addedWords: string[], removedList?: boolean): void;
 
@@ -80989,14 +80991,14 @@ declare class UserDictionary {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
 	/**
 	 * Removes the specified words from the specified list in the dictionary.
 	 * @param removedWords The words to remove.
-	 * @param removedList If true, removes the words from the removed words list. If false or unspecified, removes the words from the added words list. 
+	 * @param removedList If true, removes the words from the removed words list. If false or unspecified, removes the words from the added words list.
 	 */
 	removeWord(removedWords: string[], removedList?: boolean): void;
 
@@ -81143,7 +81145,7 @@ declare class AutoCorrectTable {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -81156,7 +81158,7 @@ declare class AutoCorrectTable {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -81363,7 +81365,7 @@ declare class Change {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -81381,7 +81383,7 @@ declare class Change {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -81657,31 +81659,31 @@ declare class TextPath {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
 	/**
 	 * Finds glyphs that match the find what value and replaces the glyphs with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeGlyph(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value and replaces the text with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeGrep(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value and replaces the text with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeText(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find character type value and replaces the text with the change character type value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeTransliterate(reverseOrder: boolean): Text[];
 
@@ -81693,25 +81695,25 @@ declare class TextPath {
 
 	/**
 	 * Finds glyphs that match the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findGlyph(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findGrep(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findText(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find character type value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findTransliterate(reverseOrder: boolean): Text[];
 
@@ -81736,7 +81738,7 @@ declare class TextPath {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -81769,7 +81771,7 @@ declare class TextPaths {
 
 	/**
 	 * Creates a new TextPath.
-	 * @param withProperties Initial values for properties of the new TextPath 
+	 * @param withProperties Initial values for properties of the new TextPath
 	 */
 	add(withProperties: object): TextPath;
 
@@ -81975,7 +81977,7 @@ declare class Note {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -82018,7 +82020,7 @@ declare class Note {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -82051,9 +82053,9 @@ declare class Notes {
 
 	/**
 	 * Creates a new note.
-	 * @param at The location relative to the reference object or within the containing object. 
+	 * @param at The location relative to the reference object or within the containing object.
 	 * @param reference The reference object. Note: Required when the at parameter specifies before or after.
-	 * @param withProperties Initial values for properties of the new Note 
+	 * @param withProperties Initial values for properties of the new Note
 	 */
 	add(at?: LocationOptions, reference?: Note | InsertionPoint, withProperties?: object): Note;
 
@@ -82299,7 +82301,7 @@ declare class Footnote {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -82335,7 +82337,7 @@ declare class Footnote {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -82368,9 +82370,9 @@ declare class Footnotes {
 
 	/**
 	 * Creates a new footnote.
-	 * @param at The location of the footnote reference number in the main text relative to the reference object or within the story. 
+	 * @param at The location of the footnote reference number in the main text relative to the reference object or within the story.
 	 * @param reference The reference object. Note: Must be an insertion point or a note. Required when the at parameter specifies before or after.
-	 * @param withProperties Initial values for properties of the new Footnote 
+	 * @param withProperties Initial values for properties of the new Footnote
 	 */
 	add(at?: LocationOptions, reference?: Note | InsertionPoint, withProperties?: object): Footnote;
 
@@ -82511,7 +82513,7 @@ declare class TextVariable {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -82534,7 +82536,7 @@ declare class TextVariable {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -82567,7 +82569,7 @@ declare class TextVariables {
 
 	/**
 	 * Creates a new TextVariable.
-	 * @param withProperties Initial values for properties of the new TextVariable 
+	 * @param withProperties Initial values for properties of the new TextVariable
 	 */
 	add(withProperties: object): TextVariable;
 
@@ -82707,7 +82709,7 @@ declare class TextVariableInstance {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -82743,7 +82745,7 @@ declare class TextVariableInstance {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -82776,9 +82778,9 @@ declare class TextVariableInstances {
 
 	/**
 	 * Creates a text variable instance at the specified location.
-	 * @param to The location relative to the reference object or within the containing object. 
+	 * @param to The location relative to the reference object or within the containing object.
 	 * @param reference The reference object. Note: Required only when the to parameter specifies before or after.
-	 * @param withProperties Initial values for properties of the new TextVariableInstance 
+	 * @param withProperties Initial values for properties of the new TextVariableInstance
 	 */
 	add(to?: LocationOptions, reference?: TextVariableInstance | XmlStory | TextFrame | EndnoteTextFrame | Story | Note | Cell | Footnote | Table | TextColumn | TextStyleRange | Text | InsertionPoint | Paragraph | Line | Word | Character | Change, withProperties?: object): TextVariableInstance;
 
@@ -82914,7 +82916,7 @@ declare class StyleExportTagMap {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -82932,7 +82934,7 @@ declare class StyleExportTagMap {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -82969,7 +82971,7 @@ declare class StyleExportTagMaps {
 	 * @param exportTag The tag to map.
 	 * @param exportClass The class to map.
 	 * @param exportAttributes The attributes to map.
-	 * @param withProperties Initial values for properties of the new StyleExportTagMap 
+	 * @param withProperties Initial values for properties of the new StyleExportTagMap
 	 */
 	add(exportType: string, exportTag: string, exportClass: string, exportAttributes: string, withProperties: object): StyleExportTagMap;
 
@@ -83103,7 +83105,7 @@ declare class ParagraphStyleGroup {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -83147,7 +83149,7 @@ declare class ParagraphStyleGroup {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -83180,7 +83182,7 @@ declare class ParagraphStyleGroups {
 
 	/**
 	 * Creates a new ParagraphStyleGroup.
-	 * @param withProperties Initial values for properties of the new ParagraphStyleGroup 
+	 * @param withProperties Initial values for properties of the new ParagraphStyleGroup
 	 */
 	add(withProperties: object): ParagraphStyleGroup;
 
@@ -83326,7 +83328,7 @@ declare class CharacterStyleGroup {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -83370,7 +83372,7 @@ declare class CharacterStyleGroup {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -83403,7 +83405,7 @@ declare class CharacterStyleGroups {
 
 	/**
 	 * Creates a new CharacterStyleGroup.
-	 * @param withProperties Initial values for properties of the new CharacterStyleGroup 
+	 * @param withProperties Initial values for properties of the new CharacterStyleGroup
 	 */
 	add(withProperties: object): CharacterStyleGroup;
 
@@ -83539,7 +83541,7 @@ declare class CompositeFont {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -83570,7 +83572,7 @@ declare class CompositeFont {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -83603,7 +83605,7 @@ declare class CompositeFonts {
 
 	/**
 	 * Creates a new CompositeFont.
-	 * @param withProperties Initial values for properties of the new CompositeFont 
+	 * @param withProperties Initial values for properties of the new CompositeFont
 	 */
 	add(withProperties: object): CompositeFont;
 
@@ -83779,7 +83781,7 @@ declare class CompositeFontEntry {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -83810,7 +83812,7 @@ declare class CompositeFontEntry {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -83843,7 +83845,7 @@ declare class CompositeFontEntries {
 
 	/**
 	 * Creates a new CompositeFontEntry.
-	 * @param withProperties Initial values for properties of the new CompositeFontEntry 
+	 * @param withProperties Initial values for properties of the new CompositeFontEntry
 	 */
 	add(withProperties: object): CompositeFontEntry;
 
@@ -83984,7 +83986,7 @@ declare class NamedGrid {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -84015,7 +84017,7 @@ declare class NamedGrid {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -84048,7 +84050,7 @@ declare class NamedGrids {
 
 	/**
 	 * Creates a new NamedGrid.
-	 * @param withProperties Initial values for properties of the new NamedGrid 
+	 * @param withProperties Initial values for properties of the new NamedGrid
 	 */
 	add(withProperties: object): NamedGrid;
 
@@ -84184,7 +84186,7 @@ declare class IndexingSortOption {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -84197,7 +84199,7 @@ declare class IndexingSortOption {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -84406,7 +84408,7 @@ declare class NumberingList {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -84430,7 +84432,7 @@ declare class NumberingList {
 
 	/**
 	 * Delete the NumberingList.
-	 * @param replacingWith The NumberingList to apply in place of this one. 
+	 * @param replacingWith The NumberingList to apply in place of this one.
 	 */
 	remove(replacingWith: NumberingList): void;
 
@@ -84438,7 +84440,7 @@ declare class NumberingList {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -84472,9 +84474,9 @@ declare class NumberingLists {
 	/**
 	 * Create a new list style.
 	 * @param name Name
-	 * @param continueNumbersAcrossStories If true, numbering will continue across stories. 
-	 * @param continueNumbersAcrossDocuments If true, numbering will continue across book documents. 
-	 * @param withProperties Initial values for properties of the new NumberingList 
+	 * @param continueNumbersAcrossStories If true, numbering will continue across stories.
+	 * @param continueNumbersAcrossDocuments If true, numbering will continue across book documents.
+	 * @param withProperties Initial values for properties of the new NumberingList
 	 */
 	add(name: string, continueNumbersAcrossStories: boolean, continueNumbersAcrossDocuments: boolean, withProperties: object): NumberingList;
 
@@ -84620,7 +84622,7 @@ declare class ObjectStyleGroup {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -84656,7 +84658,7 @@ declare class ObjectStyleGroup {
 
 	/**
 	 * Deletes the ObjectStyleGroup.
-	 * @param replacingWith The ObjectStyleGroup to apply in place of the deleted ObjectStyleGroup. 
+	 * @param replacingWith The ObjectStyleGroup to apply in place of the deleted ObjectStyleGroup.
 	 */
 	remove(replacingWith: ObjectStyle): void;
 
@@ -84664,7 +84666,7 @@ declare class ObjectStyleGroup {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -84697,7 +84699,7 @@ declare class ObjectStyleGroups {
 
 	/**
 	 * Creates a new ObjectStyleGroup.
-	 * @param withProperties Initial values for properties of the new ObjectStyleGroup 
+	 * @param withProperties Initial values for properties of the new ObjectStyleGroup
 	 */
 	add(withProperties: object): ObjectStyleGroup;
 
@@ -84848,7 +84850,7 @@ declare class Condition {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -84880,7 +84882,7 @@ declare class Condition {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -84913,7 +84915,7 @@ declare class Conditions {
 
 	/**
 	 * Creates a new Condition.
-	 * @param withProperties Initial values for properties of the new Condition 
+	 * @param withProperties Initial values for properties of the new Condition
 	 */
 	add(withProperties: object): Condition;
 
@@ -85089,7 +85091,7 @@ declare class HiddenText {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -85115,7 +85117,7 @@ declare class HiddenText {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -85278,7 +85280,7 @@ declare class ConditionSet {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -85315,7 +85317,7 @@ declare class ConditionSet {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -85348,7 +85350,7 @@ declare class ConditionSets {
 
 	/**
 	 * Creates a new ConditionSet.
-	 * @param withProperties Initial values for properties of the new ConditionSet 
+	 * @param withProperties Initial values for properties of the new ConditionSet
 	 */
 	add(withProperties: object): ConditionSet;
 
@@ -85514,7 +85516,7 @@ declare class LibraryPanel extends Panel {
 	/**
 	 * Selects the specified object(s).
 	 * @param selectableItems The objects to select.
-	 * @param existingSelection The selection status of the LibraryPanel in relation to previously selected objects. 
+	 * @param existingSelection The selection status of the LibraryPanel in relation to previously selected objects.
 	 */
 	select(selectableItems: object | object[] | NothingEnum | SelectAll, existingSelection?: SelectionOptions): void;
 
@@ -85608,7 +85610,7 @@ declare class MenuAction {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -85639,7 +85641,7 @@ declare class MenuAction {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -85782,8 +85784,8 @@ declare class ScriptMenuActions {
 
 	/**
 	 * Creates a new action.
-	 * @param title The name of the ScriptMenuAction for display in the user interface. The title includes any ampersand characters (&), which are used to tell the Windows OS to underline the following character in the name for use with the Alt key to navigate to a menu item. Double ampersands are used to display an actual ampersand character in the name. The Mac OS ignores and removes the extra ampersand characters. 
-	 * @param withProperties Initial values for properties of the new ScriptMenuAction 
+	 * @param title The name of the ScriptMenuAction for display in the user interface. The title includes any ampersand characters (&), which are used to tell the Windows OS to underline the following character in the name for use with the Alt key to navigate to a menu item. Double ampersands are used to display an actual ampersand character in the name. The Mac OS ignores and removes the extra ampersand characters.
+	 * @param withProperties Initial values for properties of the new ScriptMenuAction
 	 */
 	add(title: string, withProperties: object): ScriptMenuAction;
 
@@ -85934,7 +85936,7 @@ declare class Menu {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -85947,7 +85949,7 @@ declare class Menu {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -86084,7 +86086,7 @@ declare class MenuElement {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -86102,7 +86104,7 @@ declare class MenuElement {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -86254,9 +86256,9 @@ declare class Submenus {
 	/**
 	 * Creates a new submenu.
 	 * @param title The name of the Submenu for display in the user interface. The title includes any ampersand characters (&), which are used to tell the Windows OS to underline the following character in the name for use with the Alt key to navigate to a menu item. Double ampersands are used to display an actual ampersand character in the name. The Mac OS ignores and removes the extra ampersand characters.
-	 * @param at The location of the submenu relative to the reference object or within the containing object. 
-	 * @param reference The reference object. Note: Required when the at parameter specifies before or after. 
-	 * @param withProperties Initial values for properties of the new Submenu 
+	 * @param at The location of the submenu relative to the reference object or within the containing object.
+	 * @param reference The reference object. Note: Required when the at parameter specifies before or after.
+	 * @param withProperties Initial values for properties of the new Submenu
 	 */
 	add(title: string, at?: LocationOptions, reference?: MenuElement, withProperties?: object): Submenu;
 
@@ -86387,9 +86389,9 @@ declare class MenuItems {
 	/**
 	 * Creates a new menu item.
 	 * @param associatedMenuAction The menu action that implements themenu item.
-	 * @param at The location of the menu item relative to the reference object or within the containing object. 
-	 * @param reference The reference object. Note: Required when the at parameter specifies before or after. 
-	 * @param withProperties Initial values for properties of the new MenuItem 
+	 * @param at The location of the menu item relative to the reference object or within the containing object.
+	 * @param reference The reference object. Note: Required when the at parameter specifies before or after.
+	 * @param withProperties Initial values for properties of the new MenuItem
 	 */
 	add(associatedMenuAction: MenuAction, at?: LocationOptions, reference?: MenuElement, withProperties?: object): MenuItem;
 
@@ -86495,9 +86497,9 @@ declare class MenuSeparators {
 
 	/**
 	 * Creates a new menu separator.
-	 * @param at The location of the menu separator relative to the reference object or within the containing object. 
-	 * @param reference The reference object. Note: Required when the at parameter specifies before or after. 
-	 * @param withProperties Initial values for properties of the new MenuSeparator 
+	 * @param at The location of the menu separator relative to the reference object or within the containing object.
+	 * @param reference The reference object. Note: Required when the at parameter specifies before or after.
+	 * @param withProperties Initial values for properties of the new MenuSeparator
 	 */
 	add(at?: LocationOptions, reference?: MenuElement, withProperties?: object): MenuSeparator;
 
@@ -86617,7 +86619,7 @@ declare class Panel {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -86630,7 +86632,7 @@ declare class Panel {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -86792,7 +86794,7 @@ declare class Dialog {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -86823,7 +86825,7 @@ declare class Dialog {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -86861,7 +86863,7 @@ declare class Dialogs {
 
 	/**
 	 * Creates a new Dialog.
-	 * @param withProperties Initial values for properties of the new Dialog 
+	 * @param withProperties Initial values for properties of the new Dialog
 	 */
 	add(withProperties: object): Dialog;
 
@@ -86987,7 +86989,7 @@ declare class Widget {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -87000,7 +87002,7 @@ declare class Widget {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -87127,7 +87129,7 @@ declare class TextEditboxes {
 
 	/**
 	 * Creates a new TextEditbox.
-	 * @param withProperties Initial values for properties of the new TextEditbox 
+	 * @param withProperties Initial values for properties of the new TextEditbox
 	 */
 	add(withProperties: object): TextEditbox;
 
@@ -87232,7 +87234,7 @@ declare class StaticTexts {
 
 	/**
 	 * Creates a new StaticText.
-	 * @param withProperties Initial values for properties of the new StaticText 
+	 * @param withProperties Initial values for properties of the new StaticText
 	 */
 	add(withProperties: object): StaticText;
 
@@ -87337,7 +87339,7 @@ declare class Dropdowns {
 
 	/**
 	 * Creates a new Dropdown.
-	 * @param withProperties Initial values for properties of the new Dropdown 
+	 * @param withProperties Initial values for properties of the new Dropdown
 	 */
 	add(withProperties: object): Dropdown;
 
@@ -87442,7 +87444,7 @@ declare class CheckboxControls {
 
 	/**
 	 * Creates a new CheckboxControl.
-	 * @param withProperties Initial values for properties of the new CheckboxControl 
+	 * @param withProperties Initial values for properties of the new CheckboxControl
 	 */
 	add(withProperties: object): CheckboxControl;
 
@@ -87652,7 +87654,7 @@ declare class DialogColumn {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -87665,7 +87667,7 @@ declare class DialogColumn {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -87698,7 +87700,7 @@ declare class DialogColumns {
 
 	/**
 	 * Creates a new DialogColumn.
-	 * @param withProperties Initial values for properties of the new DialogColumn 
+	 * @param withProperties Initial values for properties of the new DialogColumn
 	 */
 	add(withProperties: object): DialogColumn;
 
@@ -87808,7 +87810,7 @@ declare class RadiobuttonGroups {
 
 	/**
 	 * Creates a new RadiobuttonGroup.
-	 * @param withProperties Initial values for properties of the new RadiobuttonGroup 
+	 * @param withProperties Initial values for properties of the new RadiobuttonGroup
 	 */
 	add(withProperties: object): RadiobuttonGroup;
 
@@ -87913,7 +87915,7 @@ declare class RadiobuttonControls {
 
 	/**
 	 * Creates a new RadiobuttonControl.
-	 * @param withProperties Initial values for properties of the new RadiobuttonControl 
+	 * @param withProperties Initial values for properties of the new RadiobuttonControl
 	 */
 	add(withProperties: object): RadiobuttonControl;
 
@@ -88038,7 +88040,7 @@ declare class IntegerEditboxes {
 
 	/**
 	 * Creates a new IntegerEditbox.
-	 * @param withProperties Initial values for properties of the new IntegerEditbox 
+	 * @param withProperties Initial values for properties of the new IntegerEditbox
 	 */
 	add(withProperties: object): IntegerEditbox;
 
@@ -88168,7 +88170,7 @@ declare class IntegerComboboxes {
 
 	/**
 	 * Creates a new IntegerCombobox.
-	 * @param withProperties Initial values for properties of the new IntegerCombobox 
+	 * @param withProperties Initial values for properties of the new IntegerCombobox
 	 */
 	add(withProperties: object): IntegerCombobox;
 
@@ -88368,7 +88370,7 @@ declare class EnablingGroups {
 
 	/**
 	 * Creates a new EnablingGroup.
-	 * @param withProperties Initial values for properties of the new EnablingGroup 
+	 * @param withProperties Initial values for properties of the new EnablingGroup
 	 */
 	add(withProperties: object): EnablingGroup;
 
@@ -88498,7 +88500,7 @@ declare class AngleComboboxes {
 
 	/**
 	 * Creates a new AngleCombobox.
-	 * @param withProperties Initial values for properties of the new AngleCombobox 
+	 * @param withProperties Initial values for properties of the new AngleCombobox
 	 */
 	add(withProperties: object): AngleCombobox;
 
@@ -88628,7 +88630,7 @@ declare class PercentComboboxes {
 
 	/**
 	 * Creates a new PercentCombobox.
-	 * @param withProperties Initial values for properties of the new PercentCombobox 
+	 * @param withProperties Initial values for properties of the new PercentCombobox
 	 */
 	add(withProperties: object): PercentCombobox;
 
@@ -88753,7 +88755,7 @@ declare class RealEditboxes {
 
 	/**
 	 * Creates a new RealEditbox.
-	 * @param withProperties Initial values for properties of the new RealEditbox 
+	 * @param withProperties Initial values for properties of the new RealEditbox
 	 */
 	add(withProperties: object): RealEditbox;
 
@@ -88878,7 +88880,7 @@ declare class PercentEditboxes {
 
 	/**
 	 * Creates a new PercentEditbox.
-	 * @param withProperties Initial values for properties of the new PercentEditbox 
+	 * @param withProperties Initial values for properties of the new PercentEditbox
 	 */
 	add(withProperties: object): PercentEditbox;
 
@@ -89003,7 +89005,7 @@ declare class AngleEditboxes {
 
 	/**
 	 * Creates a new AngleEditbox.
-	 * @param withProperties Initial values for properties of the new AngleEditbox 
+	 * @param withProperties Initial values for properties of the new AngleEditbox
 	 */
 	add(withProperties: object): AngleEditbox;
 
@@ -89133,7 +89135,7 @@ declare class RealComboboxes {
 
 	/**
 	 * Creates a new RealCombobox.
-	 * @param withProperties Initial values for properties of the new RealCombobox 
+	 * @param withProperties Initial values for properties of the new RealCombobox
 	 */
 	add(withProperties: object): RealCombobox;
 
@@ -89268,7 +89270,7 @@ declare class MeasurementComboboxes {
 
 	/**
 	 * Creates a new MeasurementCombobox.
-	 * @param withProperties Initial values for properties of the new MeasurementCombobox 
+	 * @param withProperties Initial values for properties of the new MeasurementCombobox
 	 */
 	add(withProperties: object): MeasurementCombobox;
 
@@ -89398,7 +89400,7 @@ declare class MeasurementEditboxes {
 
 	/**
 	 * Creates a new MeasurementEditbox.
-	 * @param withProperties Initial values for properties of the new MeasurementEditbox 
+	 * @param withProperties Initial values for properties of the new MeasurementEditbox
 	 */
 	add(withProperties: object): MeasurementEditbox;
 
@@ -89588,7 +89590,7 @@ declare class BorderPanels {
 
 	/**
 	 * Creates a new BorderPanel.
-	 * @param withProperties Initial values for properties of the new BorderPanel 
+	 * @param withProperties Initial values for properties of the new BorderPanel
 	 */
 	add(withProperties: object): BorderPanel;
 
@@ -89798,7 +89800,7 @@ declare class DialogRow {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -89811,7 +89813,7 @@ declare class DialogRow {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -89844,7 +89846,7 @@ declare class DialogRows {
 
 	/**
 	 * Creates a new DialogRow.
-	 * @param withProperties Initial values for properties of the new DialogRow 
+	 * @param withProperties Initial values for properties of the new DialogRow
 	 */
 	add(withProperties: object): DialogRow;
 
@@ -90063,7 +90065,7 @@ declare class XMLElement extends XMLItem {
 	/**
 	 * Applies a cell style to the table cells associated with the XMLElement.
 	 * @param using The cell style to apply.
-	 * @param clearingOverrides If true, removes local formatting before applying the cell style. 
+	 * @param clearingOverrides If true, removes local formatting before applying the cell style.
 	 */
 	applyCellStyle(using: string | CellStyle, clearingOverrides?: boolean): void;
 
@@ -90076,22 +90078,22 @@ declare class XMLElement extends XMLItem {
 	/**
 	 * Applies an object style to the frame associated with the XMLElement.
 	 * @param using The object style to apply.
-	 * @param clearingOverrides If true, removes local formatting before applying the object style. 
-	 * @param clearingOverridesThroughRootObjectStyle If true, clears unchecked category attributes through the root style. 
+	 * @param clearingOverrides If true, removes local formatting before applying the object style.
+	 * @param clearingOverridesThroughRootObjectStyle If true, clears unchecked category attributes through the root style.
 	 */
 	applyObjectStyle(using: string | ObjectStyle, clearingOverrides?: boolean, clearingOverridesThroughRootObjectStyle?: boolean): void;
 
 	/**
 	 * Applies the specified paragraph style to the text content of the XMLElement.
 	 * @param using The paragraph style to apply.
-	 * @param clearingOverrides If true, clears any attributes before applying the style. 
+	 * @param clearingOverrides If true, clears any attributes before applying the style.
 	 */
 	applyParagraphStyle(using: string | ParagraphStyle, clearingOverrides?: boolean): void;
 
 	/**
 	 * Applies a table style to the table associated with the XMLElement.
 	 * @param using The table style to apply.
-	 * @param clearingOverrides If true, removes local formatting before applying the table style. 
+	 * @param clearingOverrides If true, removes local formatting before applying the table style.
 	 */
 	applyTableStyle(using: string | TableStyle, clearingOverrides?: boolean): void;
 
@@ -90099,28 +90101,28 @@ declare class XMLElement extends XMLItem {
 	 * asynchronously exports the object(s) to a file.
 	 * @param format The export format, specified as an enumeration value or as an extension that appears in the Save as type or Format menu in the Export dialog.
 	 * @param to The path to the export file.
-	 * @param showingOptions If true, displays the export options dialog. 
-	 * @param using The export style. 
-	 * @param versionComments The comment for this version. 
-	 * @param forceSave If true, forcibly saves a version. 
+	 * @param showingOptions If true, displays the export options dialog.
+	 * @param using The export style.
+	 * @param versionComments The comment for this version.
+	 * @param forceSave If true, forcibly saves a version.
 	 */
 	asynchronousExportFile(format: ExportFormat | string, to: File, showingOptions?: boolean, using?: PDFExportPreset, versionComments?: string, forceSave?: boolean): BackgroundTask;
 
 	/**
 	 * Finds text that matches the find what value and replaces the text with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeGrep(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value and replaces the text with the change to value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeText(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find character type value and replaces the text with the change character type value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	changeTransliterate(reverseOrder: boolean): Text[];
 
@@ -90133,14 +90135,14 @@ declare class XMLElement extends XMLItem {
 
 	/**
 	 * Converts the XMLElement to an attribute of its parent element.
-	 * @param using The name to give to the new attribute. 
+	 * @param using The name to give to the new attribute.
 	 */
 	convertToAttribute(using: string): XMLAttribute;
 
 	/**
 	 * Evaluates an XPath expression starting at this XML element in the structure.
 	 * @param using The XPath expression.
-	 * @param prefixMappingTable The namespace mapping table. Can accept: Array of Arrays of 2 Strings. 
+	 * @param prefixMappingTable The namespace mapping table. Can accept: Array of Arrays of 2 Strings.
 	 */
 	evaluateXPathExpression(using: string, prefixMappingTable: any[]): XMLItem[];
 
@@ -90148,28 +90150,28 @@ declare class XMLElement extends XMLItem {
 	 * Exports the object(s) to a file.
 	 * @param format The export format, specified as an enumeration value or as an extension that appears in the Save as type or Format menu in the Export dialog.
 	 * @param to The path to the export file.
-	 * @param showingOptions If true, displays the export options dialog. 
-	 * @param using The export style. 
-	 * @param versionComments The comment for this version. 
-	 * @param forceSave If true, forcibly saves a version. 
+	 * @param showingOptions If true, displays the export options dialog.
+	 * @param using The export style.
+	 * @param versionComments The comment for this version.
+	 * @param forceSave If true, forcibly saves a version.
 	 */
 	exportFile(format: ExportFormat | string, to: File, showingOptions?: boolean, using?: PDFExportPreset, versionComments?: string, forceSave?: boolean): void;
 
 	/**
 	 * Finds text that matches the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findGrep(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find what value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findText(reverseOrder: boolean): Text[];
 
 	/**
 	 * Finds text that matches the find character type value.
-	 * @param reverseOrder If true, returns the results in reverse order. 
+	 * @param reverseOrder If true, returns the results in reverse order.
 	 */
 	findTransliterate(reverseOrder: boolean): Text[];
 
@@ -90204,7 +90206,7 @@ declare class XMLElement extends XMLItem {
 	 * @param on The page or spread on which to create the new page item.
 	 * @param placePoint The page coordinates of the top left corner of the page item, in the format [y1, x1]
 	 * @param copyItem The page item to copy.
-	 * @param retainExistingFrame If true, associates the XML element with the existing page item and moves the page item (rather than a copy of the page item). 
+	 * @param retainExistingFrame If true, associates the XML element with the existing page item and moves the page item (rather than a copy of the page item).
 	 */
 	placeIntoCopy(on: Spread | Page | MasterSpread, placePoint: string[] | number[], copyItem: PageItem, retainExistingFrame?: boolean): PageItem;
 
@@ -90218,7 +90220,7 @@ declare class XMLElement extends XMLItem {
 	/**
 	 * Associates an existing page item with the XML element and places it into an inline frame.
 	 * @param copyItem The page item to copy.
-	 * @param retainExistingFrame If true, moves the existing page item. If false, moves a copy of the page item. 
+	 * @param retainExistingFrame If true, moves the existing page item. If false, moves a copy of the page item.
 	 */
 	placeIntoInlineCopy(copyItem: PageItem, retainExistingFrame?: boolean): PageItem;
 
@@ -90237,14 +90239,14 @@ declare class XMLElement extends XMLItem {
 	/**
 	 * Replaces the content of XML element with content imported from a file.
 	 * @param using The file path to the import file.
-	 * @param relativeBasePath Base path used to resolve relative paths. 
+	 * @param relativeBasePath Base path used to resolve relative paths.
 	 */
 	setContent(using: string, relativeBasePath: string): PageItem;
 
 	/**
 	 * Stores the object in the specified library.
 	 * @param using The library in which to store the object.
-	 * @param withProperties Initial values for properties of the new XMLElement 
+	 * @param withProperties Initial values for properties of the new XMLElement
 	 */
 	store(using: Library, withProperties: object): Asset;
 
@@ -90255,7 +90257,7 @@ declare class XMLElement extends XMLItem {
 
 	/**
 	 * Validates the element against a DTD.
-	 * @param maximumErrors The maximum number of validation errors to generate. 
+	 * @param maximumErrors The maximum number of validation errors to generate.
 	 */
 	validate(maximumErrors?: number): ValidationError[];
 
@@ -90280,7 +90282,7 @@ declare class XMLElements {
 	 * Creates a new XML element.
 	 * @param markupTag The XML tag used to identify the element.
 	 * @param xmlContent The content to be marked up.
-	 * @param withProperties Initial values for properties of the new XMLElement 
+	 * @param withProperties Initial values for properties of the new XMLElement
 	 */
 	add(markupTag: string | XMLTag, xmlContent: Text | Story | PageItem | Movie | Sound | Graphic | Table | Cell, withProperties: object): XMLElement;
 
@@ -90400,14 +90402,14 @@ declare class XMLAttribute {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
 	/**
 	 * Converts the XML attribute to a child element of its parent element.
-	 * @param located The location of the new XML element within the parent XML element of the XML attribute. 
-	 * @param markupTag The XML tag to apply to the new XML element. 
+	 * @param located The location of the new XML element within the parent XML element of the XML attribute.
+	 * @param markupTag The XML tag to apply to the new XML element.
 	 */
 	convertToElement(located?: XMLElementLocation, markupTag?: XMLTag): XMLElement;
 
@@ -90425,13 +90427,13 @@ declare class XMLAttribute {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
 	/**
 	 * Selects the object.
-	 * @param existingSelection The selection status of the XMLAttribute in relation to previously selected objects. 
+	 * @param existingSelection The selection status of the XMLAttribute in relation to previously selected objects.
 	 */
 	select(existingSelection?: SelectionOptions): void;
 
@@ -90466,7 +90468,7 @@ declare class XMLAttributes {
 	 * Creates a new XML attribute.
 	 * @param name The name of the attribute.
 	 * @param value The value of the attribute.
-	 * @param withProperties Initial values for properties of the new XMLAttribute 
+	 * @param withProperties Initial values for properties of the new XMLAttribute
 	 */
 	add(name: string, value: string, withProperties: object): XMLAttribute;
 
@@ -90596,7 +90598,7 @@ declare class XMLTag {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -90628,7 +90630,7 @@ declare class XMLTag {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -90661,9 +90663,9 @@ declare class XMLTags {
 
 	/**
 	 * Creates a tag.
-	 * @param name The name of the tag. 
+	 * @param name The name of the tag.
 	 * @param tagColor The dolor of the tag, specified either as an array of three doubles, each in the range 0 to 255 and representing R, G, and B values, or as a UI color.
-	 * @param withProperties Initial values for properties of the new XMLTag 
+	 * @param withProperties Initial values for properties of the new XMLTag
 	 */
 	add(name: string, tagColor: [number, number, number] | UIColors, withProperties: object): XMLTag;
 
@@ -90789,7 +90791,7 @@ declare class XMLImportMap {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -90807,7 +90809,7 @@ declare class XMLImportMap {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -90842,7 +90844,7 @@ declare class XMLImportMaps {
 	 * Create a new mapping
 	 * @param markupTag The tag to map.
 	 * @param mappedStyle the mapped style.
-	 * @param withProperties Initial values for properties of the new XMLImportMap 
+	 * @param withProperties Initial values for properties of the new XMLImportMap
 	 */
 	add(markupTag: XMLTag | string, mappedStyle: ParagraphStyle | CharacterStyle | TableStyle | CellStyle | string, withProperties: object): XMLImportMap;
 
@@ -90971,7 +90973,7 @@ declare class XMLExportMap {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -90989,7 +90991,7 @@ declare class XMLExportMap {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -91024,7 +91026,7 @@ declare class XMLExportMaps {
 	 * Create a new mapping
 	 * @param mappedStyle The mapped style.
 	 * @param markupTag The tag to map.
-	 * @param withProperties Initial values for properties of the new XMLExportMap 
+	 * @param withProperties Initial values for properties of the new XMLExportMap
 	 */
 	add(mappedStyle: ParagraphStyle | CharacterStyle | TableStyle | CellStyle | string, markupTag: XMLTag | string, withProperties: object): XMLExportMap;
 
@@ -91143,7 +91145,7 @@ declare class ValidationError {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -91156,7 +91158,7 @@ declare class ValidationError {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -91289,9 +91291,9 @@ declare class XMLComments {
 
 	/**
 	 * Creates a new XML comment.
-	 * @param value The value of the comment. 
+	 * @param value The value of the comment.
 	 * @param storyOffset The location within the story, specified as an insertion point.
-	 * @param withProperties Initial values for properties of the new XMLComment 
+	 * @param withProperties Initial values for properties of the new XMLComment
 	 */
 	add(value?: string, storyOffset?: InsertionPoint | number, withProperties?: object): XMLComment;
 
@@ -91409,9 +91411,9 @@ declare class XMLInstructions {
 	/**
 	 * Creates a new XML processing instruction.
 	 * @param target A name that identifies the processing instruction to an application reading the exported XML file.
-	 * @param data A value that tells the application what to do with the processing instruction identified in the target. 
+	 * @param data A value that tells the application what to do with the processing instruction identified in the target.
 	 * @param storyOffset The location within the story, specified as an insertion point.
-	 * @param withProperties Initial values for properties of the new XMLInstruction 
+	 * @param withProperties Initial values for properties of the new XMLInstruction
 	 */
 	add(target: string, data?: string, storyOffset?: InsertionPoint | number, withProperties?: object): XMLInstruction;
 
@@ -91526,7 +91528,7 @@ declare class XMLItem {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -91549,13 +91551,13 @@ declare class XMLItem {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
 	/**
 	 * Selects the object.
-	 * @param existingSelection The selection status of the XMLItem in relation to previously selected objects. 
+	 * @param existingSelection The selection status of the XMLItem in relation to previously selected objects.
 	 */
 	select(existingSelection?: SelectionOptions): void;
 
@@ -91921,7 +91923,7 @@ declare class XMLRuleProcessor {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -91967,7 +91969,7 @@ declare class XMLRuleProcessor {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
@@ -92017,8 +92019,8 @@ declare class XMLRuleProcessors {
 	/**
 	 * Create a new XMLRuleProcessor
 	 * @param rulePaths The XPath condition paths of the rules in the rule set.
-	 * @param prefixMappingTable The namespace mapping table. Can accept: Array of Arrays of 2 Strings. 
-	 * @param withProperties Initial values for properties of the new XMLRuleProcessor 
+	 * @param prefixMappingTable The namespace mapping table. Can accept: Array of Arrays of 2 Strings.
+	 * @param withProperties Initial values for properties of the new XMLRuleProcessor
 	 */
 	add(rulePaths: string[], prefixMappingTable: any[], withProperties: object): XMLRuleProcessor;
 
@@ -92144,7 +92146,7 @@ declare class XMLRuleMatchData {
 	 * Adds an event listener.
 	 * @param eventType The event type.
 	 * @param handler The event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	addEventListener(eventType: string, handler: File | Function, captures?: boolean): EventListener;
 
@@ -92157,7 +92159,7 @@ declare class XMLRuleMatchData {
 	 * Removes the event listener.
 	 * @param eventType The registered event type.
 	 * @param handler The registered event handler.
-	 * @param captures This parameter is obsolete. 
+	 * @param captures This parameter is obsolete.
 	 */
 	removeEventListener(eventType: string, handler: File | Function, captures?: boolean): boolean;
 
