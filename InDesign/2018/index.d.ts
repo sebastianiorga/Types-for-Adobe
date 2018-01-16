@@ -5724,7 +5724,7 @@ declare class Books {
 	count(): number;
 
 	/**
-	 * Returns a synthetic item that chaing messages to every Book in the collection. Chain a call to .getElements() in order to get a proper array.
+	 * Returns a synthetic item that chains messages to every Book in the collection. Chain a call to .getElements() in order to get a proper array.
 	 */
 	everyItem(): Book;
 
