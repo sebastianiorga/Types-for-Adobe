@@ -433,13 +433,13 @@ declare class ScriptUIGraphics {
 	 * Contains the enumerated constants for the type argument of newBrush().
 	 * Type constants are: SOLID_COLOR, THEME_COLOR.
 	 */
-	static readonly BrushType: object;
+	readonly BrushType: object;
 
 	/**
 	 * Contains the enumerated constants for the type argument of newPen().
 	 * Type constants are: SOLID_COLOR, THEME_COLOR.
 	 */
-	static readonly PenType: object;
+	readonly PenType: object;
 
 	/**
 	 * The background color for containers; for non-containers, the parent background color.
