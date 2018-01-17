@@ -71558,9 +71558,10 @@ declare class Paragraphs {
 	count(): number;
 
 	/**
-	 * Returns every Paragraph in the collection.
+	 * Returns a synthetic item that chains messages to every Paragraph in the collection. Chain a call to .getElements() in order to get a proper array.
 	 */
-	everyItem(): Paragraph[];
+	 */
+	everyItem(): Paragraph;
 
 	/**
 	 * Returns the first Paragraph in the collection.
