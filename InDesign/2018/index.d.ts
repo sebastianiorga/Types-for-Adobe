@@ -71560,7 +71560,6 @@ declare class Paragraphs {
 	/**
 	 * Returns a synthetic item that chains messages to every Paragraph in the collection. Chain a call to .getElements() in order to get a proper array.
 	 */
-	 */
 	everyItem(): Paragraph;
 
 	/**
