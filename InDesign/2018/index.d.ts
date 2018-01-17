@@ -72212,9 +72212,9 @@ declare class TextFrames {
 	count(): number;
 
 	/**
-	 * Returns every TextFrame in the collection.
+	 * Returns a synthetic item that chains messages to every TextFrame in the collection. Chain a call to .getElements() in order to get a proper array.
 	 */
-	everyItem(): TextFrame[];
+	everyItem(): TextFrame;
 
 	/**
 	 * Returns the first TextFrame in the collection.
