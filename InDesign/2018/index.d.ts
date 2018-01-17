@@ -72124,6 +72124,11 @@ declare class TextFrame extends PageItem {
 	findTransliterate(reverseOrder: boolean): Text[];
 
 	/**
+	 * Resolves the object specifier, creating an array of object references.
+	 */
+	getElements(): TextFrame[];
+
+	/**
 	 * Creates a new page item by intersecting the TextFrame with other objects. Returns an error if the objects do not intersect.
 	 * @param with The object(s) with which to intersect.
 	 */
