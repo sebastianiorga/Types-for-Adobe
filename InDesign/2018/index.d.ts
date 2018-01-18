@@ -71530,6 +71530,10 @@ declare class Paragraph extends Text {
 	 */
 	readonly numberingResultNumber: number;
 
+	/**
+	 * Resolves the object specifier, creating an array of object references.
+	 */
+	getElements(): Paragraph[];
 }
 
 /**
