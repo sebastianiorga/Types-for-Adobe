@@ -27499,6 +27499,10 @@ declare class TextBox extends FormField {
 	 */
 	sendToBack(reference: PageItem): void;
 
+	/**
+	 * Returns an array of TextBox.
+	 */
+	getElements(): TextBox;
 }
 
 /**
@@ -27539,10 +27543,6 @@ declare class TextBoxes {
 	 * Returns a synthetic TextBox that wraps all TextBoxes in collection. If you want a proper array chain with getElements().
 	 */
 	everyItem(): TextBox;
-	/**
-	 * Returns an array of TextBox.
-	 */
-	getElements(): TextBox[];
 
 	/**
 	 * Returns the first TextBox in the collection.
