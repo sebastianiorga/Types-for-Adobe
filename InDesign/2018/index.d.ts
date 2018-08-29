@@ -27502,7 +27502,7 @@ declare class TextBox extends FormField {
 	/**
 	 * Returns an array of TextBox.
 	 */
-	getElements(): TextBox;
+	getElements(): TextBox[];
 }
 
 /**
