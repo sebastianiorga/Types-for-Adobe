@@ -27536,9 +27536,13 @@ declare class TextBoxes {
 	count(): number;
 
 	/**
-	 * Returns every TextBox in the collection.
+	 * Returns a synthetic TextBox that wraps all TextBoxes in collection. If you want a proper array chain with getElements().
 	 */
-	everyItem(): TextBox[];
+	everyItem(): TextBox;
+	/**
+	 * Returns an array of TextBox.
+	 */
+	getElements(): TextBox[];
 
 	/**
 	 * Returns the first TextBox in the collection.
